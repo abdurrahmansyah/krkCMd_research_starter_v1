@@ -1,0 +1,19 @@
+seed: 42
+data:
+  path: data/raw/krkCMd_table.csv
+  target: MANwidth
+  feature_prefix: x
+  expected_feature_count: 501
+  metadata_columns: [No, Profile, Series, Image, Grid, Stage]
+  comparison_baselines: [DLMwidth, AEDwidth]
+split:
+  proposed_group_columns: [Series, Image, Grid]
+  test_size: 0.20
+  validation_size_of_remaining: 0.20
+models:
+  include_mlp: false
+robustness:
+  brightness_shifts: [-20, 20]
+  contrast_scales: [0.8, 1.2]
+  gaussian_noise_sigmas: [5, 10]
+  smoothing_sigmas: [1.0]
