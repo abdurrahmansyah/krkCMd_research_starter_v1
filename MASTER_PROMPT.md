@@ -28,8 +28,8 @@ Do not immediately train all models. Perform these tasks in order:
 2. Do not extract or process the 38.6 GB images archive for the first baseline.
 3. Inspect Python version, OS, CPU, RAM, and available GPU using safe local commands.
 4. Check CSV columns, row count, dtypes, missing values, duplicates, ranges, target distribution, and category counts.
-5. Verify the meaning of `Series`, `Image`, `Grid`, `Stage`, and `Profile` using dataset descriptor and supplied scripts. Do not assume the proposed group key without checking.
-6. Determine whether `Series + Image + Grid` groups the same physical location across stages. If uncertain, stop and document uncertainty; do not silently use random row split.
+5. Verify the meaning of `Series`, `Image`, `Gridline`, `Stage`, and `Profile` using dataset descriptor and supplied scripts. Do not assume the proposed group key without checking.
+6. Determine whether `Series + Image + Gridline` groups the same physical location across stages. If uncertain, stop and document uncertainty; do not silently use random row split.
 7. Update `docs/DATA_AND_PAPERS.md` with verified provenance and file status. Keep unknown items marked UNKNOWN.
 8. Create/adjust a local Python 3.11 virtual environment setup guide. Do not install packages globally.
 9. Run the smallest possible CSV-read smoke test and save an audit report in `reports/`.

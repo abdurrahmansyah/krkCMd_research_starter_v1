@@ -14,7 +14,7 @@
 ### krkCMd_scripts.zip
 - Sumber: Zenodo record yang sama.
 - Status lokal: pengguna menyatakan sudah mengunduh; perlu diekstrak/ditinjau setelah audit awal.
-- Tujuan: memverifikasi definisi Profile/Series/Image/Grid/Stage dan prosedur pembentukan data.
+- Tujuan: memverifikasi definisi Profile/Series/Image/Gridline/Stage dan prosedur pembentukan data.
 
 ### krkCMd_images.zip
 - Sumber: Zenodo record yang sama.

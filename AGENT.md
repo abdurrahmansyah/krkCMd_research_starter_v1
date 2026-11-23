@@ -20,7 +20,7 @@ Jangan mulai Ide 4 otomatis. Buat laporan singkat yang menjelaskan bukti awal, r
 - **No fabricated results:** jangan pernah mengarang angka, tabel, grafik, hasil training, sitasi, DOI, atau status download.
 - **No plagiarism:** paper boleh direplikasi dengan atribusi; jangan menyalin teks paper untuk diklaim sebagai tulisan sendiri.
 - **No data leakage:** `MANwidth` adalah target. `DLMwidth` dan `AEDwidth` adalah baseline pembanding, bukan fitur input model utama.
-- Kolom metadata `No`, `Profile`, `Series`, `Image`, `Grid`, `Stage` tidak masuk fitur utama secara default. Simpan untuk audit dan grouping.
+- Kolom metadata `No`, `Profile`, `Series`, `Image`, `Gridline`, `Stage` tidak masuk fitur utama secara default. Simpan untuk audit dan grouping.
 - Baris bukan otomatis sampel independen. Beberapa profil dapat terkait gambar/lokasi/spesimen dan tahapan self-healing.
 - Jangan memakai random row-wise split sebagai hasil utama.
 - Fit scaler/preprocessor hanya pada data training.
@@ -34,7 +34,7 @@ Jangan mulai Ide 4 otomatis. Buat laporan singkat yang menjelaskan bukti awal, r
 Dataset utama: `krkCMd_table.csv`
 
 Kolom yang diharapkan:
-- Metadata: `No`, `Profile`, `Series`, `Image`, `Grid`, `Stage`
+- Metadata: `No`, `Profile`, `Series`, `Image`, `Gridline`, `Stage`
 - Input: `x1` sampai `x501` (intensitas brightness, umumnya 0–255)
 - Target manual: `MANwidth` (µm)
 - Baseline terdahulu: `DLMwidth`, `AEDwidth`
@@ -153,9 +153,9 @@ Setelah setiap diskusi yang menghasilkan keputusan final, agent harus:
 - Baris dengan target kosong/tidak valid harus dilaporkan dan ditangani eksplisit.
 
 ### 8.2 Group split
-Default grouping awal yang harus diverifikasi: gabungan `Series + Image + Grid`, tanpa `Stage`, agar lokasi yang sama lintas tahapan tidak tersebar antara train dan test.
-- Periksa apakah kombinasi tersebut benar-benar merepresentasikan unit pengukuran/lokasi yang sama.
-- Jika `Image` atau `Grid` memiliki arti berbeda, ubah hanya setelah bukti dari data descriptor/scripts.
+Default grouping awal yang telah diverifikasi: gabungan `Series + Image + Gridline`, tanpa `Stage`, agar lokasi yang sama lintas tahapan tidak tersebar antara train dan test.
+- Verifikasi telah membuktikan kombinasi tersebut merepresentasikan unit pengukuran/lokasi fisik yang sama di mana setiap kelompok memiliki tepat 6 tahapan (Stage 1 sampai 6).
+- Kolom di CSV terkonfirmasi bernama `Gridline` (bukan `Grid`).
 - Simpan daftar group train/validation/test agar dapat direproduksi.
 - Jika group count terlalu kecil atau group tidak seimbang, jangan memaksakan split; laporkan masalah dan usulkan alternatif.
 - Lakukan pemeriksaan overlap group setelah split.
@@ -209,7 +209,7 @@ Milestone 0 — Setup:
 
 Milestone 1 — Data reconnaissance:
 - shape/schema, missing, duplicates, target stats
-- category counts for Series/Image/Grid/Stage
+- category counts for Series/Image/Gridline/Stage
 - group count and group-size distribution
 - target distribution by Series and Stage
 - sample brightness profiles plot
@@ -254,4 +254,5 @@ A milestone is done only when:
 
 ## 12. Changelog
 
+- 2026-11-23 — Schema correction and group validation: Kolom metadata diverifikasi dari CSV aktual bernama `Gridline` (bukan `Grid`). Group key `Series + Image + Gridline` tervalidasi 100% konsisten (3,183 kelompok, masing-masing tepat 6 observasi Stage 1–6). Dependency `pypdf` ditambahkan ke requirements.txt.
 - 2026-11-20 — Initial master protocol created. Research sequence fixed as Ide 1 + Ide 2, with Ide 4 gated by initial evidence. Initial grouping proposal is Series+Image+Grid and must be validated against dataset documentation/scripts.

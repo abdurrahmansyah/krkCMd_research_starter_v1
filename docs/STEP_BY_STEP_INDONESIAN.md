@@ -6,7 +6,7 @@ Bayangkan kita punya banyak garis kecil yang merekam terang-gelap permukaan reta
 Setiap baris CSV berisi:
 - 501 angka terang-gelap (`x1` sampai `x501`),
 - satu angka lebar retak hasil pengukuran manusia (`MANwidth`),
-- beberapa identitas/keterangan seperti seri, gambar, grid, dan tahap pengamatan.
+- beberapa identitas/keterangan seperti seri, gambar, gridline, dan tahap pengamatan.
 
 Tugas komputer: belajar dari 501 angka tersebut untuk menebak lebar retak. Setelah itu kita ganggu angka terang-gelap sedikit untuk melihat apakah tebakan komputer berubah terlalu jauh.
 
@@ -64,7 +64,7 @@ Ini bagian penting. Kita tidak boleh memberi komputer foto/lokasi yang hampir sa
 
 Karena satu lokasi mungkin diamati pada beberapa Stage, pembagian harus berdasarkan kelompok lokasi, bukan mengacak baris satu per satu.
 
-Notebook menyediakan rancangan group split awal dari `Series + Image + Grid`. Kita belum boleh menganggap ini benar sebelum memeriksa definisi kolom di data descriptor dan scripts ZIP. Jika unit lokasi ternyata berbeda, group key harus diperbaiki dan alasannya ditulis.
+Notebook menyediakan rancangan group split awal dari `Series + Image + Gridline`. Kita belum boleh menganggap ini benar sebelum memeriksa definisi kolom di data descriptor dan scripts ZIP. Jika unit lokasi ternyata berbeda, group key harus diperbaiki dan alasannya ditulis.
 
 ## Tahap E — Ide 1: bandingkan model
 
