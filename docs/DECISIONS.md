@@ -25,3 +25,9 @@
 - Decision: Rename metadata field reference from `Grid` to `Gridline` across all code, configs, and documentation.
 - Rationale: The raw dataset `krkCMd_table.csv` officially names this column `Gridline`. The starter template had a typographical discrepancy using `Grid`.
 - Consequence: Aligned `baseline.yaml`, `AGENT.md`, `00_baseline_krkCMd.ipynb`, and `audit_dataset.py`.
+
+## D-005 — Model Registry and Compatibility Assessment (2026-11-25)
+- Status: EXPLORATORY (M01 COMPLETE; AWAITING IMPLEMENTATION APPROVAL)
+- Context: Evaluated 32 candidate models across 6 paradigms for potential extension of Idea 1 (benchmark) and Idea 2 (robustness).
+- Outcome: 8 models passed L0/L1 smoke testing in existing .venv; 12 static reviews completed; 7 conditional constraints identified; 5 custom designs cataloged.
+- Strict Constraint: No model is approved for new experimental training until resource budgets, environment plans, and selection criteria receive explicit user authorization. Previous decisions D-001 through D-004 remain fully in force.

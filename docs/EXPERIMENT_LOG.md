@@ -27,3 +27,16 @@ Append-only log. Do not rewrite old results.
   - `Crack_Multi_Intersection_ROI_ImagJ.txt` (ImageJ2 ROI extraction: 500 px length yielding 501 points).
 - Results: No machine learning model was trained. Notebook safety guard halted before training due to `Grid` vs `Gridline` discrepancy. Schema corrected in code and config.
 - Next: Run benchmark models (Ide 1) after user approval.
+
+## EXP-002 — Milestone M01: Model Registry and Compatibility Assessment
+- Date: 2026-11-25
+- Status: COMPLETED (Exploratory / Compatibility Audit Only)
+- Scope: Hardware & environment audit, 32-candidate model registry, dependency resolution analysis, synthetic profile L0/L1 smoke testing, DLM and AED reproduction feasibility study.
+- Key Findings:
+  - System: Windows 11, Intel Core i7 (14C/20T), 31.7 GB RAM, NVIDIA RTX 3050 Laptop (4GB VRAM), 37.5 GB free disk space.
+  - MATLAB R2026b is installed, but Deep Learning Toolbox is absent.
+  - 8 installed models passed synthetic 501-feature L0/L1 smoke tests (0 errors, 100% finite predictions).
+  - 24 remaining models registered with primary citations, licenses, and environment isolation plans.
+  - Feasibility of faithful Python port for AED confirmed. Table 3 of 2024 paper provides exact 15-layer architecture for DLM retrained.
+- Results: Zero machine learning models were trained on actual krkCMd data. No baseline notebooks or manuscript results were altered.
+- Next: Await user approval on environment plan and model selection before installing packages or executing L2 progressive capacity tests.
