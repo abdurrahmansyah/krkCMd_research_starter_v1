@@ -57,17 +57,20 @@ flowchart TD
 
 ---
 
-## 3. Explicit Stop Conditions & Safety Bounds
+## 3. Explicit Stop Conditions & Provisional Dynamic Safety Bounds (Updated M01.1)
 
-To protect the host workstation (Intel Core i7, 32 GB RAM with 4.8 GB available, NVIDIA RTX 3050 4 GB VRAM, 37.5 GB free disk space), any test must immediately terminate if:
+To protect the new workstation (`DESKTOP-CQB09OU`: Intel Core i9-10900KF 20T, 127.92 GB RAM, NVIDIA Quadro RTX 6000 24 GB VRAM Turing `sm_75`, ~1.75 TB free disk), reserve at least **16 GB** available host RAM, **2.5 GB** available GPU VRAM, and **100 GB** free disk space, and compute provisional dynamic budgets (`GB = 10^9 bytes`, distinct from `GiB = 2^30 bytes`):
 
-1. **Memory Ceiling:**
-   - Host RAM consumption exceeds **8.0 GB** of additional memory.
-   - GPU VRAM consumption exceeds **3.5 GB** (out of 4.0 GB physical VRAM).
-2. **Runtime Ceiling:**
+1. **Dynamic Memory & Storage Ceilings:**
+   - `ram_budget_gb = max(0, min(64, 0.70 * available_ram_gb, available_ram_gb - 16))` (capped at **64 GB** when abundant RAM is available).
+   - `vram_budget_gb = max(0, min(20, 0.85 * available_vram_gb, available_vram_gb - 2.5))` (capped at **20 GB**).
+   - `initial_env_cache_budget_gb = max(0, min(30, available_disk_gb - 100))` (capped at **30 GB**).
+2. **Concurrency & Thread Controls:**
+   - 1 compatibility worker at a time (`1` GPU worker exclusively), default CPU thread budget `16` (`OMP_NUM_THREADS=16`, `OPENBLAS_NUM_THREADS=16`, `MKL_NUM_THREADS=16`), with `psutil` child-process RSS monitoring and process-tree termination on timeout.
+3. **Runtime Ceiling:**
    - Single fit duration exceeds **300 seconds (5 minutes)** for classical/signal models.
    - Single fit duration exceeds **900 seconds (15 minutes)** for deep learning models.
-3. **Numerical Failure:**
+4. **Numerical Failure:**
    - Loss divergence resulting in `NaN` or `Inf` weights or predictions.
    - CUDA out-of-memory exception.
 

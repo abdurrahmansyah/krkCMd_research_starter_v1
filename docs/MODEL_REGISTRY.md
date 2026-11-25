@@ -105,10 +105,10 @@ In compliance with project governance (`AGENT.md` Section 1.1), candidate status
 ### Family 2: Tabular Deep Learning
 
 #### DL01 — MLP (Multi-Layer Perceptron)
-- **Estimator:** `sklearn.neural_network.MLPRegressor` / PyTorch Sequential
+- **Estimator:** `sklearn.neural_network.MLPRegressor` (prototype) / PyTorch Sequential (target)
 - **Primary Literature:** Rumelhart, D. E., Hinton, G. E., & Williams, R. J. (1986). "Learning representations by back-propagating errors". *Nature*, 323, 533–536. DOI: [10.1038/323533a0](https://doi.org/10.1038/323533a0).
 - **License:** BSD-3-Clause.
-- **Status:** `SMOKE_TEST_PASS` (Duration: 0.043s on synthetic 501-profile).
+- **Status:** `SMOKE_TEST_PASS_PROTOTYPE` (M01-R tested `sklearn.neural_network.MLPRegressor` only with 1 `ConvergenceWarning` at `max_iter=20`; PyTorch MLP remains `NOT_EXECUTED`).
 
 #### DL02 — FT-Transformer (Feature Tokenizer Transformer)
 - **Estimator:** `rtdl.FTTransformer` (PyTorch)
@@ -256,10 +256,10 @@ In compliance with project governance (`AGENT.md` Section 1.1), candidate status
 - **Status:** `SMOKE_TEST_PASS`.
 
 #### RF03 — AED Original (Analytical Extreme-point Detection)
-- **Estimator:** Python translation of `CrackWidthAED_VBA.txt`
+- **Estimator:** Simplified single-profile prototype (smoke test) / Python translation of `CrackWidthAED_VBA.txt` (target)
 - **Primary Literature:** Tomczak, K., Jakubowski, J., & Fiołek, P. (2017). "Method for Assessment of Changes in the Width of Cracks in Cement Composites with Use of Computer Image Processing and Analysis". *Studia Geotechnica et Mechanica*, 39(4), 73–80. DOI: [10.1515/sgem-2017-0017](https://doi.org/10.1515/sgem-2017-0017).
-- **Mechanism:** Rule-based heuristic search outward from global minimum brightness.
-- **Status:** `SMOKE_TEST_PASS` (Native Python translation executed successfully in <0.001s).
+- **Mechanism:** Rule-based heuristic search outward from global minimum brightness (analytical init+predict; no training).
+- **Status:** `CONDITIONAL` (Simplified analytical prototype passed L0/L1 finite check; faithful multi-stage VBA reproduction and parity validation against `AEDwidth` remain pending).
 
 #### RF04 — DLM Pretrained (Deep Learning Metasensor)
 - **Estimator:** Author's pretrained network in `krknet.mat`

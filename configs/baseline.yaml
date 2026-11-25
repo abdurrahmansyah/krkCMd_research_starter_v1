@@ -4,7 +4,13 @@ data:
   target: MANwidth
   feature_prefix: x
   expected_feature_count: 501
-  metadata_columns: [No, Profile, Series, Image, Gridline, Stage]
+  metadata_columns:
+    - "No"
+    - "Profile"
+    - "Series"
+    - "Image"
+    - "Gridline"
+    - "Stage"
   comparison_baselines: [DLMwidth, AEDwidth]
 split:
   proposed_group_columns: [Series, Image, Gridline]

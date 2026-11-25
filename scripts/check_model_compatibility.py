@@ -910,10 +910,10 @@ candidates = [
     {
         "id": "RF03",
         "family": "Reference Benchmarks",
-        "name": "AED Original (Python Port)",
-        "estimator": "scripts.aed_analytical.AEDRegressor",
+        "name": "AED Original (Simplified Prototype)",
+        "estimator": "Simplified single-profile heuristic (prototype) / CrackWidthAED_VBA.txt (target)",
         "package": "numpy, scipy",
-        "status": "SMOKE_TEST_PASS",
+        "status": "CONDITIONAL",
         "paper": "Tomczak et al. (2017) Method for Assessment of Changes in Crack Width",
         "doi": "10.1515/sgem-2017-0017",
         "license_code": "CC BY 4.0 (original script)",
@@ -924,7 +924,7 @@ candidates = [
         "features_501_compatible": True,
         "n_train_12216_compatible": True,
         "complexity": "Medium",
-        "readiness_summary": "Faithful Python port of CrackWidthAED_VBA.txt. Pure rule-based analytical algorithm.",
+        "readiness_summary": "Simplified single-profile analytical prototype passed L0/L1 init+predict; faithful VBA reproduction remains CONDITIONAL pending parity check.",
     },
     {
         "id": "RF04",
@@ -965,6 +965,20 @@ candidates = [
         "readiness_summary": "15-layer 1D-CNN architecture fully documented in Table 3 of 2024 paper. Re-trained from scratch under strict group-aware split.",
     },
 ]
+
+# Propagate dynamic smoke-test results instead of relying solely on hardcoded status strings
+for c in candidates:
+    sm = smoke_results.get(c["id"])
+    if sm is not None:
+        c["smoke_test_observed"] = sm.get("status", "UNKNOWN")
+        if c["id"] == "DL01" and sm.get("status") == "SMOKE_TEST_PASS":
+            c["status"] = "SMOKE_TEST_PASS_PROTOTYPE"
+        elif c["id"] == "RF03" and sm.get("status") == "SMOKE_TEST_PASS":
+            c["status"] = "CONDITIONAL"
+        else:
+            c["status"] = sm.get("status", c["status"])
+    else:
+        c["smoke_test_observed"] = "NOT_EXECUTED"
 
 df_matrix = pd.DataFrame(candidates)
 csv_matrix_path = TABLES_DIR / "model_compatibility_matrix.csv"
