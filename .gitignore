@@ -2,6 +2,10 @@
 venv/
 .venv_old_pc_backup/
 venv_old_pc_backup/
+.venv-boost/
+venv-boost/
+.venv-signal-cpu/
+venv-signal-cpu/
 __pycache__/
 .ipynb_checkpoints/
 *.py[cod]

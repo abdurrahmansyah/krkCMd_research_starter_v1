@@ -81,3 +81,11 @@ Before any new package installation or training begins, user approval is strictl
    Create `.venv-deep`, install CUDA-enabled `torch` and `faiss-cpu`. Run L0/L1 smoke tests for DLM Retrained and TabR.
 4. **Phase 4 (Foundation Models):**
    Await explicit license review for PriorLabs/TabPFN before creating `.venv-foundation`.
+
+---
+
+## 6. Actual Provisioned Environments (M02A — 2026-11-25)
+
+- **`.venv-boost` (Kernel: `krkcmd-boost`, Display: `Python (krkCMd - Boosting)`):** Python `3.11.9`, `xgboost==3.2.0`, `lightgbm==4.7.0`, `catboost==1.2.10`, `numpy==2.4.6`, `pandas==3.1.1`, `scipy==1.17.1`, `scikit-learn==1.9.1`, `ipykernel==7.4.0`. Lock verified (`pip check` clean).
+- **`.venv-signal-cpu` (Kernel: `krkcmd-signal-cpu`, Display: `Python (krkCMd - CPU Signal)`):** Python `3.11.9`, `aeon==1.6.0`, `numba==0.63.1`, `llvmlite==0.46.0`, `numpy==2.3.5`, `pandas==3.0.6`, `scipy==1.17.1`, `scikit-learn==1.9.1`, `ipykernel==7.4.0`. Lock verified (`pip check` clean). Note: `SG06` (`MultiRocketHydraRegressor`) requires soft dependency `torch` and is deferred to M02B.
+- **`.venv` (Kernel: `krkcmd-research-newpc`):** Preserved frozen without modification. `.venv-deep` and `.venv-foundation` remain proposed for M02B/M02C.

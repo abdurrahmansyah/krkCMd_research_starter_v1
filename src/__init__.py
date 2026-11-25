@@ -1,0 +1,1 @@
+"""krkCMd modular source package."""

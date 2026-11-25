@@ -1,0 +1,31 @@
+{
+  "timestamp_utc": "2026-11-25T07:46:19Z",
+  "run_id": "M02A_20261125_074616_DESKTOP-CQB09OU",
+  "hostname": "DESKTOP-CQB09OU",
+  "cpu_processor": "Intel64 Family 6 Model 165 Stepping 5, GenuineIntel",
+  "cpu_physical_cores": 10,
+  "cpu_logical_cores": 20,
+  "ram_total_gib": 127.921,
+  "ram_available_gib": 107.08,
+  "disk_total_gib": 1906.739,
+  "disk_free_gib": 1746.22,
+  "gpu": {
+    "gpu_available": true,
+    "gpu_name": "Quadro RTX 6000",
+    "driver_version": "621.24",
+    "compute_capability": "7.5",
+    "vram_total_gib": 24.0,
+    "vram_available_gib": 22.64
+  },
+  "m02a_resource_policy": {
+    "unit": "GiB (2^30 bytes)",
+    "ram_budget_gib": 64.0,
+    "vram_budget_gib": 19.244,
+    "env_cache_budget_gib": 30.0,
+    "ram_reserve_min_gib": 16.0,
+    "disk_reserve_min_gib": 100.0,
+    "max_concurrent_workers": 1,
+    "max_cpu_threads": 16,
+    "execution_mode": "CPU_ONLY (M02A)"
+  }
+}

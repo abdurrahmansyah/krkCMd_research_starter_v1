@@ -1,0 +1,18 @@
+{
+  "timestamp_utc": "2026-11-25T07:46:18Z",
+  "git_commit_sha": "d48510636da2fd62d355174d15aa1226c1b0c621",
+  "git_initial_status": "## main...origin/main\n?? for_review/result_run_6_M01.1.md",
+  "baseline_python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv\\Scripts\\python.exe",
+  "baseline_python_version": "3.11.9",
+  "base_python_311_executable": "C:\\Users\\Nur Ridho A\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+  "pip_check_returncode": 0,
+  "pip_check_output": "No broken requirements found.",
+  "baseline_freeze_sha256": "C9BEBFE1B8950B4AC6730DB68E349ED1C1BC447DA5DF8C0B9D693C829A975EDA",
+  "baseline_package_count": 112,
+  "file_sha256": {
+    "configs/model_registry.yaml": "CB0F5D9D6CF6ED2EE75D279BE81C9C839154F90A86FE2A066C296EAFE10793C0",
+    "configs/baseline.yaml": "1175981E4D283CC0A989A3E48209FDD62C4FA54289FBDF02737CEF311961C697",
+    "data/raw/krkCMd_table.csv": "CCCA7965B225F77D35567573BB557A6E0476122C381E14AB1BDA898DF9F9B909",
+    "reports/tables/group_split_manifest.csv": "361A3446455F6BCB431E20319BDD33AA3CF6F7BD5A65EE74581C6A20EFCF7685"
+  }
+}

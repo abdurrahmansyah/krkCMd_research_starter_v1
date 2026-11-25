@@ -239,14 +239,14 @@ categories:
 
     - id: "SG06"
       name: "MultiROCKET-HYDRA Regression"
-      estimator: "aeon.regression.convolution_based.MultiRocketRegressor / MultiRocketHydraRegressor"
-      package: "aeon, numba"
-      status: "STATIC_REVIEW"
-      env: "env-signal-cpu"
-      hardware: "CPU"
+      estimator: "aeon.regression.convolution_based.MultiRocketHydraRegressor"
+      package: "aeon, numba, torch (soft dependency)"
+      status: "BLOCKED"
+      env: "env-signal-cpu (blocked: no torch) / env-deep (M02B)"
+      hardware: "CPU/GPU"
       complexity: "Medium"
       license: "BSD-3-Clause"
-      notes: "MultiRocketRegressor implements MultiROCKET only; MultiROCKET-HYDRA requires MultiRocketHydraRegressor or explicit HYDRA estimator."
+      notes: "aeon 1.6.0 MultiRocketHydraRegressor requires soft dependency 'torch', which is excluded from M02A CPU-only .venv-signal-cpu."
 
   custom_hybrid_approaches:
     - id: "HY01"

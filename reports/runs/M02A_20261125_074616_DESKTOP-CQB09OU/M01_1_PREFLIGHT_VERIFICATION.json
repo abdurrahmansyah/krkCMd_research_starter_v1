@@ -1,0 +1,21 @@
+{
+  "run_id": "M02A_20261125_074616_DESKTOP-CQB09OU",
+  "m01_1_run_dir_exists": true,
+  "checks": {
+    "1_all_32_ids_unique": true,
+    "2_sample_counts_12216_3060_3822": true,
+    "3_501_features_preserved": true,
+    "4_manwidth_target": true,
+    "5_comparison_only_cols": true,
+    "6_registry_loaded_from_yaml_in_check_script": false,
+    "7_runtime_status_from_actual_evidence": true,
+    "8_invalid_outputs_cannot_pass": true,
+    "9_aed_prototype_separated_from_fidelity": true,
+    "10_dl01_sklearn_separated_from_pytorch": true,
+    "11_m00_m01r_evidence_preserved": true,
+    "12_m00_in_experiment_log": true,
+    "13_identity_refs_licenses_present": true,
+    "14_resource_policy_process_tree_monitoring": true
+  },
+  "note_on_check_6": "check_model_compatibility.py still contains legacy hardcoded candidates list; will be refactored or supplemented in M02A to load from configs/model_registry.yaml directly."
+}

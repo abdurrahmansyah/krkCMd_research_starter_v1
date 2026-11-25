@@ -201,10 +201,10 @@ In compliance with project governance (`AGENT.md` Section 1.1), candidate status
 - **Status:** `STATIC_REVIEW` (aeon 1.6.0 verified via PyPI dry-run).
 
 #### SG06 — MultiROCKET-HYDRA Regression
-- **Estimator:** `aeon.regression.convolution_based.MultiRocketRegressor`
+- **Estimator:** `aeon.regression.convolution_based.MultiRocketHydraRegressor`
 - **Primary Literature:** Tan, C. W. et al. (2022). "MultiRocket: multiple pooling operators and transformations". *Data Mining and Knowledge Discovery*, 36, 1623–1646. DOI: [10.1007/s10618-022-00834-3](https://doi.org/10.1007/s10618-022-00834-3).
 - **License:** BSD-3-Clause.
-- **Status:** `STATIC_REVIEW` (Extracts features on first-order profile differences as well as raw signals).
+- **Status:** `BLOCKED` (M02A L0 failed in CPU-only `.venv-signal-cpu` because `aeon 1.6.0` `MultiRocketHydraRegressor` requires soft dependency `torch`, which is deferred to M02B).
 
 ---
 

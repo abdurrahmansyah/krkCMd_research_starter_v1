@@ -61,3 +61,16 @@ Append-only log. Do not rewrite old results.
   - All 32 candidates preserved; 8 installed baseline candidates passed synthetic L0/L1 smoke tests (`ML01-03`, `ML07`, `DL01` [sklearn], `RF01-02`, `RF03` [simplified AED prototype]); transitive `pip install --dry-run` resolved for all 6 proposed environments.
   - Known M01.1 issues documented separately without premature implementation.
 - Next: Await researcher review of `reports/runs/M01R_20261125_032229_DESKTOP-CQB09OU/M01_R_MIGRATION_REPORT.md` and approval before proceeding to M01.1 or M02.
+
+## EXP-004 — Milestone M02A: Boosting & CPU Signal Provisioning and Synthetic Capacity Assessment
+- Date: 2026-11-25
+- Run ID: `M02A_20261125_074616_DESKTOP-CQB09OU`
+- Status: PARTIAL (4/5 candidates SCALE_CHECK_PASS through L2C; SG06 BLOCKED at L0 due to missing `torch` soft dependency in CPU-only env; ZERO real krkCMd training)
+- Environments Created:
+  - `.venv-boost` (Python 3.11.9, kernel `krkcmd-boost`): `xgboost==3.2.0`, `lightgbm==4.7.0`, `catboost==1.2.10`, `numpy==2.4.6`, `pandas==3.1.1`, `scikit-learn==1.9.1`; `pip check` clean; lock 100% matched.
+  - `.venv-signal-cpu` (Python 3.11.9, kernel `krkcmd-signal-cpu`): `aeon==1.6.0`, `numba==0.63.1`, `llvmlite==0.46.0`, `numpy==2.3.5`, `pandas==3.0.6`, `scikit-learn==1.9.1`; `pip check` clean; lock 100% matched.
+- Synthetic L0/L1/L2 Results (strictly synthetic `seed=42`, `D=501`, max `12,216` train / `3,822` test rows):
+  - `ML04` (`XGBRegressor`), `ML05` (`LGBMRegressor`), `ML06` (`CatBoostRegressor`), `SG05` (`RocketRegressor`): PASS L0, L1 (incl. joblib reload parity), L2A, L2B, and L2C within dynamic RAM budget and 300s timeout.
+  - `SG06` (`MultiRocketHydraRegressor`): FAILED/BLOCKED at L0 because `aeon 1.6.0` requires `torch` (soft dependency), which is prohibited in M02A; deferred to M02B without substituting `MultiRocketRegressor` or `HydraRegressor`.
+- Baseline `.venv` and M00/M01/M01-R/M01.1 historical artifacts remain completely unchanged.
+- Next: Await researcher review of `reports/runs/M02A_20261125_074616_DESKTOP-CQB09OU/M02A_PROVISIONING_REPORT.md` before M02B.

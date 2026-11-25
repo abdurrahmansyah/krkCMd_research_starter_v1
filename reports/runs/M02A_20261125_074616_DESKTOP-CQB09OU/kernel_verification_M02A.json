@@ -1,0 +1,16 @@
+{
+  "krkcmd-boost": {
+    "display_name": "Python (krkCMd - Boosting)",
+    "argv0": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-boost\\Scripts\\python.exe",
+    "matches_expected_python": true,
+    "nbclient_smoke_status": "PASS",
+    "nbclient_output": "NB_OK C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-boost\\Scripts\\python.exe 3.2.0"
+  },
+  "krkcmd-signal-cpu": {
+    "display_name": "Python (krkCMd - CPU Signal)",
+    "argv0": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-signal-cpu\\Scripts\\python.exe",
+    "matches_expected_python": true,
+    "nbclient_smoke_status": "PASS",
+    "nbclient_output": "NB_OK C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-signal-cpu\\Scripts\\python.exe 1.6.0"
+  }
+}

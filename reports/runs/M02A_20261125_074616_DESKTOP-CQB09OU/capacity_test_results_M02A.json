@@ -1,0 +1,699 @@
+{
+  "ML04": {
+    "L2A": {
+      "model_id": "ML04",
+      "stage": "L2A",
+      "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-boost\\Scripts\\python.exe",
+      "n_threads": 16,
+      "status": "PASS",
+      "input_shape": [
+        1000,
+        501
+      ],
+      "predict_input_shape": [
+        200,
+        501
+      ],
+      "output_shape": [
+        200
+      ],
+      "all_finite": true,
+      "negative_prediction_count": 0,
+      "min_pred": 60.57827377319336,
+      "max_pred": 309.0405578613281,
+      "init_time_sec": 1.5286,
+      "fit_time_sec": 0.3387,
+      "predict_time_sec": 0.0012,
+      "total_wall_sec": 0.3399,
+      "second_run_post_jit": null,
+      "serialization": null,
+      "metadata": {
+        "model_id": "ML04",
+        "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-boost\\Scripts\\python.exe",
+        "package": "xgboost",
+        "package_version": "3.2.0",
+        "estimator_class": "xgboost.sklearn.XGBRegressor",
+        "input_mode": "2d",
+        "config_label": "compatibility_bounded",
+        "config": {
+          "n_estimators": 20,
+          "max_depth": 4,
+          "learning_rate": 0.1,
+          "tree_method": "hist",
+          "device": "cpu",
+          "n_jobs": 16,
+          "random_state": 42
+        },
+        "random_state": 42,
+        "n_threads": 16,
+        "fit_time_sec": 0.3387,
+        "predict_time_sec": 0.0012,
+        "transformed_dimensionality": null
+      },
+      "warning_count": 0,
+      "warnings_sample": [],
+      "peak_rss_mb": 319.594,
+      "subprocess_elapsed_sec": 2.5,
+      "timed_out": false,
+      "ram_budget_compliant": true
+    },
+    "L2B": {
+      "model_id": "ML04",
+      "stage": "L2B",
+      "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-boost\\Scripts\\python.exe",
+      "n_threads": 16,
+      "status": "PASS",
+      "input_shape": [
+        4096,
+        501
+      ],
+      "predict_input_shape": [
+        1024,
+        501
+      ],
+      "output_shape": [
+        1024
+      ],
+      "all_finite": true,
+      "negative_prediction_count": 0,
+      "min_pred": 61.73866653442383,
+      "max_pred": 310.4208679199219,
+      "init_time_sec": 1.5219,
+      "fit_time_sec": 0.4656,
+      "predict_time_sec": 0.0017,
+      "total_wall_sec": 0.4673,
+      "second_run_post_jit": null,
+      "serialization": null,
+      "metadata": {
+        "model_id": "ML04",
+        "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-boost\\Scripts\\python.exe",
+        "package": "xgboost",
+        "package_version": "3.2.0",
+        "estimator_class": "xgboost.sklearn.XGBRegressor",
+        "input_mode": "2d",
+        "config_label": "compatibility_bounded",
+        "config": {
+          "n_estimators": 20,
+          "max_depth": 4,
+          "learning_rate": 0.1,
+          "tree_method": "hist",
+          "device": "cpu",
+          "n_jobs": 16,
+          "random_state": 42
+        },
+        "random_state": 42,
+        "n_threads": 16,
+        "fit_time_sec": 0.4656,
+        "predict_time_sec": 0.0017,
+        "transformed_dimensionality": null
+      },
+      "warning_count": 0,
+      "warnings_sample": [],
+      "peak_rss_mb": 338.637,
+      "subprocess_elapsed_sec": 2.703,
+      "timed_out": false,
+      "ram_budget_compliant": true
+    },
+    "L2C": {
+      "model_id": "ML04",
+      "stage": "L2C",
+      "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-boost\\Scripts\\python.exe",
+      "n_threads": 16,
+      "status": "PASS",
+      "input_shape": [
+        12216,
+        501
+      ],
+      "predict_input_shape": [
+        3822,
+        501
+      ],
+      "output_shape": [
+        3822
+      ],
+      "all_finite": true,
+      "negative_prediction_count": 0,
+      "min_pred": 57.58211898803711,
+      "max_pred": 311.6682434082031,
+      "init_time_sec": 1.5392,
+      "fit_time_sec": 0.8021,
+      "predict_time_sec": 0.002,
+      "total_wall_sec": 0.8041,
+      "second_run_post_jit": null,
+      "serialization": null,
+      "metadata": {
+        "model_id": "ML04",
+        "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-boost\\Scripts\\python.exe",
+        "package": "xgboost",
+        "package_version": "3.2.0",
+        "estimator_class": "xgboost.sklearn.XGBRegressor",
+        "input_mode": "2d",
+        "config_label": "compatibility_bounded",
+        "config": {
+          "n_estimators": 20,
+          "max_depth": 4,
+          "learning_rate": 0.1,
+          "tree_method": "hist",
+          "device": "cpu",
+          "n_jobs": 16,
+          "random_state": 42
+        },
+        "random_state": 42,
+        "n_threads": 16,
+        "fit_time_sec": 0.8021,
+        "predict_time_sec": 0.002,
+        "transformed_dimensionality": null
+      },
+      "warning_count": 0,
+      "warnings_sample": [],
+      "peak_rss_mb": 375.254,
+      "subprocess_elapsed_sec": 3.343,
+      "timed_out": false,
+      "ram_budget_compliant": true
+    }
+  },
+  "ML05": {
+    "L2A": {
+      "model_id": "ML05",
+      "stage": "L2A",
+      "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-boost\\Scripts\\python.exe",
+      "n_threads": 16,
+      "status": "PASS",
+      "input_shape": [
+        1000,
+        501
+      ],
+      "predict_input_shape": [
+        200,
+        501
+      ],
+      "output_shape": [
+        200
+      ],
+      "all_finite": true,
+      "negative_prediction_count": 0,
+      "min_pred": 55.311715856578466,
+      "max_pred": 314.7402578080641,
+      "init_time_sec": 1.6328,
+      "fit_time_sec": 0.2328,
+      "predict_time_sec": 0.0015,
+      "total_wall_sec": 0.2343,
+      "second_run_post_jit": null,
+      "serialization": null,
+      "metadata": {
+        "model_id": "ML05",
+        "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-boost\\Scripts\\python.exe",
+        "package": "lightgbm",
+        "package_version": "4.7.0",
+        "estimator_class": "lightgbm.sklearn.LGBMRegressor",
+        "input_mode": "2d",
+        "config_label": "compatibility_bounded",
+        "config": {
+          "n_estimators": 20,
+          "max_depth": 6,
+          "learning_rate": 0.1,
+          "device": "cpu",
+          "n_jobs": 16,
+          "random_state": 42,
+          "verbose": -1
+        },
+        "random_state": 42,
+        "n_threads": 16,
+        "fit_time_sec": 0.2328,
+        "predict_time_sec": 0.0015,
+        "transformed_dimensionality": null
+      },
+      "warning_count": 0,
+      "warnings_sample": [],
+      "peak_rss_mb": 216.93,
+      "subprocess_elapsed_sec": 2.5,
+      "timed_out": false,
+      "ram_budget_compliant": true
+    },
+    "L2B": {
+      "model_id": "ML05",
+      "stage": "L2B",
+      "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-boost\\Scripts\\python.exe",
+      "n_threads": 16,
+      "status": "PASS",
+      "input_shape": [
+        4096,
+        501
+      ],
+      "predict_input_shape": [
+        1024,
+        501
+      ],
+      "output_shape": [
+        1024
+      ],
+      "all_finite": true,
+      "negative_prediction_count": 0,
+      "min_pred": 57.46272870234692,
+      "max_pred": 318.3843365391254,
+      "init_time_sec": 1.4847,
+      "fit_time_sec": 0.3219,
+      "predict_time_sec": 0.0013,
+      "total_wall_sec": 0.3232,
+      "second_run_post_jit": null,
+      "serialization": null,
+      "metadata": {
+        "model_id": "ML05",
+        "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-boost\\Scripts\\python.exe",
+        "package": "lightgbm",
+        "package_version": "4.7.0",
+        "estimator_class": "lightgbm.sklearn.LGBMRegressor",
+        "input_mode": "2d",
+        "config_label": "compatibility_bounded",
+        "config": {
+          "n_estimators": 20,
+          "max_depth": 6,
+          "learning_rate": 0.1,
+          "device": "cpu",
+          "n_jobs": 16,
+          "random_state": 42,
+          "verbose": -1
+        },
+        "random_state": 42,
+        "n_threads": 16,
+        "fit_time_sec": 0.3219,
+        "predict_time_sec": 0.0013,
+        "transformed_dimensionality": null
+      },
+      "warning_count": 0,
+      "warnings_sample": [],
+      "peak_rss_mb": 230.336,
+      "subprocess_elapsed_sec": 2.5,
+      "timed_out": false,
+      "ram_budget_compliant": true
+    },
+    "L2C": {
+      "model_id": "ML05",
+      "stage": "L2C",
+      "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-boost\\Scripts\\python.exe",
+      "n_threads": 16,
+      "status": "PASS",
+      "input_shape": [
+        12216,
+        501
+      ],
+      "predict_input_shape": [
+        3822,
+        501
+      ],
+      "output_shape": [
+        3822
+      ],
+      "all_finite": true,
+      "negative_prediction_count": 0,
+      "min_pred": 57.50695644944906,
+      "max_pred": 316.2305092617143,
+      "init_time_sec": 1.4723,
+      "fit_time_sec": 0.5259,
+      "predict_time_sec": 0.0022,
+      "total_wall_sec": 0.5281,
+      "second_run_post_jit": null,
+      "serialization": null,
+      "metadata": {
+        "model_id": "ML05",
+        "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-boost\\Scripts\\python.exe",
+        "package": "lightgbm",
+        "package_version": "4.7.0",
+        "estimator_class": "lightgbm.sklearn.LGBMRegressor",
+        "input_mode": "2d",
+        "config_label": "compatibility_bounded",
+        "config": {
+          "n_estimators": 20,
+          "max_depth": 6,
+          "learning_rate": 0.1,
+          "device": "cpu",
+          "n_jobs": 16,
+          "random_state": 42,
+          "verbose": -1
+        },
+        "random_state": 42,
+        "n_threads": 16,
+        "fit_time_sec": 0.5259,
+        "predict_time_sec": 0.0022,
+        "transformed_dimensionality": null
+      },
+      "warning_count": 0,
+      "warnings_sample": [],
+      "peak_rss_mb": 250.824,
+      "subprocess_elapsed_sec": 2.906,
+      "timed_out": false,
+      "ram_budget_compliant": true
+    }
+  },
+  "ML06": {
+    "L2A": {
+      "model_id": "ML06",
+      "stage": "L2A",
+      "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-boost\\Scripts\\python.exe",
+      "n_threads": 16,
+      "status": "PASS",
+      "input_shape": [
+        1000,
+        501
+      ],
+      "predict_input_shape": [
+        200,
+        501
+      ],
+      "output_shape": [
+        200
+      ],
+      "all_finite": true,
+      "negative_prediction_count": 0,
+      "min_pred": 69.8428653832994,
+      "max_pred": 298.2933777603986,
+      "init_time_sec": 0.6116,
+      "fit_time_sec": 0.6762,
+      "predict_time_sec": 0.0027,
+      "total_wall_sec": 0.6789,
+      "second_run_post_jit": null,
+      "serialization": null,
+      "metadata": {
+        "model_id": "ML06",
+        "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-boost\\Scripts\\python.exe",
+        "package": "catboost",
+        "package_version": "1.2.10",
+        "estimator_class": "catboost.core.CatBoostRegressor",
+        "input_mode": "2d",
+        "config_label": "compatibility_bounded",
+        "config": {
+          "iterations": 20,
+          "depth": 6,
+          "learning_rate": 0.1,
+          "task_type": "CPU",
+          "thread_count": 16,
+          "random_seed": 42,
+          "verbose": 0,
+          "allow_writing_files": false
+        },
+        "random_state": 42,
+        "n_threads": 16,
+        "fit_time_sec": 0.6762,
+        "predict_time_sec": 0.0027,
+        "transformed_dimensionality": null
+      },
+      "warning_count": 0,
+      "warnings_sample": [],
+      "peak_rss_mb": 251.191,
+      "subprocess_elapsed_sec": 1.875,
+      "timed_out": false,
+      "ram_budget_compliant": true
+    },
+    "L2B": {
+      "model_id": "ML06",
+      "stage": "L2B",
+      "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-boost\\Scripts\\python.exe",
+      "n_threads": 16,
+      "status": "PASS",
+      "input_shape": [
+        4096,
+        501
+      ],
+      "predict_input_shape": [
+        1024,
+        501
+      ],
+      "output_shape": [
+        1024
+      ],
+      "all_finite": true,
+      "negative_prediction_count": 0,
+      "min_pred": 65.90717633146649,
+      "max_pred": 306.625375813704,
+      "init_time_sec": 0.6076,
+      "fit_time_sec": 0.7184,
+      "predict_time_sec": 0.0035,
+      "total_wall_sec": 0.7219,
+      "second_run_post_jit": null,
+      "serialization": null,
+      "metadata": {
+        "model_id": "ML06",
+        "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-boost\\Scripts\\python.exe",
+        "package": "catboost",
+        "package_version": "1.2.10",
+        "estimator_class": "catboost.core.CatBoostRegressor",
+        "input_mode": "2d",
+        "config_label": "compatibility_bounded",
+        "config": {
+          "iterations": 20,
+          "depth": 6,
+          "learning_rate": 0.1,
+          "task_type": "CPU",
+          "thread_count": 16,
+          "random_seed": 42,
+          "verbose": 0,
+          "allow_writing_files": false
+        },
+        "random_state": 42,
+        "n_threads": 16,
+        "fit_time_sec": 0.7184,
+        "predict_time_sec": 0.0035,
+        "transformed_dimensionality": null
+      },
+      "warning_count": 0,
+      "warnings_sample": [],
+      "peak_rss_mb": 267.215,
+      "subprocess_elapsed_sec": 1.906,
+      "timed_out": false,
+      "ram_budget_compliant": true
+    },
+    "L2C": {
+      "model_id": "ML06",
+      "stage": "L2C",
+      "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-boost\\Scripts\\python.exe",
+      "n_threads": 16,
+      "status": "PASS",
+      "input_shape": [
+        12216,
+        501
+      ],
+      "predict_input_shape": [
+        3822,
+        501
+      ],
+      "output_shape": [
+        3822
+      ],
+      "all_finite": true,
+      "negative_prediction_count": 0,
+      "min_pred": 67.04616160576444,
+      "max_pred": 311.67744633735555,
+      "init_time_sec": 0.6115,
+      "fit_time_sec": 0.9043,
+      "predict_time_sec": 0.0065,
+      "total_wall_sec": 0.9108,
+      "second_run_post_jit": null,
+      "serialization": null,
+      "metadata": {
+        "model_id": "ML06",
+        "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-boost\\Scripts\\python.exe",
+        "package": "catboost",
+        "package_version": "1.2.10",
+        "estimator_class": "catboost.core.CatBoostRegressor",
+        "input_mode": "2d",
+        "config_label": "compatibility_bounded",
+        "config": {
+          "iterations": 20,
+          "depth": 6,
+          "learning_rate": 0.1,
+          "task_type": "CPU",
+          "thread_count": 16,
+          "random_seed": 42,
+          "verbose": 0,
+          "allow_writing_files": false
+        },
+        "random_state": 42,
+        "n_threads": 16,
+        "fit_time_sec": 0.9043,
+        "predict_time_sec": 0.0065,
+        "transformed_dimensionality": null
+      },
+      "warning_count": 0,
+      "warnings_sample": [],
+      "peak_rss_mb": 309.602,
+      "subprocess_elapsed_sec": 2.296,
+      "timed_out": false,
+      "ram_budget_compliant": true
+    }
+  },
+  "SG05": {
+    "L2A": {
+      "model_id": "SG05",
+      "stage": "L2A",
+      "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-signal-cpu\\Scripts\\python.exe",
+      "n_threads": 16,
+      "status": "PASS",
+      "input_shape": [
+        1000,
+        501
+      ],
+      "predict_input_shape": [
+        200,
+        501
+      ],
+      "output_shape": [
+        200
+      ],
+      "all_finite": true,
+      "negative_prediction_count": 0,
+      "min_pred": 30.73260498046875,
+      "max_pred": 342.2164306640625,
+      "init_time_sec": 2.0067,
+      "fit_time_sec": 1.4076,
+      "predict_time_sec": 0.1963,
+      "total_wall_sec": 1.6039,
+      "second_run_post_jit": null,
+      "serialization": null,
+      "metadata": {
+        "model_id": "SG05",
+        "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-signal-cpu\\Scripts\\python.exe",
+        "package": "aeon",
+        "package_version": "1.6.0",
+        "estimator_class": "aeon.regression.convolution_based._rocket.RocketRegressor",
+        "input_mode": "3d_signal",
+        "config_label": "compatibility_bounded",
+        "config": {
+          "n_kernels": 2000,
+          "n_jobs": 16,
+          "random_state": 42
+        },
+        "random_state": 42,
+        "n_threads": 16,
+        "fit_time_sec": 1.4076,
+        "predict_time_sec": 0.1963,
+        "transformed_dimensionality": 4000
+      },
+      "warning_count": 0,
+      "warnings_sample": [],
+      "peak_rss_mb": 276.414,
+      "subprocess_elapsed_sec": 4.359,
+      "timed_out": false,
+      "ram_budget_compliant": true
+    },
+    "L2B": {
+      "model_id": "SG05",
+      "stage": "L2B",
+      "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-signal-cpu\\Scripts\\python.exe",
+      "n_threads": 16,
+      "status": "PASS",
+      "input_shape": [
+        4096,
+        501
+      ],
+      "predict_input_shape": [
+        1024,
+        501
+      ],
+      "output_shape": [
+        1024
+      ],
+      "all_finite": true,
+      "negative_prediction_count": 0,
+      "min_pred": 25.239959716796875,
+      "max_pred": 355.5146179199219,
+      "init_time_sec": 1.9643,
+      "fit_time_sec": 22.5631,
+      "predict_time_sec": 0.9895,
+      "total_wall_sec": 23.5526,
+      "second_run_post_jit": null,
+      "serialization": null,
+      "metadata": {
+        "model_id": "SG05",
+        "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-signal-cpu\\Scripts\\python.exe",
+        "package": "aeon",
+        "package_version": "1.6.0",
+        "estimator_class": "aeon.regression.convolution_based._rocket.RocketRegressor",
+        "input_mode": "3d_signal",
+        "config_label": "compatibility_bounded",
+        "config": {
+          "n_kernels": 2000,
+          "n_jobs": 16,
+          "random_state": 42
+        },
+        "random_state": 42,
+        "n_threads": 16,
+        "fit_time_sec": 22.5631,
+        "predict_time_sec": 0.9895,
+        "transformed_dimensionality": 4000
+      },
+      "warning_count": 0,
+      "warnings_sample": [],
+      "peak_rss_mb": 906.965,
+      "subprocess_elapsed_sec": 26.266,
+      "timed_out": false,
+      "ram_budget_compliant": true
+    },
+    "L2C": {
+      "model_id": "SG05",
+      "stage": "L2C",
+      "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-signal-cpu\\Scripts\\python.exe",
+      "n_threads": 16,
+      "status": "PASS",
+      "input_shape": [
+        12216,
+        501
+      ],
+      "predict_input_shape": [
+        3822,
+        501
+      ],
+      "output_shape": [
+        3822
+      ],
+      "all_finite": true,
+      "negative_prediction_count": 0,
+      "min_pred": 22.81146240234375,
+      "max_pred": 359.8440856933594,
+      "init_time_sec": 2.0113,
+      "fit_time_sec": 46.0127,
+      "predict_time_sec": 4.0882,
+      "total_wall_sec": 50.1009,
+      "second_run_post_jit": null,
+      "serialization": null,
+      "metadata": {
+        "model_id": "SG05",
+        "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-signal-cpu\\Scripts\\python.exe",
+        "package": "aeon",
+        "package_version": "1.6.0",
+        "estimator_class": "aeon.regression.convolution_based._rocket.RocketRegressor",
+        "input_mode": "3d_signal",
+        "config_label": "compatibility_bounded",
+        "config": {
+          "n_kernels": 2000,
+          "n_jobs": 16,
+          "random_state": 42
+        },
+        "random_state": 42,
+        "n_threads": 16,
+        "fit_time_sec": 46.0127,
+        "predict_time_sec": 4.0882,
+        "transformed_dimensionality": 4000
+      },
+      "warning_count": 0,
+      "warnings_sample": [],
+      "peak_rss_mb": 1808.91,
+      "subprocess_elapsed_sec": 53.016,
+      "timed_out": false,
+      "ram_budget_compliant": true
+    }
+  },
+  "SG06": {
+    "L2A": {
+      "status": "NOT_EXECUTED",
+      "reason": "Prior stage failed or exceeded budget"
+    },
+    "L2B": {
+      "status": "NOT_EXECUTED",
+      "reason": "Prior stage failed or exceeded budget"
+    },
+    "L2C": {
+      "status": "NOT_EXECUTED",
+      "reason": "Prior stage failed or exceeded budget"
+    }
+  }
+}

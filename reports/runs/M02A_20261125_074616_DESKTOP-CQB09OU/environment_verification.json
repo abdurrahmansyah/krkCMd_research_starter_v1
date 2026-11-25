@@ -1,0 +1,48 @@
+{
+  "boost": {
+    "venv_path": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-boost",
+    "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-boost\\Scripts\\python.exe",
+    "install_duration_sec": 108.56,
+    "pip_check_returncode": 0,
+    "pip_check_output": "No broken requirements found.",
+    "lock_match": true,
+    "lock_diffs": {},
+    "imported_versions": {
+      "xgboost": "3.2.0",
+      "lightgbm": "4.7.0",
+      "catboost": "1.2.10",
+      "numpy": "2.4.6",
+      "pandas": "3.1.1",
+      "scipy": "1.17.1",
+      "sklearn": "1.9.1",
+      "joblib": "1.6.0",
+      "psutil": "7.2.2",
+      "yaml": "6.0.4",
+      "ipykernel": "7.4.0",
+      "threadpoolctl": "3.8.0"
+    }
+  },
+  "signal_cpu": {
+    "venv_path": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-signal-cpu",
+    "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-signal-cpu\\Scripts\\python.exe",
+    "install_duration_sec": 90.31,
+    "pip_check_returncode": 0,
+    "pip_check_output": "No broken requirements found.",
+    "lock_match": true,
+    "lock_diffs": {},
+    "imported_versions": {
+      "aeon": "1.6.0",
+      "numba": "0.63.1",
+      "llvmlite": "0.46.0",
+      "numpy": "2.3.5",
+      "pandas": "3.0.6",
+      "scipy": "1.17.1",
+      "sklearn": "1.9.1",
+      "joblib": "1.6.0",
+      "psutil": "7.2.2",
+      "yaml": "6.0.4",
+      "ipykernel": "7.4.0",
+      "threadpoolctl": "3.8.0"
+    }
+  }
+}
