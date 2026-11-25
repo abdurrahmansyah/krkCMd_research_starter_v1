@@ -1,0 +1,14 @@
+{
+  "run_id": "M02B_20261125_081433_DESKTOP-CQB09OU",
+  "m02a_run_dir_exists": true,
+  "m02a_scale_pass_ids": [
+    "ML04",
+    "ML05",
+    "ML06",
+    "SG05"
+  ],
+  "m02a_blocked_ids": [
+    "SG06"
+  ],
+  "m01_1_dir_exists": true
+}

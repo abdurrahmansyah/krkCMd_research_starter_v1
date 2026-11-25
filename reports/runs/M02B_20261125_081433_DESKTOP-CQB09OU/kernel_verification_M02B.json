@@ -1,0 +1,23 @@
+{
+  "krkcmd-deep": {
+    "display_name": "Python (krkCMd - Deep Learning CUDA)",
+    "argv0": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-deep\\Scripts\\python.exe",
+    "matches_expected_python": true,
+    "nbclient_status": "PASS",
+    "nbclient_output": "NB_OK C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-deep\\Scripts\\python.exe 2.9.1+cu128"
+  },
+  "krkcmd-signal-tf": {
+    "display_name": "Python (krkCMd - Signal TF/Keras)",
+    "argv0": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-signal-tf\\Scripts\\python.exe",
+    "matches_expected_python": true,
+    "nbclient_status": "PASS",
+    "nbclient_output": "NB_OK C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-signal-tf\\Scripts\\python.exe 1.6.0"
+  },
+  "krkcmd-signal-hydra": {
+    "display_name": "Python (krkCMd - Signal HYDRA)",
+    "argv0": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-signal-hydra\\Scripts\\python.exe",
+    "matches_expected_python": true,
+    "nbclient_status": "PASS",
+    "nbclient_output": "NB_OK C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-signal-hydra\\Scripts\\python.exe 1.6.0"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "timestamp_utc": "2026-11-25T08:14:38Z",
+  "git_head": "b894e3314c020c404490476c47e1a7f6716e8653",
+  "git_status": "## main...origin/main",
+  "environments": {
+    "baseline": {
+      "python": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv\\Scripts\\python.exe",
+      "pip_check_rc": 0,
+      "freeze_sha256": "C9BEBFE1B8950B4AC6730DB68E349ED1C1BC447DA5DF8C0B9D693C829A975EDA",
+      "pkg_count": 112
+    },
+    "boost": {
+      "python": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-boost\\Scripts\\python.exe",
+      "pip_check_rc": 0,
+      "freeze_sha256": "771E95964EAD47F8C6562F879D18D0D90A6E83918EB315D9AB6BB771F89A6297",
+      "pkg_count": 50
+    },
+    "signal_cpu": {
+      "python": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-signal-cpu\\Scripts\\python.exe",
+      "pip_check_rc": 0,
+      "freeze_sha256": "C22ADDB782A6B7900C08C0DF3B84A823CC447432178D15756C77FDDB40C9684F",
+      "pkg_count": 42
+    }
+  },
+  "files_sha256": {
+    "configs/baseline.yaml": "1175981E4D283CC0A989A3E48209FDD62C4FA54289FBDF02737CEF311961C697",
+    "configs/model_registry.yaml": "6B902C8CED47D4BBD7A4FEF0176940211B48A4D109108EDA9AC06753C6909D11",
+    "data/raw/krkCMd_table.csv": "CCCA7965B225F77D35567573BB557A6E0476122C381E14AB1BDA898DF9F9B909",
+    "reports/tables/group_split_manifest.csv": "361A3446455F6BCB431E20319BDD33AA3CF6F7BD5A65EE74581C6A20EFCF7685"
+  }
+}

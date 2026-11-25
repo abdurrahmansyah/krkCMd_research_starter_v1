@@ -1,0 +1,237 @@
+[
+  {
+    "archive_path": "run_artifacts/capacity_test_results_M02B.json",
+    "size_bytes": 68667,
+    "sha256": "92E377C507228F1921C2C66D3B3AB1BDF5B81B9BDFA301A8AF83B26C7D764757"
+  },
+  {
+    "archive_path": "run_artifacts/cuda_dependency_resolution_M02B.json",
+    "size_bytes": 937,
+    "sha256": "F9EE76C24488B107A9BD2A212753CC0E833122444603B74BFBA20311E3FCBF3E"
+  },
+  {
+    "archive_path": "run_artifacts/environment_verification_M02B.json",
+    "size_bytes": 2098,
+    "sha256": "F5B4438D690EB97CE291F1E506798569086B45132EE9BF6C1117A4F2C1907049"
+  },
+  {
+    "archive_path": "run_artifacts/existing_environment_integrity.json",
+    "size_bytes": 1405,
+    "sha256": "538315D1EBD17B51ECA29D154A98899AB7049C9CBD18F7087EC0BA532E91FB19"
+  },
+  {
+    "archive_path": "run_artifacts/gpu_runtime_verification_M02B.json",
+    "size_bytes": 598,
+    "sha256": "467BDC1491B53AA4F51A328AEAB50FE3AE6B2442D0D27D7C7ACBD7804F563990"
+  },
+  {
+    "archive_path": "run_artifacts/hardware_environment_M02B.json",
+    "size_bytes": 690,
+    "sha256": "78EE067B3E302EFCC23A855739A15932898FD26B81736A0FB0ACB4237553B0AD"
+  },
+  {
+    "archive_path": "run_artifacts/kernel_verification_M02B.json",
+    "size_bytes": 1113,
+    "sha256": "A9DB1980B25491644F9E1BA1ACA73F2010D961F5D72732E1022584786036D59D"
+  },
+  {
+    "archive_path": "run_artifacts/locks/requirements_deep.freeze.txt",
+    "size_bytes": 1193,
+    "sha256": "CF40770C8B2CEB98DAF96726536C1CDF44ACD4DE6623403B20243EFB0F3475AE"
+  },
+  {
+    "archive_path": "run_artifacts/locks/requirements_deep_addons.lock.txt",
+    "size_bytes": 1271,
+    "sha256": "D16AA3613A7E9CA4DE60B860B4CCAA119894B6EEFB692A2CAF7B12EDB303734B"
+  },
+  {
+    "archive_path": "run_artifacts/locks/requirements_signal_hydra.freeze.txt",
+    "size_bytes": 907,
+    "sha256": "2B16AD158A5CB68A218598B61313F04DA8C312BEE4BA00119E2521290FFE73A5"
+  },
+  {
+    "archive_path": "run_artifacts/locks/requirements_signal_hydra.lock.txt",
+    "size_bytes": 849,
+    "sha256": "1FEEC2C70FAA0CEE8DB1F094DEB9677585E80F81F0B1EAF1CD54399BDF4143E5"
+  },
+  {
+    "archive_path": "run_artifacts/locks/requirements_signal_tf.freeze.txt",
+    "size_bytes": 1207,
+    "sha256": "BE8EF99FB31D1FDCA27FC5AD04577B6315EFBE62F55B7C2C29B7A9AFC34AFD71"
+  },
+  {
+    "archive_path": "run_artifacts/locks/requirements_signal_tf.lock.txt",
+    "size_bytes": 1242,
+    "sha256": "C8F4B7DF686B2AB68C3B4C441D945560724469FF2CF5F0BE3847AB0AE434EC87"
+  },
+  {
+    "archive_path": "run_artifacts/locks/torch_cu128_constraint.txt",
+    "size_bytes": 20,
+    "sha256": "9C3F7DA9DACED7DFC9FC6B97588CD2E911480FED907182DFB92E1549F5D3C7E8"
+  },
+  {
+    "archive_path": "run_artifacts/logs/pip_install_deep.log",
+    "size_bytes": 24539,
+    "sha256": "BE8B16C697A3ED9D2B31BF14A0676C4588C3F7F58A173275DE4631CB6AF0680E"
+  },
+  {
+    "archive_path": "run_artifacts/logs/pip_install_signal_hydra.log",
+    "size_bytes": 18927,
+    "sha256": "2B84DBF0B5390FE600BDF951F77B750834CCB37BDF88232D078C0636973E3333"
+  },
+  {
+    "archive_path": "run_artifacts/logs/pip_install_signal_tf.log",
+    "size_bytes": 23214,
+    "sha256": "C0B3719A0AE455989F16A470F30B16BF98BB6016B751E735E92992D71F2122C3"
+  },
+  {
+    "archive_path": "run_artifacts/M02A_PREFLIGHT_VERIFICATION.json",
+    "size_bytes": 245,
+    "sha256": "2997744EA8609A1BE514FEF1F6FCC63BB1017B763097BB3BF56624243DDF2B74"
+  },
+  {
+    "archive_path": "run_artifacts/M02B_PROVISIONING_REPORT.md",
+    "size_bytes": 8516,
+    "sha256": "DDE740A466B2C9675C719BE94F3FC8CED0ED2EE0F1EA96726403FFF40B6EBDB1"
+  },
+  {
+    "archive_path": "run_artifacts/model_compatibility_matrix_M02B.csv",
+    "size_bytes": 15341,
+    "sha256": "9EDB6DC4627DFACD82ACD0BB9FDE74B0E83FAB9FE2D431553FD2D2A8239DF014"
+  },
+  {
+    "archive_path": "run_artifacts/pip_reports/deep_addons.json",
+    "size_bytes": 888379,
+    "sha256": "6CBD4DC4F18F99717854F2C2353057BDAB72880A7094DF2425A60E8DB6A5DFC8"
+  },
+  {
+    "archive_path": "run_artifacts/pip_reports/signal_hydra.json",
+    "size_bytes": 513776,
+    "sha256": "4DD90048651462BA79C625DFB0951C43674E79684631635E6177052306A533E5"
+  },
+  {
+    "archive_path": "run_artifacts/pip_reports/signal_tf.json",
+    "size_bytes": 739940,
+    "sha256": "122BDE452079D05771D02B015F3C8D326330E0741123D90F56C677BB60B51E4A"
+  },
+  {
+    "archive_path": "run_artifacts/PROPOSED_M02C_PLAN.md",
+    "size_bytes": 1359,
+    "sha256": "00D74A94E4B83D6D3D139DA27D765D948819B6A150AB517B8534E2E615B45A2A"
+  },
+  {
+    "archive_path": "run_artifacts/resource_usage_M02B.csv",
+    "size_bytes": 4166,
+    "sha256": "96259F66C92D78F4773F57A0F03B98369992234888C76535A8861FB6EB121BFB"
+  },
+  {
+    "archive_path": "run_artifacts/RF05_REPRODUCTION_FEASIBILITY.md",
+    "size_bytes": 3838,
+    "sha256": "011B504583978A0709C47C43482091952BA0CA9611DE3C5C89C328E787DCD7F4"
+  },
+  {
+    "archive_path": "run_artifacts/SG06_RECOVERY_REPORT.md",
+    "size_bytes": 1664,
+    "sha256": "4691FA018614E1A9693DCDE51033A95E632303BBF575F1808A1A4C310CE54F84"
+  },
+  {
+    "archive_path": "run_artifacts/smoke_test_results_M02B.json",
+    "size_bytes": 43145,
+    "sha256": "906A55E63814E757DD0F750DCE19337084A332610C7DFF86EDC736BA37F6215A"
+  },
+  {
+    "archive_path": "run_artifacts/snapshots/dlm_paper_extract.json",
+    "size_bytes": 5189,
+    "sha256": "144B8922878BC632A7D0943F8459CBDD83408C28C894CAA84B99B3A7E0DA3F32"
+  },
+  {
+    "archive_path": "run_artifacts/snapshots/pypi_dl_check.json",
+    "size_bytes": 3031,
+    "sha256": "09FFE0575BF673BFDA04568CAED7231B0F82C8199C2A01CDAD7B8AFE60549CB1"
+  },
+  {
+    "archive_path": "run_artifacts/unit_test_results_M02B.txt",
+    "size_bytes": 9046,
+    "sha256": "D3ADD07BAB11D6A10323B12EC8B2226500AEF9485192DC32AADF09BC7E09FCEB"
+  },
+  {
+    "archive_path": "configs/baseline.yaml",
+    "size_bytes": 570,
+    "sha256": "1175981E4D283CC0A989A3E48209FDD62C4FA54289FBDF02737CEF311961C697"
+  },
+  {
+    "archive_path": "configs/model_registry.yaml",
+    "size_bytes": 11488,
+    "sha256": "6B902C8CED47D4BBD7A4FEF0176940211B48A4D109108EDA9AC06753C6909D11"
+  },
+  {
+    "archive_path": "docs/DECISIONS.md",
+    "size_bytes": 4750,
+    "sha256": "7810A053FE1D37DC5F5DBB43BF88C4A1B16CC1102AB9084147FD64164E1DB612"
+  },
+  {
+    "archive_path": "docs/EXPERIMENT_LOG.md",
+    "size_bytes": 9236,
+    "sha256": "6AA3B57CC2A8C82CF447885E487ACBB8D65FA39F01A97CBFCD81BDF75E3CCD5D"
+  },
+  {
+    "archive_path": "docs/MODEL_REGISTRY.md",
+    "size_bytes": 20693,
+    "sha256": "63620496F5DDA2DE16261395BC1C8F47C40AD17D2F667A62E22874D33CD6A97D"
+  },
+  {
+    "archive_path": "docs/MODEL_ENVIRONMENT_PLAN.md",
+    "size_bytes": 7154,
+    "sha256": "51B56D90BA0F846A182BB24DB4B73840DA664AD83C61B44D82B5DBF71787B462"
+  },
+  {
+    "archive_path": "scripts/resource_policy.py",
+    "size_bytes": 12556,
+    "sha256": "699B9745DC249116D8F210880DF013589F9EC982FDDC5AA4170A5A3B70D6E881"
+  },
+  {
+    "archive_path": "scripts/build_compatibility_matrix.py",
+    "size_bytes": 8964,
+    "sha256": "D06FE6B9209A15CE660E1FC10E60F465B1A086FFFA67C19DCD42AB3472CB0A8A"
+  },
+  {
+    "archive_path": "scripts/check_model_compatibility.py",
+    "size_bytes": 41097,
+    "sha256": "30EA440363715CBBC14BDD0C1A547E703F7B35062DD7C56DBF7A03DEFAAFD657"
+  },
+  {
+    "archive_path": "scripts/run_m02b_compatibility.py",
+    "size_bytes": 11522,
+    "sha256": "370006ADA21B7B83F1AA73296E870E2B21CDC681802568A68AA60BF66CD8F072"
+  },
+  {
+    "archive_path": "src/models/m02a_adapters.py",
+    "size_bytes": 10609,
+    "sha256": "9CCAABD4B83EE1AF985C3882BAA6CAEA480C8017DBB2129696ADE62C4C8AD780"
+  },
+  {
+    "archive_path": "src/models/m02b_adapters.py",
+    "size_bytes": 32714,
+    "sha256": "E167D0A5F045C472F869EFB4142B40B4A34530842C3057FAE40E643DB8541900"
+  },
+  {
+    "archive_path": "src/evaluation/m02a_compat_worker.py",
+    "size_bytes": 6809,
+    "sha256": "FE6D82D66DFCCB106EF78603F7B921809A24E328B07F228D7FABA64AEB5579D0"
+  },
+  {
+    "archive_path": "src/evaluation/m02b_compat_worker.py",
+    "size_bytes": 4680,
+    "sha256": "0CF0ACB71BD0A2C4429EB1760401DC4581124B5296D8E69492A335A530838573"
+  },
+  {
+    "archive_path": "tests/test_m02a_adapters.py",
+    "size_bytes": 2644,
+    "sha256": "5152083666C9D1D2DD5F1356CFC6DA21D39D17F3981E97484B0882A5CE155647"
+  },
+  {
+    "archive_path": "tests/test_m02b_adapters_and_watchdog.py",
+    "size_bytes": 5289,
+    "sha256": "88A7286FAA2CF25CB3DACB6F7B19A7CED38E4930A58FB305C6A3D7BF56B554CE"
+  }
+]

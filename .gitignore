@@ -4,8 +4,14 @@ venv/
 venv_old_pc_backup/
 .venv-boost/
 venv-boost/
+.venv-deep/
+venv-deep/
 .venv-signal-cpu/
 venv-signal-cpu/
+.venv-signal-hydra/
+venv-signal-hydra/
+.venv-signal-tf/
+venv-signal-tf/
 __pycache__/
 .ipynb_checkpoints/
 *.py[cod]

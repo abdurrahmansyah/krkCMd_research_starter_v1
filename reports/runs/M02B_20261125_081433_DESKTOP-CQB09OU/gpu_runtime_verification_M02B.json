@@ -1,0 +1,29 @@
+{
+  "torch_version": "2.9.1+cu128",
+  "torch_cuda_version": "12.8",
+  "cuda_available": true,
+  "device_count": 1,
+  "arch_list": [
+    "sm_70",
+    "sm_75",
+    "sm_80",
+    "sm_86",
+    "sm_90",
+    "sm_100",
+    "sm_120"
+  ],
+  "gpu_name": "Quadro RTX 6000",
+  "compute_capability": [
+    7,
+    5
+  ],
+  "fp32_elapsed_sec": 1.5638,
+  "fp32_finite": true,
+  "fp16_amp_finite": true,
+  "sdpa_turing_finite": true,
+  "peak_cuda_allocated_mb": 19.312,
+  "peak_cuda_reserved_mb": 24.0,
+  "status": "GPU_PASS",
+  "subprocess_elapsed_sec": 4.39,
+  "peak_rss_mb": 1211.242
+}

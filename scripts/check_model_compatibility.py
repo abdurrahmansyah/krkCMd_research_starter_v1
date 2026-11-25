@@ -1,9 +1,11 @@
 """
 scripts/check_model_compatibility.py
 
-Automated Hardware & Dependency Audit, Synthetic Smoke Tester, and Model Registry Evaluator
-for krkCMd Research Starter Milestone M01.
-Strictly read-only with respect to actual krkCMd dataset.
+[DEPRECATED IN M02B]
+This legacy script contains a static candidate list and is retained only for
+historical reference. Use `scripts/build_compatibility_matrix.py` (which loads
+authoritative definitions from `configs/model_registry.yaml` and reconciles
+versioned runtime evidence) instead.
 """
 
 import sys
@@ -17,6 +19,14 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 import psutil
+
+if "--legacy-allow-overwrite" not in sys.argv:
+    print(
+        "[DEPRECATED] scripts/check_model_compatibility.py is deprecated in M02B.\n"
+        "Use scripts/build_compatibility_matrix.py instead (registry-driven, preserves historical matrices).",
+        file=sys.stderr,
+    )
+    sys.exit(2)
 
 ROOT = Path(__file__).resolve().parents[1]
 REPORTS_DIR = ROOT / "reports"

@@ -1,0 +1,101 @@
+{
+  "rtdl-revisiting-models": {
+    "exists": true,
+    "version": "0.0.2",
+    "requires_python": ">=3.8",
+    "requires_dist": [
+      "torch >=1.8,<3"
+    ]
+  },
+  "rtdl": {
+    "exists": true,
+    "version": "0.0.13",
+    "requires_python": ">=3.7",
+    "requires_dist": [
+      "numpy >=1.18,<2",
+      "torch >= 1.7,<2"
+    ]
+  },
+  "rtdl-num-embeddings": {
+    "exists": true,
+    "version": "0.0.12",
+    "requires_python": ">=3.9",
+    "requires_dist": [
+      "torch<3,>=1.12"
+    ]
+  },
+  "tabm": {
+    "exists": true,
+    "version": "0.0.3",
+    "requires_python": ">=3.9",
+    "requires_dist": [
+      "torch<3,>=1.12",
+      "rtdl_num_embeddings<0.1,>=0.0.12",
+      "typing_extensions<5,>=4.6.0"
+    ]
+  },
+  "pytabkit": {
+    "exists": true,
+    "version": "1.8.0",
+    "requires_python": ">=3.10",
+    "requires_dist": [
+      "numpy>=1.25",
+      "pandas>=2.0",
+      "psutil>=5.0",
+      "pytorch-lightning>=2.0",
+      "scikit-learn>=1.3",
+      "torch>=2.0",
+      "torchmetrics>=1.2.1",
+      "autogluon-multimodal>=1.0; extra == \"autogluon\"",
+      "autogluon-tabular[all]>=1.0; extra == \"autogluon\"",
+      "adjusttext>=1.0; extra == \"bench\"",
+      "autorank>=1.0; extra == \"bench\"",
+      "fire; extra == \"bench\"",
+      "matplotlib>=3.0; extra == \"bench\"",
+      "openml>=0.14; extra == \"bench\"",
+      "openpyxl>=3.0; extra == \"bench\"",
+      "patool>=1.0; extra == \"bench\"",
+      "ray>=2.8; extra == \"bench\"",
+      "requests>=2.0; extra == \"bench\"",
+      "seaborn>=0.0.13; extra == \"bench\"",
+      "tueplots>=0.0.12; extra == \"bench\"",
+      "xlrd>=2.0; extra == \"bench\"",
+      "myst-parser>=3.0; extra == \"dev\"",
+      "pytest-cov>=4.0; extra == \"dev\"",
+      "pytest>=7.0; extra == \"dev\"",
+      "sphinx-rtd-theme>=2.0; extra == \"dev\"",
+      "sphinx>=7.0; extra == \"dev\"",
+      "kditransform>=0.2; extra == \"extra\"",
+      "configspace>=0.7; extra == \"hpo\"",
+      "hyperopt>=0.2; extra == \"hpo\"",
+      "smac>=2.0; extra == \"hpo\"",
+      "catboost>=1.2; extra == \"models\"",
+      "dask[dataframe]>=2023; extra == \"models\"",
+      "dill; extra == \"models\"",
+      "lightgbm>=4.1; extra == \"models\"",
+      "msgpack>=1.0; extra == \"models\"",
+      "numba>=0.59.0; extra == \"models\"",
+      "probmetrics>=0.0.1; extra == \"models\"",
+      "pyyaml>=5.0; extra == \"models\"",
+      "skorch>=0.15; extra == \"models\"",
+      "structured-data-models>=0.2; python_version >= \"3.11\" and extra == \"models\"",
+      "torch>=2.0; extra == \"models\"",
+      "tqdm; extra == \"models\"",
+      "xgboost>=2.0; extra == \"models\"",
+      "xrfm>=0.4.3; extra == \"models\""
+    ]
+  },
+  "delu": {
+    "exists": true,
+    "version": "0.0.26",
+    "requires_python": ">=3.9",
+    "requires_dist": [
+      "numpy<3,>=1.21",
+      "torch<3,>=1.9"
+    ]
+  },
+  "tabular-dl-tabr": {
+    "exists": false,
+    "error": "HTTP Error 404: Not Found"
+  }
+}

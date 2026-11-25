@@ -74,3 +74,20 @@ Append-only log. Do not rewrite old results.
   - `SG06` (`MultiRocketHydraRegressor`): FAILED/BLOCKED at L0 because `aeon 1.6.0` requires `torch` (soft dependency), which is prohibited in M02A; deferred to M02B without substituting `MultiRocketRegressor` or `HydraRegressor`.
 - Baseline `.venv` and M00/M01/M01-R/M01.1 historical artifacts remain completely unchanged.
 - Next: Await researcher review of `reports/runs/M02A_20261125_074616_DESKTOP-CQB09OU/M02A_PROVISIONING_REPORT.md` before M02B.
+
+## EXP-005 — Milestone M02B: Deep Learning, GPU, Neural Signal & SG06 Provisioning
+- Date: 2026-11-25
+- Run ID: `M02B_20261125_081433_DESKTOP-CQB09OU`
+- Status: PARTIAL (8/11 targets SCALE_CHECK_PASS through L2C; RF05 L0/L1 PASS / L2A FAILED non-finite SGDM loss; SG06 L0..L2B PASS / L2C 300s timeout; DL04 CONDITIONAL repo-only; ZERO real krkCMd training)
+- GPU Verification (`Quadro RTX 6000`, Turing `sm_75`, `torch==2.9.1+cu128`): `GPU_PASS` (FP32 matmul + Conv1d + backward, FP16 AMP, and SDPA `math`/`mem_efficient` all finite).
+- Environments Created:
+  - `.venv-deep` (`krkcmd-deep`): `torch==2.9.1+cu128`, `rtdl-revisiting-models==0.0.2`, `rtdl-num-embeddings==0.0.12`, `tabm==0.0.3`, `pytabkit==1.8.0`, `delu==0.0.26`, `einops==0.8.2`, `numpy==2.4.6`; `pip check` clean; `nbclient` PASS.
+  - `.venv-signal-tf` (`krkcmd-signal-tf`): `aeon==1.6.0`, `tensorflow==2.21.0`, `keras==3.15.1`, `numba==0.63.1`, `numpy==2.3.5`; `pip check` clean; `nbclient` PASS (`CPU_ONLY`).
+  - `.venv-signal-hydra` (`krkcmd-signal-hydra`): `aeon==1.6.0`, `torch==2.9.1+cu128`, `numba==0.63.1`, `numpy==2.3.5`; `pip check` clean; `nbclient` PASS (`CPU`).
+- Synthetic L0/L1/L2 Results (`seed=42`, `D=501`):
+  - `DL01`, `DL02`, `DL03`, `DL05` (`k=8`), `SG01`: `SCALE_CHECK_PASS` on `cuda:0` through L2C (`12,216` -> `3,822`).
+  - `SG02` (`ResNetRegressor`), `SG03` (`InceptionTimeRegressor`), `SG04` (`LITETimeRegressor`): `SCALE_CHECK_PASS` on `CPU_ONLY` through L2C.
+  - `RF05` (`DLM15LayerCNN_Table3`, SGDM): L0/L1 `PASS` on `cuda:0`; L2A `FAILED` (`FloatingPointError: Non-finite training loss` on unnormalized `[0, 255]` inputs).
+  - `SG06` (`MultiRocketHydraRegressor`): L0/L1/L2A/L2B (`15.73 GiB` RSS) `PASS` on `CPU`; L2C `FAILED` (`WALL_CLOCK_TIMEOUT (300s)` at `26.35 GiB` RSS).
+  - `DL04` (`TabR`): `CONDITIONAL` (non-PyPI repo `yandex-research/tabular-dl-tabr` @ `17baa908`).
+- Next: Await researcher review of `reports/runs/M02B_20261125_081433_DESKTOP-CQB09OU/M02B_PROVISIONING_REPORT.md` before M02C or any real data experiments.

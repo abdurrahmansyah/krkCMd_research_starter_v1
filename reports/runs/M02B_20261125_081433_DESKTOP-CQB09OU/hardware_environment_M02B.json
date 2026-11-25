@@ -1,0 +1,25 @@
+{
+  "timestamp_utc": "2026-11-25T08:14:38Z",
+  "run_id": "M02B_20261125_081433_DESKTOP-CQB09OU",
+  "hostname": "DESKTOP-CQB09OU",
+  "cpu_logical_cores": 20,
+  "ram_total_gib": 127.921,
+  "ram_available_gib": 106.194,
+  "disk_free_gib": 1744.487,
+  "gpu": {
+    "gpu_available": true,
+    "gpu_name": "Quadro RTX 6000",
+    "driver_version": "621.24",
+    "compute_capability": "7.5",
+    "vram_total_gib": 24.0,
+    "vram_available_gib": 22.554
+  },
+  "m02b_resource_policy": {
+    "ram_budget_gib": 64.0,
+    "vram_budget_gib": 19.171,
+    "env_cache_budget_gib": 30.0,
+    "max_cpu_threads": 16,
+    "deep_timeout_sec": 900,
+    "cpu_signal_timeout_sec": 300
+  }
+}

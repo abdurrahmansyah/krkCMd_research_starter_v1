@@ -41,3 +41,11 @@
   - M00 baseline notebook reproduced identically in isolated workspace (`max_abs_diff <= 2.27e-13` µm across all 3,822 test predictions).
   - Updated environment budget proposal recorded in `reports/runs/M01R_20261125_032229_DESKTOP-CQB09OU/MODEL_ENVIRONMENT_PLAN_NEW_PC.md`.
 - Strict Constraint: D-001 through D-004 and exploratory D-005 remain unmodified. No M01.1 edits, M02 environment installations, L2 tests, or new model training are authorized without separate researcher approval.
+
+## D-007 — M02A & M02B Isolated Environment Provisioning Governance (2026-11-25)
+- Status: ADMINISTRATIVE (RECORDED; ZERO MODELS APPROVED FOR REAL TRAINING)
+- Context: Provisioned `.venv-boost` (`krkcmd-boost`), `.venv-signal-cpu` (`krkcmd-signal-cpu`), `.venv-deep` (`krkcmd-deep`), `.venv-signal-tf` (`krkcmd-signal-tf`), and `.venv-signal-hydra` (`krkcmd-signal-hydra`) while preserving frozen `.venv` (`krkcmd-research-newpc`).
+- Administrative Record:
+  - Deprecated legacy hardcoded `scripts/check_model_compatibility.py` in favor of registry-driven `scripts/build_compatibility_matrix.py` reading `configs/model_registry.yaml`.
+  - Enforced GiB-consistent subprocess watchdog in `scripts/resource_policy.py` (64 GiB RAM cap, 20 GiB VRAM cap, 16 GiB RAM reserve, 2.5 GiB VRAM reserve, log-file stdout/stderr, process-tree termination).
+- Strict Constraint: D-001 through D-004 remain unchanged; 0/32 candidates are `APPROVED` for actual krkCMd experiments.
