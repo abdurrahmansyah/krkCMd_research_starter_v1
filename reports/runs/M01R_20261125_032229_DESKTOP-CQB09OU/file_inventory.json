@@ -1,0 +1,1017 @@
+﻿{
+    "run_id":  "M01R_20261125_032229_DESKTOP-CQB09OU",
+    "timestamp":  "2026-11-25T03:22:35+00:00",
+    "total_files_inventoried":  144,
+    "copied_venv_present":  true,
+    "copied_venv_dist_info_count":  114,
+    "files":  [
+                  {
+                      "path":  ".env.example",
+                      "size_bytes":  55,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "30E4B1FBD8891DA9F66DC3AB1D31662359AD1AB0E14CAE7EA8B147C970B33A6A"
+                  },
+                  {
+                      "path":  ".gitignore",
+                      "size_bytes":  485,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "B37F8204E5BA9D1862AF41AA12A02AA7919ED397D2914BAA080191682E4B284D"
+                  },
+                  {
+                      "path":  "AGENT.md",
+                      "size_bytes":  12320,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "14C41E24C9E5D8758376E870AFB6B63216AC3772A7140B3E4AD26531A4E7B9D3"
+                  },
+                  {
+                      "path":  "MASTER_PROMPT.md",
+                      "size_bytes":  5037,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "B9D45CE154AB5E1A637B4314325CD5229B61D832AF34B2CA1EED511730BB852C"
+                  },
+                  {
+                      "path":  "PAPER_AGENT.md",
+                      "size_bytes":  5114,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "2561002EE8D81481F1546F439A41C74D7B1C437E28E69D79A48667FDF3A4F1A1"
+                  },
+                  {
+                      "path":  "README.md",
+                      "size_bytes":  1772,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "F5C58B5301E0C53F455DFB7E3DE180FE072B2783895E1CD64CD322431A3B6BB1"
+                  },
+                  {
+                      "path":  "requirements.txt",
+                      "size_bytes":  350,
+                      "last_write_time":  "2026-11-25T02:29:25",
+                      "git_tracked":  true,
+                      "sha256":  "F8E59605A2F15F0F0FBE7A6A59348AABD3759578E7F2836BE4CEF49AA98274F9"
+                  },
+                  {
+                      "path":  "VERIFY_RESULTS.md",
+                      "size_bytes":  1805,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "AA2A187A3BAD3D6334D030ECF9A2C60755703E51743925B43E045D599A794A3F"
+                  },
+                  {
+                      "path":  "artifacts/models/.gitkeep",
+                      "size_bytes":  0,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "path":  "artifacts/models/Dummy_mean.joblib",
+                      "size_bytes":  4063,
+                      "last_write_time":  "2026-11-23T17:27:30",
+                      "git_tracked":  false,
+                      "sha256":  "F852DB6D4D6865054D672EDC916E191B68258E0A3F1A92657A183F0AB8D3FB18"
+                  },
+                  {
+                      "path":  "artifacts/models/ExtraTrees.joblib",
+                      "size_bytes":  145759857,
+                      "last_write_time":  "2026-11-23T17:29:52",
+                      "git_tracked":  false,
+                      "sha256":  "0B5375E734C4092ACB855154874E9376A5C505D35AC09C382497198634FD2872"
+                  },
+                  {
+                      "path":  "artifacts/models/HistGradientBoosting.joblib",
+                      "size_bytes":  1398870,
+                      "last_write_time":  "2026-11-23T17:29:56",
+                      "git_tracked":  false,
+                      "sha256":  "2908A5805662E41DE1A505EC6BAD9F63DB784DD3FE543DBD66B5C55B92CE712B"
+                  },
+                  {
+                      "path":  "artifacts/models/LinearRegression.joblib",
+                      "size_bytes":  24681,
+                      "last_write_time":  "2026-11-23T17:27:30",
+                      "git_tracked":  false,
+                      "sha256":  "DCE4A7ED958294B43ACAA0F500728F4B0D11028A2744D8804B34B23FFE4C6AC4"
+                  },
+                  {
+                      "path":  "artifacts/models/RandomForest.joblib",
+                      "size_bytes":  89247329,
+                      "last_write_time":  "2026-11-23T17:29:14",
+                      "git_tracked":  false,
+                      "sha256":  "22BDAFEF32B6742B8F27DC084A3D67A9DEB01C31001AC44A5D7B9258696AD72B"
+                  },
+                  {
+                      "path":  "artifacts/models/SVR_RBF.joblib",
+                      "size_bytes":  49046310,
+                      "last_write_time":  "2026-11-23T17:30:42",
+                      "git_tracked":  false,
+                      "sha256":  "AFC95E0D09E8E77F1DEAC6B03550ABE1A59E99C41829DFD4F610E5E47A0D607A"
+                  },
+                  {
+                      "path":  "artifacts/results/.gitkeep",
+                      "size_bytes":  0,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "path":  "artifacts/results/benchmark_predictions.csv",
+                      "size_bytes":  1718430,
+                      "last_write_time":  "2026-11-23T17:30:42",
+                      "git_tracked":  false,
+                      "sha256":  "046D06BD1341622A2E3F845304FF555D8ADF42FBB9E7D60BF1995D72F4DB6FCD"
+                  },
+                  {
+                      "path":  "configs/.gitkeep",
+                      "size_bytes":  0,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "path":  "configs/baseline.yaml",
+                      "size_bytes":  523,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "1D26AD869C2C50D840A4A507A4D1A7CFD89FEDCB746DBE27DDAA780C7F6526B1"
+                  },
+                  {
+                      "path":  "configs/model_registry.yaml",
+                      "size_bytes":  9371,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "C91E6CED04578434785C767C980A7A1BF40B3E649BF3DEC3B5787178DD328443"
+                  },
+                  {
+                      "path":  "data/external/.gitkeep",
+                      "size_bytes":  0,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "path":  "data/interim/.gitkeep",
+                      "size_bytes":  0,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "path":  "data/interim/krkCMd_scripts/CrackWidthAED_VBA.txt",
+                      "size_bytes":  11414,
+                      "last_write_time":  "2024-12-29T06:28:38",
+                      "git_tracked":  false,
+                      "sha256":  "E0D05438310B16C45A7A168F9D3FD18014F840135B9E46159365BF35F91BA128"
+                  },
+                  {
+                      "path":  "data/interim/krkCMd_scripts/CrackWidthDLM_Matlab.m",
+                      "size_bytes":  956,
+                      "last_write_time":  "2024-12-29T06:26:38",
+                      "git_tracked":  false,
+                      "sha256":  "DF523E8A482962646A844B48CEABCF7D65A44EF01D8E845098E4B1F962C60A78"
+                  },
+                  {
+                      "path":  "data/interim/krkCMd_scripts/Crack_Multi_Intersection_ROI_ImagJ.txt",
+                      "size_bytes":  3665,
+                      "last_write_time":  "2024-12-29T06:28:22",
+                      "git_tracked":  false,
+                      "sha256":  "30DF8598A7AB2EC8931A3CE6196DA70B88CCDC77C1C5E82986853649823EF5C4"
+                  },
+                  {
+                      "path":  "data/interim/krkCMd_scripts/krknet.mat",
+                      "size_bytes":  267805,
+                      "last_write_time":  "2024-12-27T11:32:02",
+                      "git_tracked":  false,
+                      "sha256":  "AF3668EA17C814C242125E9D8E6ACA7984614546266508B82C4DCDEF24C894E9"
+                  },
+                  {
+                      "path":  "data/processed/.gitkeep",
+                      "size_bytes":  0,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "path":  "data/raw/.gitkeep",
+                      "size_bytes":  0,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "path":  "data/raw/krkCMd_images.zip",
+                      "size_bytes":  38589509774,
+                      "last_write_time":  "2026-11-20T23:39:26",
+                      "git_tracked":  false,
+                      "sha256":  "DEFERRED_LARGE_ARCHIVE_38.6GB"
+                  },
+                  {
+                      "path":  "data/raw/krkCMd_scripts.zip",
+                      "size_bytes":  273175,
+                      "last_write_time":  "2026-11-20T15:59:34",
+                      "git_tracked":  false,
+                      "sha256":  "8E4C8F527ECEF98A6394F302FA894787EED6F35335032C6DCA9F76C36875E567"
+                  },
+                  {
+                      "path":  "data/raw/krkCMd_table.csv",
+                      "size_bytes":  56292603,
+                      "last_write_time":  "2026-11-20T15:58:08",
+                      "git_tracked":  false,
+                      "sha256":  "CCCA7965B225F77D35567573BB557A6E0476122C381E14AB1BDA898DF9F9B909"
+                  },
+                  {
+                      "path":  "docs/.gitkeep",
+                      "size_bytes":  0,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "path":  "docs/DATA_AND_PAPERS.md",
+                      "size_bytes":  2910,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "BEF5C6FE33165C9593706C0870C5AE631D6EF32AF28C69A88AAA510AB4BD6AD2"
+                  },
+                  {
+                      "path":  "docs/DECISIONS.md",
+                      "size_bytes":  2551,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "0B034F932953ABF1C0207A991FEEB8D052B5A4C21DC8C395A56576724E70C2A1"
+                  },
+                  {
+                      "path":  "docs/EXPERIMENT_LOG.md",
+                      "size_bytes":  3028,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "2AC7E96EBF8BCA96E92F84E6C1EFCA7C00E14BE0DA6686985B2CC9BA4C624FF1"
+                  },
+                  {
+                      "path":  "docs/MODEL_COMPATIBILITY_PROTOCOL.md",
+                      "size_bytes":  4714,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "02C89A2BC357CB671884FDF4917B816AB2AAC4221E0D00CF5E8287BF45AAD78B"
+                  },
+                  {
+                      "path":  "docs/MODEL_ENVIRONMENT_PLAN.md",
+                      "size_bytes":  6242,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "D5A2FD11EE25CA8FF745BB2DFFEF5D0BA38A5ECD7F1823C2E1B82524CF4AFDA7"
+                  },
+                  {
+                      "path":  "docs/MODEL_REGISTRY.md",
+                      "size_bytes":  20300,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "3D9AB3C11124B0EFFB6216AFA3F10BA3CC748E3B318C20A947CF8A2DD1533E19"
+                  },
+                  {
+                      "path":  "docs/PRE_EXECUTION_CHECKLIST.md",
+                      "size_bytes":  2035,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "6B81131077B088D4D21C82FB7509D75D7986E2071B8D1CAE1E239C3118D8780F"
+                  },
+                  {
+                      "path":  "docs/RESEARCH_QUESTIONS.md",
+                      "size_bytes":  992,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "9D17B9C4345D9D603C11F2267847422ECE96BA66A830188C0DEC0B019A1BF5D5"
+                  },
+                  {
+                      "path":  "docs/STEP_BY_STEP_INDONESIAN.md",
+                      "size_bytes":  5463,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "33429B9DFDA7A2CB49FA1E1527B1B896C3A26D9BF2757A93F1EEEE3C7EAB725D"
+                  },
+                  {
+                      "path":  "for_review/first run.md",
+                      "size_bytes":  15082,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "726138833D887EC0A61860EF42D52C9FD2FFCA507AFE54BF4745D19E111FD9D2"
+                  },
+                  {
+                      "path":  "for_review/result_run_2.md",
+                      "size_bytes":  9399,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "44B6FF0239B9867D3FDD94DEE875B55C4269026ACD033068D786250DD4070DF5"
+                  },
+                  {
+                      "path":  "for_review/result_run_3.md",
+                      "size_bytes":  11637,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "5363CBA018E9BE1808CCAA7336EAD95E0156D75742A09A61BDC175B2D402A547"
+                  },
+                  {
+                      "path":  "for_review/result_run_4_M01.md",
+                      "size_bytes":  22984,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "FD220B89CCA682A3E24C766606AEA6033EC937D99A494D0DCC34A1D90CAA9FE0"
+                  },
+                  {
+                      "path":  "manuscript/krkCMd_paper_en_v0.1.docx",
+                      "size_bytes":  190443,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "BBB1EA614821BAC10855BB4B2E3E7EBCD11080E56D24E9C6DE84D315800C68A0"
+                  },
+                  {
+                      "path":  "manuscript/krkCMd_paper_id_v0.1.docx",
+                      "size_bytes":  185794,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "01FD8CC435529D7B2DF2FAA742C1DAC7F47968E5E23B8D015F0F4895E3C23BF6"
+                  },
+                  {
+                      "path":  "manuscript/PAPER_AGENT.md",
+                      "size_bytes":  5114,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "2561002EE8D81481F1546F439A41C74D7B1C437E28E69D79A48667FDF3A4F1A1"
+                  },
+                  {
+                      "path":  "manuscript/figures/architecture_en.dot",
+                      "size_bytes":  815,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "59E8F023BDA4F50BA7B6C4B4F4A1B04406C5642693626EAF0A9D6D7CF01A1C13"
+                  },
+                  {
+                      "path":  "manuscript/figures/architecture_en.png",
+                      "size_bytes":  106515,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "4346B0F569AF0517F2BEFD18442BB7878218A81ACBD80E840A372D6F982AD7F7"
+                  },
+                  {
+                      "path":  "manuscript/figures/architecture_id.dot",
+                      "size_bytes":  807,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "03558209AFAE862A07BECBEA1A809304535220257754B2D1941D789CEF568409"
+                  },
+                  {
+                      "path":  "manuscript/figures/architecture_id.png",
+                      "size_bytes":  104442,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "1322FB625C349C03A02057BBF1500BC319226AD9FFB96B9DE5E287AE92949E96"
+                  },
+                  {
+                      "path":  "manuscript/figures/profile_model_en.dot",
+                      "size_bytes":  568,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "D032A32BCF216B74643DE5965E00FE810C4CCA1FFD8EF6B6F05E53C961B28F9F"
+                  },
+                  {
+                      "path":  "manuscript/figures/profile_model_en.png",
+                      "size_bytes":  49578,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "68FB561AFBE5154254E92B398CC7E1AD1152E61DB73B04AB180A465D34C3FC82"
+                  },
+                  {
+                      "path":  "manuscript/figures/profile_model_id.dot",
+                      "size_bytes":  564,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "246A39C70EC6BA7CE9365EE4A89371ABA40253ED30A1C829420E897D79BB77D1"
+                  },
+                  {
+                      "path":  "manuscript/figures/profile_model_id.png",
+                      "size_bytes":  46684,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "7F7237B84347B5BDAC177B29CAA37A7AE96789561097676F1F40CC3C0E70BD45"
+                  },
+                  {
+                      "path":  "notebooks/.gitkeep",
+                      "size_bytes":  0,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "path":  "notebooks/00_baseline_krkCMd.html",
+                      "size_bytes":  652368,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "FDB9979156201015D124EDF312B96FA940F160EDE5757EB03FDB1EF0406A55F6"
+                  },
+                  {
+                      "path":  "notebooks/00_baseline_krkCMd.ipynb",
+                      "size_bytes":  332340,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "0C94F13EA7AEF87E884F21075459E57D43BCA563CE18907697AE72C16AFE6864"
+                  },
+                  {
+                      "path":  "papers/.gitkeep",
+                      "size_bytes":  0,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "path":  "papers/2001 Random Forests.pdf",
+                      "size_bytes":  230664,
+                      "last_write_time":  "2026-11-24T18:34:12",
+                      "git_tracked":  false,
+                      "sha256":  "3AD0F6182280E8C0F763527BE85D41BCE08F6E4D1DE3F8C674098F0DE31138CE"
+                  },
+                  {
+                      "path":  "papers/2006 Extremely randomized trees.pdf",
+                      "size_bytes":  3118772,
+                      "last_write_time":  "2026-11-24T18:34:40",
+                      "git_tracked":  false,
+                      "sha256":  "BF6A02952D30DB0FBDFC2BACE0221C1BDBC7C5551027182744C760D3B7A1E77C"
+                  },
+                  {
+                      "path":  "papers/2007 Agreement Between Methods of Measurement with Multiple Observations Per Individual.pdf",
+                      "size_bytes":  401533,
+                      "last_write_time":  "2026-11-24T19:16:36",
+                      "git_tracked":  false,
+                      "sha256":  "7EBEDB82CA00F8C0013FB52D60325C2D03A5F0B6DDE20149469F46F608C04806"
+                  },
+                  {
+                      "path":  "papers/2016 Cross-validation strategies for data with temporal, spatial, hierarchical, or phylogenetic structure.pdf",
+                      "size_bytes":  738693,
+                      "last_write_time":  "2026-11-24T18:57:38",
+                      "git_tracked":  false,
+                      "sha256":  "E4E3323D136A4AE7A62E88DAD294595E5B1B067B5669B28AF511045396954D9B"
+                  },
+                  {
+                      "path":  "papers/2016 XGBoost A Scalable Tree Boosting System.pdf",
+                      "size_bytes":  944793,
+                      "last_write_time":  "2026-11-24T18:35:06",
+                      "git_tracked":  false,
+                      "sha256":  "52BC282C922A239134EE4D6F4367C58BF920A9BDD53ACBB3B2AA3342E2BB7214"
+                  },
+                  {
+                      "path":  "papers/2017 LightGBM A Highly Efficient Gradient Boosting Decision Tree.pdf",
+                      "size_bytes":  366352,
+                      "last_write_time":  "2026-11-24T18:35:26",
+                      "git_tracked":  false,
+                      "sha256":  "32DDFE0C7A8E1ACB87C97CFF904A16E0A556A8D79EBFECF772159843E736AFFC"
+                  },
+                  {
+                      "path":  "papers/2018 CatBoost unbiased boosting with categorical features.pdf",
+                      "size_bytes":  723079,
+                      "last_write_time":  "2026-11-24T18:35:48",
+                      "git_tracked":  false,
+                      "sha256":  "E682F177E24106A1C48A0DBBA1D752A806526BD7EA85BD97E12BEC07A2ED955B"
+                  },
+                  {
+                      "path":  "papers/2019 Benchmarking Neural Network Robustness to Common Corruptions and Perturbations.pdf",
+                      "size_bytes":  1080004,
+                      "last_write_time":  "2026-11-24T18:51:06",
+                      "git_tracked":  false,
+                      "sha256":  "C9DF5483AA331DD99808350608A795C4BD9B84A7EE50396748C7D258903EA582"
+                  },
+                  {
+                      "path":  "papers/2019 Conformalized Quantile Regression.pdf",
+                      "size_bytes":  1430567,
+                      "last_write_time":  "2026-11-24T18:58:46",
+                      "git_tracked":  false,
+                      "sha256":  "E9483113D0563A6B274810C2AB70FACE7E876E06D4E7687B58D74FF07BDC9EE1"
+                  },
+                  {
+                      "path":  "papers/2019 InceptionTime Finding AlexNet for Time Series Classification.pdf",
+                      "size_bytes":  1125792,
+                      "last_write_time":  "2026-11-24T19:14:32",
+                      "git_tracked":  false,
+                      "sha256":  "D66038B26F93C3BF2ECD80AA6930908C0CFB35DBC1FD752A4240BD6B33EE07C8"
+                  },
+                  {
+                      "path":  "papers/2019 Neural Oblivious Decision Ensembles for Deep Learning on Tabular Data.pdf",
+                      "size_bytes":  517825,
+                      "last_write_time":  "2026-11-24T18:36:56",
+                      "git_tracked":  false,
+                      "sha256":  "DAA0D574FED6C3ECD279FC9670052183DF6BD60C956FCC214B9437E24A342810"
+                  },
+                  {
+                      "path":  "papers/2019 ROCKET Exceptionally fast and accurate time series classification using random convolutional kernels.pdf",
+                      "size_bytes":  813287,
+                      "last_write_time":  "2026-11-24T19:13:46",
+                      "git_tracked":  false,
+                      "sha256":  "B58ACD66DBD188978FC379F6949A4EA26C3C97AEAF6A27F5F16CCC182628DF7A"
+                  },
+                  {
+                      "path":  "papers/2019 TabNet Attentive Interpretable Tabular Learning.pdf",
+                      "size_bytes":  1558089,
+                      "last_write_time":  "2026-11-24T18:36:32",
+                      "git_tracked":  false,
+                      "sha256":  "8310BC2F2C0AAD63FB97C8438F051D93C4496B43FC0123DABD6662CC1EA3FB44"
+                  },
+                  {
+                      "path":  "papers/2019 Towards calibration-invariant spectroscopy using deep learning.pdf",
+                      "size_bytes":  3703177,
+                      "last_write_time":  "2026-11-24T19:15:08",
+                      "git_tracked":  false,
+                      "sha256":  "2C886BA9B589F8E75E7ACA817C92005EEF42462038C1091569E2EDC0130460F9"
+                  },
+                  {
+                      "path":  "papers/2021 Image-Based Automated Width Measurement of Surface Cracking_compressed.pdf",
+                      "size_bytes":  3271281,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "C7B08AE4DA08350B3F4B82843C55BF060D2E4DB51FDE1F1C768877A94524DD49"
+                  },
+                  {
+                      "path":  "papers/2021 Revisiting Deep Learning Models for Tabular Data.pdf",
+                      "size_bytes":  1676287,
+                      "last_write_time":  "2026-11-24T18:37:10",
+                      "git_tracked":  false,
+                      "sha256":  "F2FAA32FFD8C15ED8534677F978DC02730FDBE1F94E9C9557ADA6AA19163478D"
+                  },
+                  {
+                      "path":  "papers/2021 SAINT Improved Neural Networks for Tabular Data via Row Attention and Contrastive Pre-Training.pdf",
+                      "size_bytes":  3221579,
+                      "last_write_time":  "2026-11-24T18:37:34",
+                      "git_tracked":  false,
+                      "sha256":  "9069DE09BCD867B6B8604460F5D98DE678EEF5A731FAC0E2A4216FA850AAD018"
+                  },
+                  {
+                      "path":  "papers/2021 Time Series Extrinsic Regression Predicting Numeric Values from Time Series Data.pdf",
+                      "size_bytes":  1503707,
+                      "last_write_time":  "2026-11-24T18:23:38",
+                      "git_tracked":  false,
+                      "sha256":  "BEF13EC8BA7009303598DBA72B4D2BD2B78A040575A734ECFCBCD78B14CAB517"
+                  },
+                  {
+                      "path":  "papers/2022 On Embeddings for Numerical Features in Tabular Deep Learning.pdf",
+                      "size_bytes":  711060,
+                      "last_write_time":  "2026-11-24T18:37:46",
+                      "git_tracked":  false,
+                      "sha256":  "22B97677FEC340FC9F95275C9501A8AD5E2FB01A82C0ED829AEB44D33163A0D8"
+                  },
+                  {
+                      "path":  "papers/2022 Review on computer vision-based crack detection and quantification methodologies for civil structures.pdf",
+                      "size_bytes":  20889929,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "11D0D9F1CB92BC0E489EF99CDE4B74C1615C5D3357EAE8998399D46F05C12623"
+                  },
+                  {
+                      "path":  "papers/2022 Why do tree-based models still outperform deep learning on tabular data.pdf",
+                      "size_bytes":  26436552,
+                      "last_write_time":  "2026-11-24T18:19:34",
+                      "git_tracked":  false,
+                      "sha256":  "3BAEB241E4F50981DEB6E8E81F29192B1A84F1ABDE990D5FE8DF4E594D993D6F"
+                  },
+                  {
+                      "path":  "papers/2023 A Pre-Failure Narrow Concrete Cracks Dataset for Engineering Structures Damage Classification and Segmentation.pdf",
+                      "size_bytes":  2871625,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "5754D52A028DF863C0F9438951E39E9B9F7C21248ABF7A79364809F2B7B591D9"
+                  },
+                  {
+                      "path":  "papers/2023 Computer vision-based statistical crack quantification for concrete structures.pdf",
+                      "size_bytes":  6798618,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "15F2F89D2AFC41EA095FA74AF643A29AFB2D3BBEF1E90E4469FADCE1DD655C9D"
+                  },
+                  {
+                      "path":  "papers/2023 Deep CNN-based concrete cracks identification and quantification using image processing techniques.pdf",
+                      "size_bytes":  2492578,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "FE5007F84CF12E1305D62D062F004AA704C43EA28C35DD59EE03C4EBCE3D8743"
+                  },
+                  {
+                      "path":  "papers/2024 Better by default Strong pre-tuned MLPs and boosted trees on tabular data.pdf",
+                      "size_bytes":  3797671,
+                      "last_write_time":  "2026-11-24T18:25:42",
+                      "git_tracked":  false,
+                      "sha256":  "6504F7C5479802C321DF90EE32D6652C9CC1F4C823F59A68FD810A7D93EA6292"
+                  },
+                  {
+                      "path":  "papers/2024 CNN-Transformer hybrid network for concrete dam crack patrol inspection.pdf",
+                      "size_bytes":  7130125,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "FEA0A08A51DFCD564DAEAC115CE2D0473E555F28281C392F5900A184C9127613"
+                  },
+                  {
+                      "path":  "papers/2024 Crack Width and Crack Spacing in Reinforced and Prestressed Concrete Elements Data Description and Acquisition.pdf",
+                      "size_bytes":  1592641,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "9078BA7103EDC7EED2AEB270F928D13FD87D8E7E7C4BFB21ECAA9BD52BCED431"
+                  },
+                  {
+                      "path":  "papers/2024 Crack width and spacing measurement using deep learning and damage assessment for reinforced concrete non-structural wall.pdf",
+                      "size_bytes":  11741729,
+                      "last_write_time":  "2026-11-23T11:29:12",
+                      "git_tracked":  false,
+                      "sha256":  "6C2AC9CCFF6B066ADADEE7D8C08F190118CF693EE2946A93929FF4A4660C3D77"
+                  },
+                  {
+                      "path":  "papers/2024 Deep Learning for Concrete Crack Detection and Measurement.pdf",
+                      "size_bytes":  5680874,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "A7A23EC258CC8D2531984088B2FD97C978434B8DB622C4F6908749E8ADF9A0D4"
+                  },
+                  {
+                      "path":  "papers/2024 Deep learning metasensor for crack-width assessment and self-healing evaluation in concrete.pdf",
+                      "size_bytes":  15267800,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "CB17654390A16505CCA1A9A6CBAB6AEB3F17C7CBD60575AF66C974D2B56E902B"
+                  },
+                  {
+                      "path":  "papers/2024 TabM Advancing Tabular Deep Learning with Parameter-Efficient Ensembling.pdf",
+                      "size_bytes":  1322161,
+                      "last_write_time":  "2026-11-24T18:21:18",
+                      "git_tracked":  false,
+                      "sha256":  "A6988AA10D726E99C706DC92856C5A07F4E3F9FA854D08C8F854F06DC83EA34F"
+                  },
+                  {
+                      "path":  "papers/2024 TabR Tabular Deep Learning Meets Nearest Neighbors.pdf",
+                      "size_bytes":  868032,
+                      "last_write_time":  "2026-11-24T18:25:10",
+                      "git_tracked":  false,
+                      "sha256":  "FEEC976974E73B858466227A749375AC6C2EC9320F98006ACA0678883469F0BD"
+                  },
+                  {
+                      "path":  "papers/2024 Utilizing pretrained convolutional neural networks for crack detection and geometric feature recognition in concrete surface images.pdf",
+                      "size_bytes":  13805849,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "676D781C38A7B7B56528339684BE8B775576504E946EBDB9807B81D8DE7B697E"
+                  },
+                  {
+                      "path":  "papers/2025 A Deep Learning Framework for Real-Time Multi-Task Recognition and Measurement of Concrete Cracks.pdf",
+                      "size_bytes":  14873933,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "3F31C8360B02DD7BC5959F7E217A91C01EDE8498A4EFE467B2DB222D5B6BD44B"
+                  },
+                  {
+                      "path":  "papers/2025 A review on spectral data preprocessing techniques for machine learning and quantitative analysis.pdf",
+                      "size_bytes":  3266736,
+                      "last_write_time":  "2026-11-24T18:42:50",
+                      "git_tracked":  false,
+                      "sha256":  "23DD5CB632F8FC6C7F818C83010138A65DFA30AC653320E72666315D42DEBD6A"
+                  },
+                  {
+                      "path":  "papers/2025 Accurate predictions on small data with a tabular foundation model.pdf",
+                      "size_bytes":  16957699,
+                      "last_write_time":  "2026-11-24T18:21:52",
+                      "git_tracked":  false,
+                      "sha256":  "6B5CE3DBA2EF7454AD0868AD733A64B4AC89BCD98307773FAD1E0E977CAAA013"
+                  },
+                  {
+                      "path":  "papers/2025 AI-Driven Crack Analysis for Structural Health Monitoring of Engineering Cement Composite A Laboratory Study.pdf",
+                      "size_bytes":  14810080,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "20017A30C916EE59FE25CA38433F9CB3363D2DB00E8B422242CCCE5F51646B05"
+                  },
+                  {
+                      "path":  "papers/2025 Crack Width Behaviour in a Concrete Retaining Wall Using Deep Learning and Image Processing Technique.pdf",
+                      "size_bytes":  3677067,
+                      "last_write_time":  "2026-11-23T11:29:48",
+                      "git_tracked":  false,
+                      "sha256":  "02DA2605754E1FD30FA0C28FAD01ED25BD3142FEBCA07CBDE12BD95B18DA0F6F"
+                  },
+                  {
+                      "path":  "papers/2025 Dataset for developing deep learning models to assess crack width and self-healing progress in concrete.pdf",
+                      "size_bytes":  2665709,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "333E7346C6DF6691DD748BA2095011D29FD8589076161E9A204EA1D7CF1E3662"
+                  },
+                  {
+                      "path":  "papers/2025 Intelligent Multitasking Framework for Boundary-Preserving Semantic Segmentation, Width Estimation, and Propagation Modeling of Concrete Cracks.pdf",
+                      "size_bytes":  9181400,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "3131A444B4C3930D9113A9991683800A5AB873014AE64F78F734238454F3B1FB"
+                  },
+                  {
+                      "path":  "papers/2025 TabArena A Living Benchmark for Machine Learning on Tabular Data.pdf",
+                      "size_bytes":  1964941,
+                      "last_write_time":  "2026-11-24T18:27:20",
+                      "git_tracked":  false,
+                      "sha256":  "8853FD1A1EB09EE7C25BF6F48A194A8E718103774D39AF5BCC402B2C41A735E5"
+                  },
+                  {
+                      "path":  "papers/2026 A Calibrated Post-Processing Layer for Tolerance-Compliant Crack-Width Measurement.pdf",
+                      "size_bytes":  10231719,
+                      "last_write_time":  "2026-11-24T16:35:46",
+                      "git_tracked":  false,
+                      "sha256":  "D152FB2C4475DD054FABD7367D5758568CB0D47BA21E66D42987FCDD11813E22"
+                  },
+                  {
+                      "path":  "papers/2026 A focused review of recent advances in deep learning and computer vision for concrete crack detection and measurement.pdf",
+                      "size_bytes":  1797994,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "747E8DBBCE63C9A6DCB22FB8BEE9907704702B5106764F8A321F5D77447844CD"
+                  },
+                  {
+                      "path":  "papers/2026 Adaptive Deep Learning Framework for Crack Contour Recognition and Dimensional Measurement in Concrete Structures.pdf",
+                      "size_bytes":  27766745,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "30F55FACBCD52C468E6BC859D8998FD7523901FC5EAD0AADC33B8AB48110B7EB"
+                  },
+                  {
+                      "path":  "papers/2026 Artificial intelligence-driven intelligent concrete crack detection and real-time width estimation for smart structural health monitoring systems A review.pdf",
+                      "size_bytes":  747824,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "205A22020C9E8FF4075899A394D5B088500A5C91191B8908CC9D3A4936C355B0"
+                  },
+                  {
+                      "path":  "papers/2026 COMPARATIVE EVALUATION OF SEMANTIC SEGMENTATION MODELS FOR CRACK DETECTION.pdf",
+                      "size_bytes":  480521,
+                      "last_write_time":  "2026-11-25T02:29:24",
+                      "git_tracked":  true,
+                      "sha256":  "BD6D3F61BAE45959B5F8DFE4470C7F93A1C0DA8B7F809E6FE7818E92379B4175"
+                  },
+                  {
+                      "path":  "papers/2026 Intelligent Measurement of Concrete Crack Width Based on U-Net Deep Learning and Binocular Vision 3D Reconstruction.pdf",
+                      "size_bytes":  4338377,
+                      "last_write_time":  "2026-11-25T02:29:25",
+                      "git_tracked":  true,
+                      "sha256":  "EC402AA7F773789684EA7EEA13D33AB1CBA6D77DDB88879BC23806A17E4F6F06"
+                  },
+                  {
+                      "path":  "papers/2026 Pembandingan Arsitektur Transformer dan CNN untuk Pengolahan Data Non-Visual.pdf",
+                      "size_bytes":  218842,
+                      "last_write_time":  "2026-11-25T02:29:25",
+                      "git_tracked":  true,
+                      "sha256":  "A7512EB5A79F417BD5C611EB9D130977055A035AF4F4B5BF2D87F5CD7761021D"
+                  },
+                  {
+                      "path":  "papers/2026 TabICLv2 A Better, Faster, Scalable, and Open Tabular Foundation Model.pdf",
+                      "size_bytes":  15305151,
+                      "last_write_time":  "2026-11-24T18:20:36",
+                      "git_tracked":  false,
+                      "sha256":  "D805D51506C224C9C59975536C610A5C2073ED988896B8DA5D95A00DBF39C9F9"
+                  },
+                  {
+                      "path":  "papers/2026 TabPFN-3 Technical Report.pdf",
+                      "size_bytes":  6262102,
+                      "last_write_time":  "2026-11-24T19:11:46",
+                      "git_tracked":  false,
+                      "sha256":  "5A249B09618318539D7CC30E919A560AE4C730635603547F99000C2E50B31B96"
+                  },
+                  {
+                      "path":  "papers/2026 TabPFN-3.5 Technical Report.pdf",
+                      "size_bytes":  2394292,
+                      "last_write_time":  "2026-11-24T19:10:36",
+                      "git_tracked":  false,
+                      "sha256":  "0E50F83266778ECA44E111000C74AE60EDC566A66B848E9658798F407CB74317"
+                  },
+                  {
+                      "path":  "references/.gitkeep",
+                      "size_bytes":  0,
+                      "last_write_time":  "2026-11-25T02:29:25",
+                      "git_tracked":  true,
+                      "sha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "path":  "references/REFERENCE_REGISTER.md",
+                      "size_bytes":  11704,
+                      "last_write_time":  "2026-11-25T02:29:25",
+                      "git_tracked":  true,
+                      "sha256":  "FFF9E522047C8A2E1D0C7A5632348EE9D0A18C723E7563D9518BC38ADDB7B551"
+                  },
+                  {
+                      "path":  "reports/DATASET_AUDIT_REPORT.md",
+                      "size_bytes":  2597,
+                      "last_write_time":  "2026-11-25T02:29:25",
+                      "git_tracked":  true,
+                      "sha256":  "877FDA7BF612897309A234A738A144EE7E4A69C13AB276919A8F984FAA0F439E"
+                  },
+                  {
+                      "path":  "reports/M01_COMPATIBILITY_REPORT.md",
+                      "size_bytes":  18859,
+                      "last_write_time":  "2026-11-25T02:29:25",
+                      "git_tracked":  true,
+                      "sha256":  "7AD4BF8049645FB328A405ED55D2562548392A9316D77C60B1ABC745C70D3AEA"
+                  },
+                  {
+                      "path":  "reports/figures/.gitkeep",
+                      "size_bytes":  0,
+                      "last_write_time":  "2026-11-25T02:29:25",
+                      "git_tracked":  true,
+                      "sha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "path":  "reports/figures/benchmark_mae.png",
+                      "size_bytes":  44598,
+                      "last_write_time":  "2026-11-23T17:32:36",
+                      "git_tracked":  false,
+                      "sha256":  "4D8667BEA2C0A73093AC45DFA6F51696AA141D080DC6C1BEFD7818B06ADD7EE1"
+                  },
+                  {
+                      "path":  "reports/figures/manwidth_distribution.png",
+                      "size_bytes":  25795,
+                      "last_write_time":  "2026-11-23T17:24:36",
+                      "git_tracked":  false,
+                      "sha256":  "DE68282C4410BFDCD54962A7DCD68E01D7C62123419F2456371FAC794945ACE8"
+                  },
+                  {
+                      "path":  "reports/figures/robustness_mae.png",
+                      "size_bytes":  63305,
+                      "last_write_time":  "2026-11-23T17:32:36",
+                      "git_tracked":  false,
+                      "sha256":  "A3C78E524B5BAD09EAD7D3A99F6BE29F50ED98AD21D76795AA24464C4A45B0A4"
+                  },
+                  {
+                      "path":  "reports/figures/sample_brightness_profiles.png",
+                      "size_bytes":  185085,
+                      "last_write_time":  "2026-11-23T17:24:36",
+                      "git_tracked":  false,
+                      "sha256":  "9E612DCAADC8B1354D4E64BA4976C52072C1DD2ADD53F00095D414613D984419"
+                  },
+                  {
+                      "path":  "reports/logs/.gitkeep",
+                      "size_bytes":  0,
+                      "last_write_time":  "2026-11-25T02:29:25",
+                      "git_tracked":  true,
+                      "sha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "path":  "reports/logs/baseline_run_summary.json",
+                      "size_bytes":  587,
+                      "last_write_time":  "2026-11-24T11:33:26",
+                      "git_tracked":  false,
+                      "sha256":  "FDBCB42863E8A2B6AE35B9C6A036EEC1F09FF4C73B62C99B324BCA3A3C34B90D"
+                  },
+                  {
+                      "path":  "reports/logs/dependency_resolution.json",
+                      "size_bytes":  1140,
+                      "last_write_time":  "2026-11-24T19:40:50",
+                      "git_tracked":  false,
+                      "sha256":  "583F6D756EFF95440644CB60F87D2EC287E84806DC0788AC2C5FEAB21D65E7ED"
+                  },
+                  {
+                      "path":  "reports/logs/hardware_environment.json",
+                      "size_bytes":  1268,
+                      "last_write_time":  "2026-11-24T19:39:40",
+                      "git_tracked":  false,
+                      "sha256":  "34F61EF86C41DED5E65B8AC466241D0BA62B2F767AC7966ECE86993DAA27EC53"
+                  },
+                  {
+                      "path":  "reports/tables/.gitkeep",
+                      "size_bytes":  0,
+                      "last_write_time":  "2026-11-25T02:29:25",
+                      "git_tracked":  true,
+                      "sha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "path":  "reports/tables/benchmark_metrics.csv",
+                      "size_bytes":  851,
+                      "last_write_time":  "2026-11-23T17:30:42",
+                      "git_tracked":  false,
+                      "sha256":  "816D76F9E803E03E8170AE893F68750E3B56786271A6E5616F25D19CBB8D61A2"
+                  },
+                  {
+                      "path":  "reports/tables/candidate_group_sizes.csv",
+                      "size_bytes":  103640,
+                      "last_write_time":  "2026-11-23T17:24:06",
+                      "git_tracked":  false,
+                      "sha256":  "7972F0462C68EF479BE1B3B28525077E86BA511039DE379D4C3980D40F887410"
+                  },
+                  {
+                      "path":  "reports/tables/comprehensive_audit.json",
+                      "size_bytes":  3702,
+                      "last_write_time":  "2026-11-23T15:43:46",
+                      "git_tracked":  false,
+                      "sha256":  "218FC227BA003ACCA50B324B504CDC928BD22B257688DB90FECDF1CECBE2441F"
+                  },
+                  {
+                      "path":  "reports/tables/existing_baseline_metrics.csv",
+                      "size_bytes":  259,
+                      "last_write_time":  "2026-11-23T17:31:16",
+                      "git_tracked":  false,
+                      "sha256":  "B758A44BC8705104BB86AA0670E93F6F30BF66FE71ADD9B94F3918BEF5AA5601"
+                  },
+                  {
+                      "path":  "reports/tables/group_split_manifest.csv",
+                      "size_bytes":  813176,
+                      "last_write_time":  "2026-11-23T17:26:20",
+                      "git_tracked":  false,
+                      "sha256":  "361A3446455F6BCB431E20319BDD33AA3CF6F7BD5A65EE74581C6A20EFCF7685"
+                  },
+                  {
+                      "path":  "reports/tables/initial_audit_summary.csv",
+                      "size_bytes":  110,
+                      "last_write_time":  "2026-11-23T17:21:28",
+                      "git_tracked":  false,
+                      "sha256":  "A1FA9220B95D42FCA41045832F7B9AEECEC9A88B4E089339F31757C46A720A8B"
+                  },
+                  {
+                      "path":  "reports/tables/model_compatibility_matrix.csv",
+                      "size_bytes":  11435,
+                      "last_write_time":  "2026-11-24T19:40:58",
+                      "git_tracked":  false,
+                      "sha256":  "1F87F24C2C07A1C2D8B41E7A4BAD838E42B84692A5EDFA97463358D7AA2D76A2"
+                  },
+                  {
+                      "path":  "reports/tables/paper_snippets.json",
+                      "size_bytes":  2585,
+                      "last_write_time":  "2026-11-23T15:43:46",
+                      "git_tracked":  false,
+                      "sha256":  "5E1ACE5C97A02645E523102C4DDE698EEBA38DACECAC5675D02BAFEF0CA03010"
+                  },
+                  {
+                      "path":  "reports/tables/robustness_metrics.csv",
+                      "size_bytes":  1427,
+                      "last_write_time":  "2026-11-24T11:31:14",
+                      "git_tracked":  false,
+                      "sha256":  "FF3D687D6383CA8EC23060CA94C3E4D9F75DAC713A36B8662F3D9BE98AE0D70A"
+                  },
+                  {
+                      "path":  "reports/tables/test_per_series_metrics.csv",
+                      "size_bytes":  437,
+                      "last_write_time":  "2026-11-24T11:32:56",
+                      "git_tracked":  false,
+                      "sha256":  "C78DD1D78204E0093C1998511D176E1C7842E9297339E408D4BDDFD4D614AD09"
+                  },
+                  {
+                      "path":  "scripts/.gitkeep",
+                      "size_bytes":  0,
+                      "last_write_time":  "2026-11-25T02:29:25",
+                      "git_tracked":  true,
+                      "sha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "path":  "scripts/audit_dataset.py",
+                      "size_bytes":  12780,
+                      "last_write_time":  "2026-11-25T02:29:25",
+                      "git_tracked":  true,
+                      "sha256":  "707FBC733052A77F910ABE63C6B6140419554029201B3BDB6D1319DDFB7B679B"
+                  },
+                  {
+                      "path":  "scripts/check_model_compatibility.py",
+                      "size_bytes":  39960,
+                      "last_write_time":  "2026-11-25T02:29:25",
+                      "git_tracked":  true,
+                      "sha256":  "5B68EAE47B15355B27F35D1E5FF53E1530F6C7BCFE3932800FF60E51D55D53D2"
+                  },
+                  {
+                      "path":  "scripts/verify_env_and_notebook.py",
+                      "size_bytes":  6305,
+                      "last_write_time":  "2026-11-25T02:29:25",
+                      "git_tracked":  true,
+                      "sha256":  "520763E0EA02B61AB47E3BDF585A7D438A8F4C54A51609131A1CADDDE89F308C"
+                  },
+                  {
+                      "path":  "src/data/.gitkeep",
+                      "size_bytes":  0,
+                      "last_write_time":  "2026-11-25T02:29:25",
+                      "git_tracked":  true,
+                      "sha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "path":  "src/evaluation/.gitkeep",
+                      "size_bytes":  0,
+                      "last_write_time":  "2026-11-25T02:29:25",
+                      "git_tracked":  true,
+                      "sha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "path":  "src/features/.gitkeep",
+                      "size_bytes":  0,
+                      "last_write_time":  "2026-11-25T02:29:25",
+                      "git_tracked":  true,
+                      "sha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "path":  "src/models/.gitkeep",
+                      "size_bytes":  0,
+                      "last_write_time":  "2026-11-25T02:29:25",
+                      "git_tracked":  true,
+                      "sha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "path":  "tests/.gitkeep",
+                      "size_bytes":  0,
+                      "last_write_time":  "2026-11-25T02:29:25",
+                      "git_tracked":  true,
+                      "sha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  }
+              ]
+}

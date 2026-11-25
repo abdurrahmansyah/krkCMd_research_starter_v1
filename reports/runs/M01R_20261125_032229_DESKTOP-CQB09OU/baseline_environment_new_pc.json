@@ -1,0 +1,116 @@
+{
+  "run_id": "M01R_20261125_032229_DESKTOP-CQB09OU",
+  "reconstruction_mode": "Exact historical environment reconstruction (constrained to old .venv package versions; pip left at 24.0, setuptools not installed)",
+  "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv\\Scripts\\python.exe",
+  "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26100-SP0",
+  "architecture": "AMD64",
+  "pip_check_returncode": 0,
+  "pip_check_output": "No broken requirements found.",
+  "verified_imports": {
+    "numpy": {
+      "import_ok": true,
+      "module": "numpy",
+      "version": "2.4.6"
+    },
+    "pandas": {
+      "import_ok": true,
+      "module": "pandas",
+      "version": "2.3.3"
+    },
+    "scipy": {
+      "import_ok": true,
+      "module": "scipy",
+      "version": "1.17.1"
+    },
+    "scikit-learn": {
+      "import_ok": true,
+      "module": "sklearn",
+      "version": "1.9.1"
+    },
+    "matplotlib": {
+      "import_ok": true,
+      "module": "matplotlib",
+      "version": "3.11.2"
+    },
+    "seaborn": {
+      "import_ok": true,
+      "module": "seaborn",
+      "version": "0.13.2"
+    },
+    "joblib": {
+      "import_ok": true,
+      "module": "joblib",
+      "version": "1.6.0"
+    },
+    "PyYAML": {
+      "import_ok": true,
+      "module": "yaml",
+      "version": "6.0.4"
+    },
+    "openpyxl": {
+      "import_ok": true,
+      "module": "openpyxl",
+      "version": "3.1.5"
+    },
+    "pypdf": {
+      "import_ok": true,
+      "module": "pypdf",
+      "version": "7.1.1"
+    },
+    "ipykernel": {
+      "import_ok": true,
+      "module": "ipykernel",
+      "version": "6.31.0"
+    },
+    "jupyter": {
+      "import_ok": true,
+      "module": "jupyter_core",
+      "version": "5.9.1"
+    },
+    "jupyterlab": {
+      "import_ok": true,
+      "module": "jupyterlab",
+      "version": "4.6.6"
+    },
+    "notebook": {
+      "import_ok": true,
+      "module": "notebook",
+      "version": "7.6.5"
+    },
+    "nbformat": {
+      "import_ok": true,
+      "module": "nbformat",
+      "version": "5.11.1"
+    },
+    "nbconvert": {
+      "import_ok": true,
+      "module": "nbconvert",
+      "version": "7.17.2"
+    },
+    "nbclient": {
+      "import_ok": true,
+      "module": "nbclient",
+      "version": "0.11.0"
+    },
+    "psutil": {
+      "import_ok": true,
+      "module": "psutil",
+      "version": "7.2.2"
+    }
+  },
+  "historical_package_count": 114,
+  "new_pc_package_count": 112,
+  "package_differences_vs_historical": [
+    {
+      "package": "pip",
+      "historical": "26.3",
+      "new_pc": null
+    },
+    {
+      "package": "setuptools",
+      "historical": "65.5.0",
+      "new_pc": null
+    }
+  ]
+}

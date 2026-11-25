@@ -31,3 +31,13 @@
 - Context: Evaluated 32 candidate models across 6 paradigms for potential extension of Idea 1 (benchmark) and Idea 2 (robustness).
 - Outcome: 8 models passed L0/L1 smoke testing in existing .venv; 12 static reviews completed; 7 conditional constraints identified; 5 custom designs cataloged.
 - Strict Constraint: No model is approved for new experimental training until resource budgets, environment plans, and selection criteria receive explicit user authorization. Previous decisions D-001 through D-004 remain fully in force.
+
+## D-006 — New Workstation Migration & Reproduction Environment Governance (2026-11-25)
+- Status: PROPOSED (ADMINISTRATIVE; M01-R MIGRATION & M00 REPRODUCTION VERIFIED)
+- Context: Project migrated to workstation `DESKTOP-CQB09OU` (Intel Core i9-10900KF, 127.92 GB RAM, Quadro RTX 6000 24 GB VRAM, 1,752.80 GB free C:).
+- Administrative Record:
+  - Python 3.11.9 (64-bit) installed with researcher authorization; copied `.venv` preserved as `.venv_old_pc_backup`; clean `.venv` rebuilt with exact historical package pins (`reports/runs/M01R_20261125_032229_DESKTOP-CQB09OU/requirements_baseline_new_pc.freeze.txt`).
+  - Dedicated Jupyter kernel registered as `krkcmd-research-newpc` (`Python (krkCMd Research - New PC)`).
+  - M00 baseline notebook reproduced identically in isolated workspace (`max_abs_diff <= 2.27e-13` µm across all 3,822 test predictions).
+  - Updated environment budget proposal recorded in `reports/runs/M01R_20261125_032229_DESKTOP-CQB09OU/MODEL_ENVIRONMENT_PLAN_NEW_PC.md`.
+- Strict Constraint: D-001 through D-004 and exploratory D-005 remain unmodified. No M01.1 edits, M02 environment installations, L2 tests, or new model training are authorized without separate researcher approval.

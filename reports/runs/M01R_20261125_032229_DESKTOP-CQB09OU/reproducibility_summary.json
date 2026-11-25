@@ -1,0 +1,93 @@
+{
+  "run_id": "M01R_20261125_032229_DESKTOP-CQB09OU",
+  "manifest_exact_equal": true,
+  "run_summary_exact_equal": true,
+  "selected_model_old": "ExtraTrees",
+  "selected_model_new": "ExtraTrees",
+  "per_row_prediction_comparison": {
+    "Dummy_mean": {
+      "n_rows": 3822,
+      "y_true_identical": true,
+      "max_abs_diff_um": 0.0,
+      "mean_abs_diff_um": 0.0,
+      "exact_bitwise_equal": true,
+      "allclose_1e_9": true,
+      "allclose_1e_4": true
+    },
+    "ExtraTrees": {
+      "n_rows": 3822,
+      "y_true_identical": true,
+      "max_abs_diff_um": 1.7053025658242404e-13,
+      "mean_abs_diff_um": 8.673188918617336e-15,
+      "exact_bitwise_equal": false,
+      "allclose_1e_9": true,
+      "allclose_1e_4": true
+    },
+    "HistGradientBoosting": {
+      "n_rows": 3822,
+      "y_true_identical": true,
+      "max_abs_diff_um": 0.0,
+      "mean_abs_diff_um": 0.0,
+      "exact_bitwise_equal": true,
+      "allclose_1e_9": true,
+      "allclose_1e_4": true
+    },
+    "LinearRegression": {
+      "n_rows": 3822,
+      "y_true_identical": true,
+      "max_abs_diff_um": 0.0,
+      "mean_abs_diff_um": 0.0,
+      "exact_bitwise_equal": true,
+      "allclose_1e_9": true,
+      "allclose_1e_4": true
+    },
+    "RandomForest": {
+      "n_rows": 3822,
+      "y_true_identical": true,
+      "max_abs_diff_um": 2.2737367544323206e-13,
+      "mean_abs_diff_um": 9.618999009716109e-15,
+      "exact_bitwise_equal": false,
+      "allclose_1e_9": true,
+      "allclose_1e_4": true
+    },
+    "SVR_RBF": {
+      "n_rows": 3822,
+      "y_true_identical": true,
+      "max_abs_diff_um": 0.0,
+      "mean_abs_diff_um": 0.0,
+      "exact_bitwise_equal": true,
+      "allclose_1e_9": true,
+      "allclose_1e_4": true
+    }
+  },
+  "threadpool_info": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 20,
+      "prefix": "libscipy_openblas",
+      "filepath": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-63c857e738469261263c764a36be9436.dll",
+      "version": "0.3.31.188.0",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 20,
+      "prefix": "vcomp",
+      "filepath": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv\\Lib\\site-packages\\sklearn\\.libs\\vcomp140.dll",
+      "version": null
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 20,
+      "prefix": "libscipy_openblas",
+      "filepath": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv\\Lib\\site-packages\\scipy.libs\\libscipy_openblas-64eda39e79589aedb16f58e5547eb599.dll",
+      "version": "0.3.30",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    }
+  ]
+}

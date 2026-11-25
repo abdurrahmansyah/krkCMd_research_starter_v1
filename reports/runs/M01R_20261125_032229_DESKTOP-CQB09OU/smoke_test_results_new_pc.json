@@ -1,0 +1,180 @@
+{
+  "run_id": "M01R_20261125_032229_DESKTOP-CQB09OU",
+  "synthetic_data_only": true,
+  "seed": 42,
+  "n_train": 100,
+  "n_test": 20,
+  "n_features": 501,
+  "results": {
+    "ML01": {
+      "id": "ML01",
+      "name": "Extra Trees",
+      "estimator_tested": "ExtraTreesRegressor(n_estimators=10, random_state=42)",
+      "package": "scikit-learn",
+      "package_version": "1.9.1",
+      "l0_import": true,
+      "l1_fit_predict": true,
+      "n_features": 501,
+      "pred_shape": [
+        20
+      ],
+      "all_finite": true,
+      "min_pred": 38.36059169769287,
+      "max_pred": 303.9744842529297,
+      "negative_pred_count": 0,
+      "duration_sec": 0.0644,
+      "warnings_count": 0,
+      "warnings_sample": [],
+      "status": "SMOKE_TEST_PASS"
+    },
+    "ML02": {
+      "id": "ML02",
+      "name": "Random Forest",
+      "estimator_tested": "RandomForestRegressor(n_estimators=10, random_state=42)",
+      "package": "scikit-learn",
+      "package_version": "1.9.1",
+      "l0_import": true,
+      "l1_fit_predict": true,
+      "n_features": 501,
+      "pred_shape": [
+        20
+      ],
+      "all_finite": true,
+      "min_pred": 68.36097621917725,
+      "max_pred": 304.39964294433594,
+      "negative_pred_count": 0,
+      "duration_sec": 0.0632,
+      "warnings_count": 0,
+      "warnings_sample": [],
+      "status": "SMOKE_TEST_PASS"
+    },
+    "ML03": {
+      "id": "ML03",
+      "name": "HistGradientBoosting",
+      "estimator_tested": "HistGradientBoostingRegressor(max_iter=20, random_state=42)",
+      "package": "scikit-learn",
+      "package_version": "1.9.1",
+      "l0_import": true,
+      "l1_fit_predict": true,
+      "n_features": 501,
+      "pred_shape": [
+        20
+      ],
+      "all_finite": true,
+      "min_pred": 76.74960338482897,
+      "max_pred": 289.32595720079223,
+      "negative_pred_count": 0,
+      "duration_sec": 0.1207,
+      "warnings_count": 0,
+      "warnings_sample": [],
+      "status": "SMOKE_TEST_PASS"
+    },
+    "ML07": {
+      "id": "ML07",
+      "name": "SVR RBF",
+      "estimator_tested": "make_pipeline(StandardScaler(), SVR(C=10.0, epsilon=0.1, kernel='rbf'))",
+      "package": "scikit-learn",
+      "package_version": "1.9.1",
+      "l0_import": true,
+      "l1_fit_predict": true,
+      "n_features": 501,
+      "pred_shape": [
+        20
+      ],
+      "all_finite": true,
+      "min_pred": 92.198858735412,
+      "max_pred": 275.9287899195432,
+      "negative_pred_count": 0,
+      "duration_sec": 0.0054,
+      "warnings_count": 0,
+      "warnings_sample": [],
+      "status": "SMOKE_TEST_PASS"
+    },
+    "DL01": {
+      "id": "DL01",
+      "name": "MLP (sklearn prototype; distinct from future PyTorch MLP)",
+      "estimator_tested": "make_pipeline(StandardScaler(), MLPRegressor(hidden_layer_sizes=(64,32), max_iter=20, random_state=42))",
+      "package": "scikit-learn",
+      "package_version": "1.9.1",
+      "l0_import": true,
+      "l1_fit_predict": true,
+      "n_features": 501,
+      "pred_shape": [
+        20
+      ],
+      "all_finite": true,
+      "min_pred": 3.7708868980407715,
+      "max_pred": 58.36720657348633,
+      "negative_pred_count": 0,
+      "duration_sec": 0.0241,
+      "warnings_count": 1,
+      "warnings_sample": [
+        "Stochastic Optimizer: Maximum iterations (20) reached and the optimization hasn't converged yet."
+      ],
+      "status": "SMOKE_TEST_PASS"
+    },
+    "RF01": {
+      "id": "RF01",
+      "name": "Dummy Mean",
+      "estimator_tested": "DummyRegressor(strategy='mean')",
+      "package": "scikit-learn",
+      "package_version": "1.9.1",
+      "l0_import": true,
+      "l1_fit_predict": true,
+      "n_features": 501,
+      "pred_shape": [
+        20
+      ],
+      "all_finite": true,
+      "min_pred": 186.7072296142578,
+      "max_pred": 186.7072296142578,
+      "negative_pred_count": 0,
+      "duration_sec": 0.0003,
+      "warnings_count": 0,
+      "warnings_sample": [],
+      "status": "SMOKE_TEST_PASS"
+    },
+    "RF02": {
+      "id": "RF02",
+      "name": "Linear Regression",
+      "estimator_tested": "make_pipeline(StandardScaler(), LinearRegression())",
+      "package": "scikit-learn",
+      "package_version": "1.9.1",
+      "l0_import": true,
+      "l1_fit_predict": true,
+      "n_features": 501,
+      "pred_shape": [
+        20
+      ],
+      "all_finite": true,
+      "min_pred": 77.06861114501953,
+      "max_pred": 414.56024169921875,
+      "negative_pred_count": 0,
+      "duration_sec": 0.0134,
+      "warnings_count": 0,
+      "warnings_sample": [],
+      "status": "SMOKE_TEST_PASS"
+    },
+    "RF03": {
+      "id": "RF03",
+      "name": "AED Original (simplified prototype; equivalence to CrackWidthAED_VBA.txt NOT established)",
+      "estimator_tested": "Simplified single-profile minimum-width heuristic prototype (not multi-stage VBA port)",
+      "package": "numpy/scipy",
+      "package_version": "numpy 2.4.6, scipy 1.17.1",
+      "l0_import": true,
+      "l1_fit_predict": true,
+      "n_features": 501,
+      "pred_shape": [
+        20
+      ],
+      "all_finite": true,
+      "min_pred": 3.96875,
+      "max_pred": 43.65625,
+      "negative_pred_count": 0,
+      "duration_sec": 0.0002,
+      "warnings_count": 0,
+      "warnings_sample": [],
+      "status": "SMOKE_TEST_PASS"
+    }
+  }
+}

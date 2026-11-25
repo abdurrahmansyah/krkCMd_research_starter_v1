@@ -1,5 +1,7 @@
 .venv/
 venv/
+.venv_old_pc_backup/
+venv_old_pc_backup/
 __pycache__/
 .ipynb_checkpoints/
 *.py[cod]
@@ -22,5 +24,6 @@ reports/tables/*
 !reports/tables/.gitkeep
 reports/logs/*
 !reports/logs/.gitkeep
+reports/runs/*/isolated_workspace
 papers/*.pdf
 !papers/.gitkeep

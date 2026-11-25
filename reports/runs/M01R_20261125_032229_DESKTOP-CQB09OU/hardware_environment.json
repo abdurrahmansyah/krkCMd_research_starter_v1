@@ -1,0 +1,82 @@
+﻿{
+    "run_id":  "M01R_20261125_032229_DESKTOP-CQB09OU",
+    "timestamp":  "2026-11-25T03:22:29+00:00",
+    "hostname":  "DESKTOP-CQB09OU",
+    "username":  "Nur Ridho A",
+    "os":  {
+               "product_name_registry":  "Windows 10 Pro",
+               "edition_id":  "Professional",
+               "display_version":  "24H2",
+               "build":  "26100.9711",
+               "architecture":  "AMD64",
+               "powershell_version":  "5.1.26100.9711",
+               "git_version":  "git version 2.56.1.windows.1",
+               "is_admin":  false,
+               "workspace_path":  "C:\\PROJECT\\krkCMd_research_starter_v1"
+           },
+    "cpu":  {
+                "model":  "Intel(R) Core(TM) i9-10900KF CPU @ 3.70GHz",
+                "identifier":  "Intel64 Family 6 Model 165 Stepping 5",
+                "nominal_mhz":  3696,
+                "physical_cores_note":  "10 (Intel Core i9-10900KF specification; WMI/CIM unavailable in sandbox)",
+                "logical_cores":  20,
+                "features":  {
+                                 "sse2":  true,
+                                 "sse3":  true,
+                                 "avx":  true,
+                                 "avx2":  true,
+                                 "avx512f":  false
+                             }
+            },
+    "memory_gb":  {
+                      "total_physical":  127.92,
+                      "available_physical":  113.36,
+                      "used_physical":  14.56,
+                      "percent_used":  11,
+                      "total_pagefile":  144.92,
+                      "available_pagefile":  128.73
+                  },
+    "storage":  {
+                    "workspace_drive":  "C:",
+                    "volumes":  [
+                                    {
+                                        "drive":  "C:",
+                                        "filesystem":  "NTFS",
+                                        "total_gb":  1906.74,
+                                        "free_gb":  1752.8,
+                                        "used_gb":  153.94
+                                    }
+                                ]
+                },
+    "gpu":  {
+                "gpu_count":  1,
+                "multi_gpu":  false,
+                "cuda_version_reported_by_driver":  "13.5",
+                "cuda_toolkit_installed":  false,
+                "cuda_computation_verified":  false,
+                "devices":  [
+                                {
+                                    "index":  0,
+                                    "name":  "Quadro RTX 6000",
+                                    "driver_version":  "621.24",
+                                    "vram_total_mb":  24576,
+                                    "vram_free_mb":  22974,
+                                    "vram_used_mb":  1282,
+                                    "compute_capability":  "7.5",
+                                    "pci_bus_id":  "00000000:01:00.0"
+                                }
+                            ]
+            },
+    "optional_software":  {
+                              "python_311_installed":  false,
+                              "py_launcher_present":  false,
+                              "python_search_note":  "No Python 3.11 or other Python runtime installed; WindowsApps stub only; copied .venv points to C:\\Users\\NurRidhoA\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+                              "vscode_installed":  false,
+                              "jupyter_available":  false,
+                              "matlab_installed":  false,
+                              "matlab_deep_learning_toolbox_present":  false,
+                              "matlab_license_verified":  false,
+                              "wsl2_installed":  false,
+                              "docker_installed":  false
+                          }
+}

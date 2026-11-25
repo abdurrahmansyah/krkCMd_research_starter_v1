@@ -1,0 +1,458 @@
+﻿[
+    {
+        "Name":  "anyio",
+        "Version":  "4.16.0"
+    },
+    {
+        "Name":  "argon2-cffi",
+        "Version":  "25.1.0"
+    },
+    {
+        "Name":  "argon2-cffi-bindings",
+        "Version":  "26.2.0"
+    },
+    {
+        "Name":  "arrow",
+        "Version":  "1.4.0"
+    },
+    {
+        "Name":  "asttokens",
+        "Version":  "3.0.2"
+    },
+    {
+        "Name":  "async-lru",
+        "Version":  "2.4.0"
+    },
+    {
+        "Name":  "attrs",
+        "Version":  "26.1.0"
+    },
+    {
+        "Name":  "babel",
+        "Version":  "2.18.0"
+    },
+    {
+        "Name":  "beautifulsoup4",
+        "Version":  "4.15.0"
+    },
+    {
+        "Name":  "bleach",
+        "Version":  "6.4.0"
+    },
+    {
+        "Name":  "certifi",
+        "Version":  "2026.11.20"
+    },
+    {
+        "Name":  "cffi",
+        "Version":  "2.1.1"
+    },
+    {
+        "Name":  "charset-normalizer",
+        "Version":  "3.5.3"
+    },
+    {
+        "Name":  "cloudpickle",
+        "Version":  "3.1.3"
+    },
+    {
+        "Name":  "colorama",
+        "Version":  "0.4.6"
+    },
+    {
+        "Name":  "comm",
+        "Version":  "0.2.3"
+    },
+    {
+        "Name":  "contourpy",
+        "Version":  "1.3.3"
+    },
+    {
+        "Name":  "cycler",
+        "Version":  "0.12.1"
+    },
+    {
+        "Name":  "debugpy",
+        "Version":  "1.8.22"
+    },
+    {
+        "Name":  "defusedxml",
+        "Version":  "0.7.1"
+    },
+    {
+        "Name":  "et_xmlfile",
+        "Version":  "2.0.0"
+    },
+    {
+        "Name":  "executing",
+        "Version":  "2.3.0"
+    },
+    {
+        "Name":  "fastjsonschema",
+        "Version":  "2.22.3"
+    },
+    {
+        "Name":  "fonttools",
+        "Version":  "4.68.0"
+    },
+    {
+        "Name":  "fqdn",
+        "Version":  "1.6.0"
+    },
+    {
+        "Name":  "h11",
+        "Version":  "0.16.0"
+    },
+    {
+        "Name":  "httpcore",
+        "Version":  "1.0.9"
+    },
+    {
+        "Name":  "httpx",
+        "Version":  "0.28.1"
+    },
+    {
+        "Name":  "idna",
+        "Version":  "3.20"
+    },
+    {
+        "Name":  "ipykernel",
+        "Version":  "6.31.0"
+    },
+    {
+        "Name":  "ipython",
+        "Version":  "9.19.1"
+    },
+    {
+        "Name":  "ipython_pygments_lexers",
+        "Version":  "1.1.1"
+    },
+    {
+        "Name":  "isoduration",
+        "Version":  "20.11.0"
+    },
+    {
+        "Name":  "jedi",
+        "Version":  "0.20.1"
+    },
+    {
+        "Name":  "Jinja2",
+        "Version":  "3.1.6"
+    },
+    {
+        "Name":  "joblib",
+        "Version":  "1.6.0"
+    },
+    {
+        "Name":  "json5",
+        "Version":  "0.17.3"
+    },
+    {
+        "Name":  "jsonpointer",
+        "Version":  "3.12"
+    },
+    {
+        "Name":  "jsonschema",
+        "Version":  "4.26.0"
+    },
+    {
+        "Name":  "jsonschema-specifications",
+        "Version":  "2025.9.1"
+    },
+    {
+        "Name":  "jupyter_builder",
+        "Version":  "1.3.0"
+    },
+    {
+        "Name":  "jupyter_client",
+        "Version":  "8.10.0"
+    },
+    {
+        "Name":  "jupyter_core",
+        "Version":  "5.9.1"
+    },
+    {
+        "Name":  "jupyter_server",
+        "Version":  "2.21.1"
+    },
+    {
+        "Name":  "jupyter_server_terminals",
+        "Version":  "0.5.4"
+    },
+    {
+        "Name":  "jupyter-events",
+        "Version":  "0.12.1"
+    },
+    {
+        "Name":  "jupyterlab",
+        "Version":  "4.6.6"
+    },
+    {
+        "Name":  "jupyterlab_pygments",
+        "Version":  "0.3.0"
+    },
+    {
+        "Name":  "jupyterlab_server",
+        "Version":  "2.28.1"
+    },
+    {
+        "Name":  "jupyter-lsp",
+        "Version":  "2.3.1"
+    },
+    {
+        "Name":  "kiwisolver",
+        "Version":  "1.5.1"
+    },
+    {
+        "Name":  "lark",
+        "Version":  "1.3.1"
+    },
+    {
+        "Name":  "MarkupSafe",
+        "Version":  "3.0.4"
+    },
+    {
+        "Name":  "matplotlib",
+        "Version":  "3.11.2"
+    },
+    {
+        "Name":  "matplotlib-inline",
+        "Version":  "0.2.2"
+    },
+    {
+        "Name":  "mistune",
+        "Version":  "3.4.0"
+    },
+    {
+        "Name":  "narwhals",
+        "Version":  "2.29.0"
+    },
+    {
+        "Name":  "nbclient",
+        "Version":  "0.11.0"
+    },
+    {
+        "Name":  "nbconvert",
+        "Version":  "7.17.2"
+    },
+    {
+        "Name":  "nbformat",
+        "Version":  "5.11.1"
+    },
+    {
+        "Name":  "nest-asyncio",
+        "Version":  "1.6.0"
+    },
+    {
+        "Name":  "notebook",
+        "Version":  "7.6.5"
+    },
+    {
+        "Name":  "notebook_shim",
+        "Version":  "0.2.4"
+    },
+    {
+        "Name":  "numpy",
+        "Version":  "2.4.6"
+    },
+    {
+        "Name":  "openpyxl",
+        "Version":  "3.1.5"
+    },
+    {
+        "Name":  "overrides",
+        "Version":  "7.7.0"
+    },
+    {
+        "Name":  "packaging",
+        "Version":  "26.3"
+    },
+    {
+        "Name":  "pandas",
+        "Version":  "2.3.3"
+    },
+    {
+        "Name":  "pandocfilters",
+        "Version":  "1.5.1"
+    },
+    {
+        "Name":  "parso",
+        "Version":  "0.8.7"
+    },
+    {
+        "Name":  "pillow",
+        "Version":  "13.0.0"
+    },
+    {
+        "Name":  "pip",
+        "Version":  "26.3"
+    },
+    {
+        "Name":  "platformdirs",
+        "Version":  "4.14.8"
+    },
+    {
+        "Name":  "prometheus_client",
+        "Version":  "0.26.0"
+    },
+    {
+        "Name":  "prompt_toolkit",
+        "Version":  "3.0.53"
+    },
+    {
+        "Name":  "psutil",
+        "Version":  "7.2.2"
+    },
+    {
+        "Name":  "pure_eval",
+        "Version":  "0.2.4"
+    },
+    {
+        "Name":  "pycparser",
+        "Version":  "3.12"
+    },
+    {
+        "Name":  "Pygments",
+        "Version":  "2.21.0"
+    },
+    {
+        "Name":  "pyparsing",
+        "Version":  "3.3.3"
+    },
+    {
+        "Name":  "pypdf",
+        "Version":  "7.1.1"
+    },
+    {
+        "Name":  "python-dateutil",
+        "Version":  "4.0.0"
+    },
+    {
+        "Name":  "python-json-logger",
+        "Version":  "4.2.0"
+    },
+    {
+        "Name":  "pytz",
+        "Version":  "2026.6"
+    },
+    {
+        "Name":  "pywinpty",
+        "Version":  "3.1.2"
+    },
+    {
+        "Name":  "PyYAML",
+        "Version":  "6.0.4"
+    },
+    {
+        "Name":  "pyzmq",
+        "Version":  "27.3.0"
+    },
+    {
+        "Name":  "referencing",
+        "Version":  "0.37.0"
+    },
+    {
+        "Name":  "requests",
+        "Version":  "2.34.2"
+    },
+    {
+        "Name":  "rfc3339-validator",
+        "Version":  "0.1.4"
+    },
+    {
+        "Name":  "rfc3986-validator",
+        "Version":  "0.1.1"
+    },
+    {
+        "Name":  "rfc3987-syntax",
+        "Version":  "1.1.0"
+    },
+    {
+        "Name":  "rpds-py",
+        "Version":  "2026.9.1"
+    },
+    {
+        "Name":  "scikit-learn",
+        "Version":  "1.9.1"
+    },
+    {
+        "Name":  "scipy",
+        "Version":  "1.17.1"
+    },
+    {
+        "Name":  "seaborn",
+        "Version":  "0.13.2"
+    },
+    {
+        "Name":  "Send2Trash",
+        "Version":  "2.2.0"
+    },
+    {
+        "Name":  "setuptools",
+        "Version":  "65.5.0"
+    },
+    {
+        "Name":  "six",
+        "Version":  "1.17.0"
+    },
+    {
+        "Name":  "soupsieve",
+        "Version":  "4.1.3"
+    },
+    {
+        "Name":  "stack-data",
+        "Version":  "0.6.3"
+    },
+    {
+        "Name":  "terminado",
+        "Version":  "0.18.1"
+    },
+    {
+        "Name":  "threadpoolctl",
+        "Version":  "3.8.0"
+    },
+    {
+        "Name":  "tinycss2",
+        "Version":  "1.5.1"
+    },
+    {
+        "Name":  "tornado",
+        "Version":  "6.6.1"
+    },
+    {
+        "Name":  "traitlets",
+        "Version":  "5.16.1"
+    },
+    {
+        "Name":  "typing_extensions",
+        "Version":  "4.16.0"
+    },
+    {
+        "Name":  "tzdata",
+        "Version":  "2026.6"
+    },
+    {
+        "Name":  "uri-template",
+        "Version":  "1.3.0"
+    },
+    {
+        "Name":  "urllib3",
+        "Version":  "2.8.0"
+    },
+    {
+        "Name":  "wcwidth",
+        "Version":  "0.9.5"
+    },
+    {
+        "Name":  "webcolors",
+        "Version":  "25.10.0"
+    },
+    {
+        "Name":  "webencodings",
+        "Version":  "0.6.1"
+    },
+    {
+        "Name":  "websocket-client",
+        "Version":  "1.9.2"
+    }
+]

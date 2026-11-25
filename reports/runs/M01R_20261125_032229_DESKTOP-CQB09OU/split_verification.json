@@ -1,0 +1,65 @@
+{
+  "run_id": "M01R_20261125_032229_DESKTOP-CQB09OU",
+  "historical_manifest_rows": 19098,
+  "historical_partition_counts": {
+    "train": {
+      "rows": 12216,
+      "groups": 2036
+    },
+    "validation": {
+      "rows": 3060,
+      "groups": 510
+    },
+    "test": {
+      "rows": 3822,
+      "groups": 637
+    }
+  },
+  "regenerated_partition_counts": {
+    "train": {
+      "rows": 12216,
+      "groups": 2036
+    },
+    "validation": {
+      "rows": 3060,
+      "groups": 510
+    },
+    "test": {
+      "rows": 3822,
+      "groups": 637
+    }
+  },
+  "unique_source_row_id": true,
+  "full_row_coverage": true,
+  "pairwise_group_overlaps": {
+    "train_val": 0,
+    "train_test": 0,
+    "val_test": 0
+  },
+  "group_id_matches_csv": true,
+  "all_groups_have_stages_1_to_6": true,
+  "exact_row_by_row_match_sorted": true,
+  "exact_row_and_order_match": true,
+  "series_distribution_by_split": {
+    "CMd_0.23_20mths": {
+      "test": 1308,
+      "train": 3738,
+      "validation": 798
+    },
+    "CMd_0.23_2mths": {
+      "test": 780,
+      "train": 2436,
+      "validation": 720
+    },
+    "CMd_0.28_20mths": {
+      "test": 402,
+      "train": 1500,
+      "validation": 390
+    },
+    "CMd_0.28_2mths": {
+      "test": 1332,
+      "train": 4542,
+      "validation": 1152
+    }
+  }
+}

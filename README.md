@@ -51,3 +51,14 @@ Pilih kernel `Python (krkCMd Research)`. Pastikan notebook dijalankan dari proje
 - Jangan ekstrak `krkCMd_images.zip` untuk eksperimen CSV awal.
 - Notebook memeriksa schema dan membuat audit awal. Group split yang dipakai masih harus dikonfirmasi terhadap dokumentasi/scripts.
 - Hasil notebook adalah hasil eksperimen lokal Anda, bukan angka dari paper.
+
+## Catatan Migrasi Workstation Baru (M01-R)
+
+Pada workstation baru (`DESKTOP-CQB09OU`), environment baseline `.venv` telah dibangun ulang menggunakan **Python 3.11.9 (64-bit)** dengan pin versi historis yang terverifikasi pada `reports/runs/M01R_20261125_032229_DESKTOP-CQB09OU/requirements_baseline_new_pc.freeze.txt` (salinan `.venv` PC lama disimpan sebagai `.venv_old_pc_backup`).
+
+- **Kernel Jupyter baru:** `krkcmd-research-newpc` (`Python (krkCMd Research - New PC)`)
+  ```powershell
+  .\.venv\Scripts\python.exe -m ipykernel install --user --name krkcmd-research-newpc --display-name "Python (krkCMd Research - New PC)"
+  ```
+- **Catatan `scripts/verify_env_and_notebook.py`:** Skrip verifikasi historis memeriksa nama kernel lama `krkcmd-research` secara hardcoded; pada workstation baru gunakan kernel `krkcmd-research-newpc` hingga pembaruan M01.1 disetujui.
+- **Laporan migrasi & reproduksi:** Lihat `reports/runs/M01R_20261125_032229_DESKTOP-CQB09OU/M01_R_MIGRATION_REPORT.md`.

@@ -1,0 +1,164 @@
+{
+  "run_id": "M01R_20261125_032229_DESKTOP-CQB09OU",
+  "csv_path": "data/raw/krkCMd_table.csv",
+  "csv_sha256": "CCCA7965B225F77D35567573BB557A6E0476122C381E14AB1BDA898DF9F9B909",
+  "audit_exact_match_with_historical": true,
+  "new_audit_summary": {
+    "dataset_path": "data\\raw\\krkCMd_table.csv",
+    "n_rows": 19098,
+    "n_cols": 510,
+    "expected_cols": 510,
+    "total_missing_cells": 0,
+    "duplicate_rows": 0,
+    "schema": {
+      "required_metadata": [
+        "No",
+        "Profile",
+        "Series",
+        "Image",
+        "Gridline",
+        "Stage"
+      ],
+      "metadata_found": true,
+      "actual_feature_count": 501,
+      "expected_feature_count": 501,
+      "features_in_order": true,
+      "target_column": "MANwidth",
+      "baseline_columns": [
+        "DLMwidth",
+        "AEDwidth"
+      ]
+    },
+    "group_validation": {
+      "group_key": [
+        "Series",
+        "Image",
+        "Gridline"
+      ],
+      "n_unique_groups": 3183,
+      "min_group_size": 6,
+      "max_group_size": 6,
+      "all_groups_have_6_observations": true,
+      "all_groups_have_stages_1_to_6": true,
+      "expected_rows_check": true
+    },
+    "target_stats": {
+      "name": "MANwidth",
+      "count": 19098,
+      "min": 0.0,
+      "max": 813.5938,
+      "mean": 148.87550550319403,
+      "median": 119.0625,
+      "std": 141.78857980773932
+    },
+    "baseline_stats": {
+      "DLMwidth": {
+        "count": 19098,
+        "min": 0.0,
+        "max": 651.5065,
+        "mean": 147.71744034777547,
+        "std": 137.1472738892249
+      },
+      "AEDwidth": {
+        "count": 19098,
+        "min": 0.0,
+        "max": 992.1875,
+        "mean": 125.63115754267463,
+        "std": 125.0244024183881
+      }
+    },
+    "features_stats": {
+      "min_intensity": 0.0,
+      "max_intensity": 255.0,
+      "missing_values": 0
+    },
+    "metadata_summary": {
+      "No": {
+        "unique_count": 19098,
+        "null_count": 0,
+        "top_values": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1,
+          "9": 1,
+          "10": 1
+        }
+      },
+      "Profile": {
+        "unique_count": 19098,
+        "null_count": 0,
+        "top_values": {
+          "CMd_0.28_2mths_Image6_Gridline1786-1400_Stage1": 1,
+          "CMd_0.28_2mths_Image6_Gridline1786-1400_Stage2": 1,
+          "CMd_0.28_2mths_Image6_Gridline1786-1400_Stage3": 1,
+          "CMd_0.28_2mths_Image6_Gridline1786-1400_Stage4": 1,
+          "CMd_0.28_2mths_Image6_Gridline1786-1400_Stage5": 1,
+          "CMd_0.28_2mths_Image6_Gridline1786-1400_Stage6": 1,
+          "CMd_0.28_2mths_Image6_Gridline1786-1500_Stage1": 1,
+          "CMd_0.28_2mths_Image6_Gridline1786-1500_Stage2": 1,
+          "CMd_0.28_2mths_Image6_Gridline1786-1500_Stage3": 1,
+          "CMd_0.28_2mths_Image6_Gridline1786-1500_Stage4": 1
+        }
+      },
+      "Series": {
+        "unique_count": 4,
+        "null_count": 0,
+        "top_values": {
+          "CMd_0.28_2mths": 7026,
+          "CMd_0.23_20mths": 5844,
+          "CMd_0.23_2mths": 3936,
+          "CMd_0.28_20mths": 2292
+        }
+      },
+      "Image": {
+        "unique_count": 16,
+        "null_count": 0,
+        "top_values": {
+          "1": 2838,
+          "4": 2376,
+          "2": 2184,
+          "3": 1878,
+          "5": 1842,
+          "8": 1758,
+          "7": 1728,
+          "6": 1506,
+          "10": 516,
+          "9": 462
+        }
+      },
+      "Gridline": {
+        "unique_count": 3183,
+        "null_count": 0,
+        "top_values": {
+          "1786-1400": 6,
+          "1786-1500": 6,
+          "1786-1600": 6,
+          "1786-1700": 6,
+          "1819-1300": 6,
+          "1835-1800": 6,
+          "1851-1200": 6,
+          "1852-1900": 6,
+          "1890-2000": 6,
+          "1891-1100": 6
+        }
+      },
+      "Stage": {
+        "unique_count": 6,
+        "null_count": 0,
+        "top_values": {
+          "1": 3183,
+          "2": 3183,
+          "3": 3183,
+          "4": 3183,
+          "5": 3183,
+          "6": 3183
+        }
+      }
+    }
+  }
+}
