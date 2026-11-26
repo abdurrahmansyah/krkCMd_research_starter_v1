@@ -1,0 +1,56 @@
+version: "1.0"
+milestone: "M03"
+primary_selection_metric: "mae_um"
+prohibited_primary_metrics: ["mape"]
+prohibited_reason: "MANwidth contains 4,900 exact zero-width observations (25.66%); MAPE divides by zero."
+
+predictive_accuracy:
+  - {id: "mae_um", unit: "um", direction: "lower_better", primary: true}
+  - {id: "rmse_um", unit: "um", direction: "lower_better", secondary: true}
+  - {id: "mse_um2", unit: "um^2", direction: "lower_better"}
+  - {id: "median_ae_um", unit: "um", direction: "lower_better"}
+  - {id: "r2", unit: "unitless", direction: "higher_better"}
+  - {id: "bias_um", unit: "um", formula: "mean(y_pred - y_true)", ideal: 0.0}
+  - {id: "p90_ae_um", unit: "um", direction: "lower_better"}
+  - {id: "p95_ae_um", unit: "um", direction: "lower_better"}
+  - {id: "max_ae_um", unit: "um", direction: "lower_better"}
+  - {id: "wape", unit: "ratio", zero_denom_guard: "None if sum(|y_true|) == 0"}
+
+measurement_agreement:
+  - {id: "bland_altman_mean_diff_um", unit: "um"}
+  - {id: "bland_altman_loa_lower_um", unit: "um", formula: "mean_diff - 1.96 * sd_diff"}
+  - {id: "bland_altman_loa_upper_um", unit: "um", formula: "mean_diff + 1.96 * sd_diff"}
+  - {id: "lins_ccc", unit: "unitless", direction: "higher_better"}
+  - {id: "pearson_r", unit: "unitless"}
+  - {id: "spearman_rho", unit: "unitless"}
+  - {id: "calibration_slope", unit: "unitless", ideal: 1.0}
+  - {id: "calibration_intercept_um", unit: "um", ideal: 0.0}
+
+engineering_analytical_tolerances:
+  note: "Analytical tolerances, NOT certified structural engineering acceptance thresholds; original pixel step at 6400 dpi is 3.96875 um/px."
+  tolerances_um: [5.0, 10.0, 20.0, 50.0]
+  metrics_per_tolerance: ["within_tol_rate", "exceedance_rate", "severe_underest_rate"]
+
+robustness:
+  - "clean_mae_um"
+  - "mean_corrupted_mae_um"
+  - "worst_condition_mae_um"
+  - "abs_degradation_um"
+  - "rel_degradation"
+  - "prediction_consistency_mad_um"
+  - "mean_tolerance_retention"
+  - "area_under_severity_error_curve"
+
+computational_efficiency:
+  - "init_time_sec"
+  - "checkpoint_load_time_sec"
+  - "fit_or_context_time_sec"
+  - "hpo_wall_sec"
+  - "single_sample_latency_ms"
+  - "batch_inference_time_sec"
+  - "throughput_samples_per_sec"
+  - "peak_rss_mb"
+  - "peak_cuda_allocated_mb"
+  - "peak_cuda_reserved_mb"
+  - "artifact_size_bytes"
+  - "param_count"

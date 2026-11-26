@@ -1,0 +1,13 @@
+id,topic,citation_or_file,doi_or_url,verification_status,relevance_to_krkcmd
+L01,Original DLM & krkCMd,Jakubowski & Tomczak (2024) Constr. Build. Mater. 422 135768,10.1016/j.conbuildmat.2024.135768,LOCAL_PDF_READ,Core reference benchmark (RF04/RF05) and dataset source
+L02,Original AED Method,Tomczak Jakubowski & Fiolek (2017) Stud. Geotech. Mech. 39(4),10.1515/sgem-2017-0017,METADATA_VERIFIED,Core analytical baseline (RF03)
+L03,krkCMd Data Descriptor,Jakubowski & Tomczak (2025) Sci. Data / Zenodo 14568863,10.1038/s41597-025-04485-z,METADATA_VERIFIED,Dataset provenance and multi-stage healing structure
+L04,Calibrated Post-Processing,A Calibrated Post-Processing Layer for Tolerance-Compliant Crack-Width Measurement (2026),https://pmc.ncbi.nlm.nih.gov/articles/PMC13611813/,METADATA_ONLY_NOT_LOCAL,Tolerance calibration & krkCMd external reference
+L05,Tabular Foundation Models,Hollmann et al. (2025) Nature 637:345-353 (TabPFN),10.1038/s41586-024-08328-6,METADATA_VERIFIED,Foundation paradigm (FM01/FM02)
+L06,Tabular Foundation Models,Qu et al. (2025/2026) TabICLv2,https://arxiv.org/abs/2602.11139,README_VERIFIED,Foundation paradigm (FM03)
+L07,Tabular Foundation Models,Ma et al. (2025) TabDPT NeurIPS 2025,https://arxiv.org/abs/2410.18164,README_VERIFIED,Retrieval-based foundation paradigm (FM04)
+L08,Tabular Deep Learning,Gorishniy et al. (2021/2024) FT-Transformer TabR TabM,https://arxiv.org/abs/2410.24210,METADATA_VERIFIED,Deep tabular baselines (DL02 DL04 DL05)
+L09,Signal Regression,Dempster et al. (2020) ROCKET; Tan et al. (2022) MultiRocket,10.1007/s10618-020-00701-z,METADATA_VERIFIED,1D signal convolution baselines (SG05 SG06)
+L10,Grouped CV & Leakage,Roberts et al. (2017) Ecography; Kapoor & Narayanan (2023),10.1111/ecog.02881,METADATA_VERIFIED,Justifies Protocol B Series+Image grouped CV
+L11,Robustness Corruptions,Hendrycks & Dietterich (2019) ICLR,https://mlanthology.org/iclr/2019/hendrycks2019iclr-benchmarking/,METADATA_VERIFIED,Inspiration for Idea 2 corruption taxonomy
+L12,Spectral Preprocessing,Barnes et al. (1989) SNV; Savitzky & Golay (1964),10.1366/0003702894202201,METADATA_VERIFIED,Justifies HY01/HY02 preprocessing designs

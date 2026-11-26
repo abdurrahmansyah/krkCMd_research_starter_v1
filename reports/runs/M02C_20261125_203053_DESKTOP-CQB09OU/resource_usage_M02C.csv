@@ -1,0 +1,20 @@
+model_id,env,stage,status,device_used,checkpoint_load_time_sec,fit_context_time_sec,predict_time_sec,subprocess_wall_sec,peak_rss_mb,peak_cuda_allocated_mb,peak_cuda_reserved_mb,violation_reason
+FM01,.venv-foundation,L0,PASS,cuda:0,,,,6.297,666.75,,,
+FM01,.venv-foundation,L1,BLOCKED_LICENSE,N/A,,,,6.61,674.824,,,
+FM02,.venv-foundation,L0,PASS,cuda:0,,,,6.313,667.0,,,
+FM02,.venv-foundation,L1,BLOCKED_LICENSE,N/A,,,,6.016,674.078,,,
+FM03,.venv-foundation,L0,PASS,cuda:0,,,,4.5,615.121,,,
+FM03,.venv-foundation,L1,PASS,cuda:0,0.0,3.055,0.7649,11.141,1548.223,414.329,524.0,
+FM03,.venv-foundation,L2A,PASS,cuda:0,0.0,3.4724,3.0808,11.141,1446.211,2094.19,2970.0,
+FM03,.venv-foundation,L2B,PASS,cuda:0,0.0,4.7623,10.1333,19.531,1534.266,8306.66,11688.0,
+FM03,.venv-foundation,L2C,FAILED,N/A,,,,13.421,1622.723,,,GPU_VRAM_BUDGET_EXCEEDED (20731.0 MiB > 19527.0 MiB)
+FM04,.venv-foundation,L0,PASS,cuda:0,,,,6.453,1007.5,,,
+FM04,.venv-foundation,L1,PASS,cuda:0,1.5367,0.0894,0.9161,9.891,1612.488,486.056,506.0,
+FM04,.venv-foundation,L2A,PASS,cuda:0,1.5484,0.0995,1.526,7.954,1370.43,486.056,506.0,
+FM04,.venv-foundation,L2B,PASS,cuda:0,1.5428,0.1875,616.6034,623.578,1477.109,8164.267,10816.0,
+FM04,.venv-foundation,L2C,FAILED,N/A,,,,48477.078,1590.344,,,WALL_CLOCK_TIMEOUT (900s)
+DL04,.venv-tabr,L0,PASS,cpu (faiss-cpu IndexFlatL2; faiss-gpu unsupported on Windows),,,,8.031,605.125,,,
+DL04,.venv-tabr,L1,PASS,cpu (faiss-cpu IndexFlatL2; faiss-gpu unsupported on Windows),2.3851,0.1268,0.0019,8.047,710.234,,,
+DL04,.venv-tabr,L2A,PASS,cpu (faiss-cpu IndexFlatL2; faiss-gpu unsupported on Windows),2.3724,0.9819,0.0158,8.656,727.949,,,
+DL04,.venv-tabr,L2B,PASS,cpu (faiss-cpu IndexFlatL2; faiss-gpu unsupported on Windows),2.0022,6.5195,0.0751,13.735,767.605,,,
+DL04,.venv-tabr,L2C,PASS,cpu (faiss-cpu IndexFlatL2; faiss-gpu unsupported on Windows),2.0551,43.8489,0.7268,52.109,861.953,,,

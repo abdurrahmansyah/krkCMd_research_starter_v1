@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "shape": [
+    3822
+  ],
+  "all_finite": true,
+  "fit_sec": 7.211,
+  "predict_sec": 39.946,
+  "elapsed_sec": 47.157,
+  "peak_cuda_alloc_mb": 11917.214,
+  "peak_cuda_res_mb": 18418.0,
+  "peak_rss_mb": 9720.547,
+  "subprocess_elapsed_sec": 52.719,
+  "violation_reason": null,
+  "attempt_id": "M03_FM03_L2C_offload_cpu",
+  "suspend_detected": false,
+  "max_poll_gap_sec": 0.407
+}

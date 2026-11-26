@@ -1,0 +1,135 @@
+{
+  "sources": {
+    "tabpfn_model_loading": {
+      "url": "https://raw.githubusercontent.com/PriorLabs/TabPFN/main/src/tabpfn/model_loading.py",
+      "status": "FETCHED",
+      "len": 59466
+    },
+    "tabpfn_readme": {
+      "url": "https://raw.githubusercontent.com/PriorLabs/TabPFN/main/README.md",
+      "status": "FETCHED",
+      "len": 22761
+    },
+    "tabicl_readme": {
+      "url": "https://raw.githubusercontent.com/soda-inria/tabicl/main/README.md",
+      "status": "FETCHED",
+      "len": 20396
+    },
+    "tabdpt_readme": {
+      "url": "https://raw.githubusercontent.com/layer6ai-labs/TabDPT-inference/main/README.md",
+      "status": "FETCHED",
+      "len": 12631
+    },
+    "tabr_readme": {
+      "url": "https://raw.githubusercontent.com/yandex-research/tabular-dl-tabr/17baa9082506f8e7a0f8d11bb1e08212926a1507/README.md",
+      "status": "FETCHED",
+      "len": 16528
+    },
+    "tabr_license": {
+      "url": "https://raw.githubusercontent.com/yandex-research/tabular-dl-tabr/17baa9082506f8e7a0f8d11bb1e08212926a1507/LICENSE",
+      "status": "FETCHED",
+      "len": 1127
+    }
+  },
+  "hf_models": {
+    "Prior-Labs/tabpfn_3_5": {
+      "exists": true,
+      "gated": false,
+      "sha": "06bf2ba35c80a92a3b9abb436b99cf49e7a0365e",
+      "tags": [
+        "chemistry",
+        "biology",
+        "finance",
+        "legal",
+        "climate",
+        "medical",
+        "tabular-classification",
+        "license:other",
+        "region:us"
+      ],
+      "siblings_sample": [
+        ".gitattributes",
+        "LICENSE",
+        "README.md",
+        "config.json",
+        "tabpfn-v3.5-20260909.safetensors",
+        "tabpfn-v3.5-20260909_multiclass.safetensors",
+        "tabpfn-v3.5-fast-20260909.safetensors"
+      ]
+    },
+    "Prior-Labs/TabPFN-v2-reg": {
+      "exists": true,
+      "gated": false,
+      "sha": "02a44705ff7790b50cded404bc59adb94da456a1",
+      "tags": [
+        "tabpfn",
+        "tabular-regression",
+        "license:other",
+        "region:us"
+      ],
+      "siblings_sample": [
+        ".DS_Store",
+        ".gitattributes",
+        "LICENSE.txt",
+        "README.md",
+        "config.json",
+        "tabpfn-v2-regressor-09gpqh39.ckpt",
+        "tabpfn-v2-regressor-2noar4o2.ckpt",
+        "tabpfn-v2-regressor-5wof9ojf.ckpt",
+        "tabpfn-v2-regressor-v2_default.ckpt",
+        "tabpfn-v2-regressor-wyl4o83o.ckpt",
+        "tabpfn-v2-regressor.ckpt"
+      ]
+    },
+    "jingang/TabICL": {
+      "exists": true,
+      "gated": false,
+      "sha": "4dcd344ece2c00be9e831fdd35bed57b5ad83e19",
+      "tags": [
+        "tabicl",
+        "tabular-classification",
+        "tabular-regression",
+        "tabular-foundation-model",
+        "arxiv:2502.05564",
+        "arxiv:2602.11139",
+        "license:bsd-3-clause",
+        "region:us"
+      ],
+      "siblings_sample": [
+        ".gitattributes",
+        "README.md",
+        "tabicl-classifier-v1-20250208.ckpt",
+        "tabicl-classifier-v1.1-20250506.ckpt",
+        "tabicl-classifier-v2-20260212.ckpt",
+        "tabicl-regressor-v2-20260212.ckpt"
+      ]
+    },
+    "soda-inria/tabicl": {
+      "exists": false,
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    "Layer6/TabDPT": {
+      "exists": true,
+      "gated": false,
+      "sha": "a5ca6e01c0fa09ec68c73e958e5199d1932abb3a",
+      "tags": [
+        "Tabular",
+        "In-Context-Learning",
+        "Transformer",
+        "other",
+        "arxiv:2410.18164",
+        "license:apache-2.0",
+        "region:us"
+      ],
+      "siblings_sample": [
+        ".gitattributes",
+        "LICENSE",
+        "README.md",
+        "config.json",
+        "tabdpt1_1.safetensors",
+        "tabdpt1_2.safetensors",
+        "tabdpt1_3.safetensors"
+      ]
+    }
+  }
+}

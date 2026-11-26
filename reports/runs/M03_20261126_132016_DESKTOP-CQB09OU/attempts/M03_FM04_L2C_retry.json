@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "shape": [
+    3822
+  ],
+  "all_finite": true,
+  "load_sec": 1.413,
+  "fit_sec": 0.228,
+  "predict_sec": 2354.673,
+  "elapsed_sec": 2356.315,
+  "peak_cuda_alloc_mb": 8169.624,
+  "peak_cuda_res_mb": 10864.0,
+  "peak_rss_mb": 1763.988,
+  "subprocess_elapsed_sec": 2361.703,
+  "violation_reason": null,
+  "attempt_id": "M03_FM04_L2C_retry",
+  "suspend_detected": false,
+  "max_poll_gap_sec": 0.797
+}

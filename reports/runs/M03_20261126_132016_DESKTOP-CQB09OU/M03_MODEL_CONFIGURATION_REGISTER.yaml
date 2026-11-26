@@ -1,0 +1,146 @@
+version: "1.0"
+run_id: "M03_20261126_132016_DESKTOP-CQB09OU"
+status: "PROPOSED_FOR_M04_APPROVAL"
+experimental_approval: "NOT_APPROVED"
+random_seed: 42
+input_dim: 501
+target: "MANwidth_um"
+notes:
+  - "All preprocessing transforms (StandardScaler, mean centering, PCA) MUST be fit on training fold/split only."
+  - "No hyperparameter optimization on test set; nested/validation-only HPO on inner group-aware folds."
+
+models:
+  ML01:
+    environment: ".venv"
+    estimator: "sklearn.ensemble.ExtraTreesRegressor"
+    default_params: { n_estimators: 300, n_jobs: -1, random_state: 42 }
+    hpo_space: { n_estimators: [200, 400], max_features: [0.3, 0.5, 1.0], min_samples_leaf: [1, 3, 5] }
+    hpo_max_trials: 12
+  ML02:
+    environment: ".venv"
+    estimator: "sklearn.ensemble.RandomForestRegressor"
+    default_params: { n_estimators: 300, n_jobs: -1, random_state: 42 }
+    hpo_space: { n_estimators: [200, 400], max_features: [0.3, 0.5, 1.0], min_samples_leaf: [1, 3, 5] }
+    hpo_max_trials: 12
+  ML03:
+    environment: ".venv"
+    estimator: "sklearn.ensemble.HistGradientBoostingRegressor"
+    default_params: { max_iter: 300, learning_rate: 0.05, random_state: 42 }
+    hpo_space: { max_iter: [200, 400], learning_rate: [0.03, 0.05, 0.1], max_leaf_nodes: [31, 63], min_samples_leaf: [10, 20] }
+    hpo_max_trials: 15
+  ML04:
+    environment: ".venv-boost"
+    estimator: "xgboost.XGBRegressor"
+    default_params: { n_estimators: 500, max_depth: 6, learning_rate: 0.05, subsample: 0.8, colsample_bytree: 0.8, tree_method: "hist", device: "cpu", n_jobs: 16, random_state: 42 }
+    hpo_space: { max_depth: [4, 6, 8], learning_rate: [0.03, 0.05, 0.1], subsample: [0.7, 0.9], colsample_bytree: [0.6, 0.8], reg_lambda: [1.0, 5.0] }
+    hpo_max_trials: 20
+  ML05:
+    environment: ".venv-boost"
+    estimator: "lightgbm.LGBMRegressor"
+    default_params: { n_estimators: 500, max_depth: -1, num_leaves: 63, learning_rate: 0.05, subsample: 0.8, colsample_bytree: 0.8, device: "cpu", n_jobs: 16, random_state: 42, verbose: -1 }
+    hpo_space: { num_leaves: [31, 63, 127], learning_rate: [0.03, 0.05, 0.1], feature_fraction: [0.6, 0.8], min_child_samples: [10, 20, 40] }
+    hpo_max_trials: 20
+  ML06:
+    environment: ".venv-boost"
+    estimator: "catboost.CatBoostRegressor"
+    default_params: { iterations: 1000, depth: 6, learning_rate: 0.05, task_type: "CPU", thread_count: 16, random_seed: 42, verbose: 0, allow_writing_files: false }
+    hpo_space: { depth: [5, 6, 8], learning_rate: [0.03, 0.05, 0.1], l2_leaf_reg: [1.0, 3.0, 9.0] }
+    hpo_max_trials: 15
+  ML07:
+    environment: ".venv"
+    estimator: "sklearn.pipeline(StandardScaler, SVR)"
+    default_params: { C: 10.0, epsilon: 0.1, kernel: "rbf" }
+    hpo_space: { C: [1.0, 10.0, 50.0], epsilon: [0.05, 0.1, 0.5], gamma: ["scale", "auto"] }
+    hpo_max_trials: 12
+  DL01:
+    environment: ".venv-deep"
+    estimator: "torch.nn.Sequential_MLP"
+    default_params: { hidden_dims: [256, 128, 64], dropout: 0.1, lr: 0.001, batch_size: 128, max_epochs: 100, early_stopping_patience: 15, device: "cuda:0" }
+    hpo_space: { lr: [0.0005, 0.001, 0.003], dropout: [0.0, 0.1, 0.2], weight_decay: [0.0, 0.0001] }
+    hpo_max_trials: 12
+  DL02:
+    environment: ".venv-deep"
+    estimator: "rtdl_revisiting_models.FTTransformer"
+    default_params: { n_cont_features: 501, d_out: 1, n_blocks: 3, d_block: 64, attention_n_heads: 4, ffn_d_hidden_multiplier: 1.333, attention_dropout: 0.1, ffn_dropout: 0.1, residual_dropout: 0.0, lr: 0.0005, batch_size: 64, max_epochs: 80, early_stopping_patience: 12, device: "cuda:0" }
+    hpo_space: { n_blocks: [2, 3], d_block: [64, 96], lr: [0.0003, 0.001], attention_dropout: [0.1, 0.2] }
+    hpo_max_trials: 10
+  DL03:
+    environment: ".venv-deep"
+    estimator: "pytabkit.RealMLP_TD_Regressor"
+    default_params: { n_epochs: 100, batch_size: 128, device: "cuda:0", random_state: 42 }
+    hpo_space: { lr: [0.02, 0.04, 0.08], hidden_sizes: [[256, 256, 256], [512, 256, 128]] }
+    hpo_max_trials: 8
+  DL04:
+    environment: ".venv-tabr"
+    estimator: "bin.tabr.Model"
+    default_params: { d_main: 64, d_multiplier: 2.0, encoder_n_blocks: 1, predictor_n_blocks: 1, context_size: 32, batch_size: 64, max_epochs: 80, faiss_backend: "cpu" }
+    hpo_space: { d_main: [64, 128], context_size: [32, 64], lr: [0.0005, 0.001] }
+    hpo_max_trials: 8
+  DL05:
+    environment: ".venv-deep"
+    estimator: "tabm.TabM"
+    default_params: { n_num_features: 501, k_ensemble_size: 8, d_out: 1, batch_size: 128, max_epochs: 100, device: "cuda:0" }
+    hpo_space: { k_ensemble_size: [8, 16], lr: [0.001, 0.002] }
+    hpo_max_trials: 8
+  FM03:
+    environment: ".venv-foundation"
+    estimator: "tabicl.TabICLRegressor"
+    default_params: { n_estimators: 8, batch_size: 1, offload_mode: "cpu", use_amp: "auto", use_fa3: false, random_state: 42 }
+    hpo_max_trials: 0
+    zero_shot_in_context: true
+  FM04:
+    environment: ".venv-foundation"
+    estimator: "tabdpt.TabDPTRegressor"
+    default_params: { normalizer: "standard", feature_reduction: "pca", context_reduction: "retrieval", n_ensembles: 8, context_size: 2048, use_flash: false, compile: false, seed: 42 }
+    hpo_max_trials: 0
+    zero_shot_in_context: true
+    runtime_budget_note: "~39.4 min per full L2C split; prioritize Protocol A clean test."
+  SG01:
+    environment: ".venv-deep"
+    estimator: "torch.nn.VanillaConv1DRegressor"
+    default_params: { channels: [32, 64], kernel_sizes: [5, 5], batch_size: 128, max_epochs: 100, lr: 0.001, device: "cuda:0" }
+    hpo_space: { channels: [[32, 64], [64, 128]], kernel_sizes: [[5, 5], [7, 5]], lr: [0.0005, 0.001] }
+    hpo_max_trials: 10
+  SG02:
+    environment: ".venv-signal-tf"
+    estimator: "aeon.regression.deep_learning.ResNetRegressor"
+    default_params: { n_epochs: 50, batch_size: 64, random_state: 42, verbose: false }
+    hpo_max_trials: 4
+  SG03:
+    environment: ".venv-signal-tf"
+    estimator: "aeon.regression.deep_learning.InceptionTimeRegressor"
+    default_params: { n_regressors: 1, n_epochs: 50, batch_size: 64, random_state: 42, verbose: false }
+    hpo_max_trials: 4
+  SG04:
+    environment: ".venv-signal-tf"
+    estimator: "aeon.regression.deep_learning.LITETimeRegressor"
+    default_params: { n_regressors: 1, n_epochs: 50, batch_size: 64, random_state: 42, verbose: false }
+    hpo_max_trials: 4
+  SG05:
+    environment: ".venv-signal-cpu"
+    estimator: "aeon.regression.convolution_based.RocketRegressor"
+    default_params: { n_kernels: 2000, n_jobs: 16, random_state: 42 }
+    hpo_space: { n_kernels: [2000, 5000, 10000] }
+    hpo_max_trials: 3
+  SG06:
+    environment: ".venv-signal-hydra"
+    estimator: "aeon.regression.convolution_based.MultiRocketHydraRegressor"
+    default_params: { n_kernels: 8, n_groups: 64, n_jobs: 16, random_state: 42 }
+    hpo_max_trials: 2
+    runtime_budget_note: "~345s wall, ~26.2 GiB RSS at L2C."
+  RF01:
+    environment: ".venv"
+    estimator: "sklearn.dummy.DummyRegressor"
+    default_params: { strategy: "mean" }
+    hpo_max_trials: 0
+  RF02:
+    environment: ".venv"
+    estimator: "sklearn.pipeline(StandardScaler, LinearRegression)"
+    default_params: {}
+    hpo_max_trials: 0
+  RF05:
+    environment: ".venv-deep"
+    estimator: "torch.nn.DLM15LayerCNN_Table3_Normalized"
+    default_params: { input_normalization: "train_zero_center", target_scale_pi2mi: 3.96875, optimizer: "SGD", lr: 0.001, momentum: 0.9, batch_size: 128, max_epochs: 100, device: "cuda:0" }
+    hpo_max_trials: 0
+    reference_reproduction_note: "Architecture and SGDM hyperparams fixed per Table 3 of source paper."

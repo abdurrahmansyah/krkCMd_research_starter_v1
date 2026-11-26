@@ -1,0 +1,6 @@
+# M03_RESEARCH_QUESTIONS.md — Scientific Research Questions (M03)
+
+1. **RQ1 (Idea 1 — Multi-Paradigm Accuracy):** Across tree ensembles, gradient boosting, kernel methods, tabular deep learning, retrieval-augmented TabR, 1D convolutional/signal models, and tabular foundation models, which paradigm achieves the lowest prediction error (`MAE`, `RMSE`, `Lin's CCC`) on `MANwidth` from 501-point brightness profiles under strict group-aware evaluation?
+2. **RQ2 (Idea 2 — Comparative Robustness):** How severely do controlled brightness-profile corruptions (brightness shifts, contrast scaling, Gaussian noise, smoothing, gamma, illumination gradient, impulse noise, downsampling, combined) degrade accuracy across paradigms, and which preprocessing or model architectures best preserve tolerance retention?
+3. **RQ3 (Generalization & Subgroup Reliability):** How do model accuracy and calibration vary across `Series` (`CMd_0.23_20mths`, `CMd_0.23_2mths`, `CMd_0.28_20mths`, `CMd_0.28_2mths`), healing `Stage` (`1..6`), crack-width regimes (including `4,900` zero-width observations), and stricter `Series + Image` splits?
+4. **RQ4 (Reference & Efficiency Trade-off):** Under identical group-aware splits and hardware budgets, what are the Pareto trade-offs between accuracy, robustness, and computational cost relative to `DLMwidth` (`RF04`/`RF05`) and `AEDwidth` (`RF03`)?

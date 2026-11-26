@@ -1,0 +1,44 @@
+{
+  "foundation": {
+    "venv_path": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-foundation",
+    "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-foundation\\Scripts\\python.exe",
+    "install_duration_sec": 251.14,
+    "pip_check_rc": 0,
+    "pip_check_output": "No broken requirements found.",
+    "cuda_check": "True 2.9.1+cu128",
+    "imported_versions": {
+      "torch": "2.9.1+cu128",
+      "tabpfn": "10.2.0",
+      "tabicl": "installed",
+      "tabdpt": "installed",
+      "huggingface_hub": "1.33.0",
+      "sklearn": "1.9.1",
+      "numpy": "2.4.6",
+      "pandas": "3.1.1",
+      "psutil": "7.2.2",
+      "yaml": "6.0.4",
+      "ipykernel": "7.4.0"
+    }
+  },
+  "tabr": {
+    "venv_path": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-tabr",
+    "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-tabr\\Scripts\\python.exe",
+    "install_duration_sec": 199.65,
+    "pip_check_rc": 0,
+    "pip_check_output": "No broken requirements found.",
+    "cuda_check": "True 2.9.1+cu128",
+    "imported_versions": {
+      "torch": "2.9.1+cu128",
+      "faiss": "1.16.0",
+      "delu": "0.0.26",
+      "rtdl_num_embeddings": "0.0.12",
+      "einops": "0.8.2",
+      "sklearn": "1.9.1",
+      "numpy": "2.4.6",
+      "pandas": "3.1.1",
+      "psutil": "7.2.2",
+      "yaml": "6.0.4",
+      "ipykernel": "7.4.0"
+    }
+  }
+}

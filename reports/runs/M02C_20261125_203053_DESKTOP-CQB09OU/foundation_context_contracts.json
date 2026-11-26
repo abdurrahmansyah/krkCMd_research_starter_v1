@@ -1,0 +1,54 @@
+{
+  "FM01": {
+    "status_l1": "BLOCKED_LICENSE",
+    "status_l2c": "NOT_EXECUTED",
+    "available_training_rows_tested": null,
+    "context_rows_per_query": "all_or_internal",
+    "internally_dropped_features": 0,
+    "native_feature_reduction": "none",
+    "config": null
+  },
+  "FM02": {
+    "status_l1": "BLOCKED_LICENSE",
+    "status_l2c": "NOT_EXECUTED",
+    "available_training_rows_tested": null,
+    "context_rows_per_query": "all_or_internal",
+    "internally_dropped_features": 0,
+    "native_feature_reduction": "none",
+    "config": null
+  },
+  "FM03": {
+    "status_l1": "PASS",
+    "status_l2c": "FAILED",
+    "available_training_rows_tested": 100,
+    "context_rows_per_query": "all_or_internal",
+    "internally_dropped_features": 0,
+    "native_feature_reduction": "none",
+    "config": {
+      "checkpoint_version": "tabicl-regressor-v2-20260212.ckpt",
+      "n_estimators": 8,
+      "batch_size": 1,
+      "use_amp": "auto",
+      "use_fa3": false,
+      "random_state": 42
+    }
+  },
+  "FM04": {
+    "status_l1": "PASS",
+    "status_l2c": "FAILED",
+    "available_training_rows_tested": 100,
+    "context_rows_per_query": 100,
+    "internally_dropped_features": 0,
+    "native_feature_reduction": "pca",
+    "config": {
+      "normalizer": "standard",
+      "feature_reduction": "pca (native TabDPT compression if > max_features)",
+      "context_reduction": "retrieval",
+      "n_ensembles": 8,
+      "context_size": 2048,
+      "use_flash": false,
+      "compile": false,
+      "seed": 42
+    }
+  }
+}

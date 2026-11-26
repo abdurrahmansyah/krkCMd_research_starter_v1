@@ -1,0 +1,44 @@
+{
+  "run_id": "M03_20261126_132016_DESKTOP-CQB09OU",
+  "total_rows": 19098,
+  "total_cols": 512,
+  "gridline_groups": 3183,
+  "image_groups": 36,
+  "image_group_size_min": 60,
+  "image_group_size_max": 924,
+  "image_group_size_median": 513.0,
+  "image_groups_per_series": {
+    "CMd_0.23_20mths": 8,
+    "CMd_0.23_2mths": 8,
+    "CMd_0.28_20mths": 4,
+    "CMd_0.28_2mths": 16
+  },
+  "zero_width_observations": 4900,
+  "manwidth_min": 0.0,
+  "manwidth_max": 813.5938,
+  "manwidth_mean": 148.87550550319403,
+  "historical_split_rows": {
+    "train": 12216,
+    "test": 3822,
+    "validation": 3060
+  },
+  "historical_split_groups": {
+    "test": 637,
+    "train": 2036,
+    "validation": 510
+  },
+  "protocol_b_3fold_max_folds_per_image_group": 1,
+  "protocol_b_3fold_sizes": {
+    "0": 6246,
+    "1": 6444,
+    "2": 6408
+  },
+  "protocol_b_5fold_max_folds_per_image_group": 1,
+  "protocol_b_5fold_sizes": {
+    "0": 3834,
+    "1": 3828,
+    "2": 3816,
+    "3": 3786,
+    "4": 3834
+  }
+}

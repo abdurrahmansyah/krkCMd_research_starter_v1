@@ -1,0 +1,47 @@
+manifest_version: "1.0"
+run_id: "M03_20261126_132016_DESKTOP-CQB09OU"
+status: "PROPOSED_AWAITING_APPROVAL"
+authorize_real_data_training: false
+dataset:
+  path: "data/processed/krkCMd_table.csv"
+  total_rows: 19098
+  feature_dim: 501
+  target_col: "MANwidth"
+  zero_width_rows: 4900
+
+split_protocols:
+  protocol_a_historical:
+    manifest: "reports/tables/group_split_manifest.csv"
+    folds: 1
+    train_rows: 12216
+    val_rows: 3060
+    test_rows: 3822
+  protocol_b_primary_3fold:
+    manifest: "reports/runs/M03_20261126_132016_DESKTOP-CQB09OU/M03_PROPOSED_SPLIT_MANIFESTS/protocol_b_series_image_3fold.csv"
+    folds: 3
+    group_key: "Series + Image"
+  protocol_b_sensitivity_5fold:
+    manifest: "reports/runs/M03_20261126_132016_DESKTOP-CQB09OU/M03_PROPOSED_SPLIT_MANIFESTS/protocol_b_series_image_5fold.csv"
+    folds: 5
+    group_key: "Series + Image"
+  protocol_c_loso:
+    manifest: "reports/runs/M03_20261126_132016_DESKTOP-CQB09OU/M03_PROPOSED_SPLIT_MANIFESTS/protocol_c_leave_one_series_out.csv"
+    folds: 4
+    group_key: "Series"
+
+eligible_models:
+  historical_m00: ["ML01", "ML02", "ML03", "ML07", "RF01", "RF02"]
+  synthetic_l2c_pass: ["ML04", "ML05", "ML06", "DL01", "DL02", "DL03", "DL04", "DL05", "FM03", "FM04", "SG01", "SG02", "SG03", "SG04", "SG05", "SG06", "RF05"]
+  deferred_blocked_license: ["FM01", "FM02"]
+  deferred_reference_impl: ["RF03", "RF04"]
+  deferred_custom_design: ["HY01", "HY02", "HY03", "HY04", "HY05"]
+
+metrics:
+  primary: ["rmse", "mae", "r2"]
+  stratified_and_rank: ["zero_width_mae", "positive_width_rmse", "positive_width_mape", "spearman_rho", "p95_abs_error", "max_abs_error"]
+  prohibited_global: ["mape"]
+
+robustness:
+  perturbation_register: "reports/runs/M03_20261126_132016_DESKTOP-CQB09OU/M03_PERTURBATION_REGISTER.yaml"
+  families: ["gaussian_noise", "brightness_shift", "contrast_scale", "gaussian_blur", "spatial_shift", "local_dropout", "salt_pepper"]
+  fm04_excluded_from_full_sweep: true

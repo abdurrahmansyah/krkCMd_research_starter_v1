@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "max_abs_diff_batched_vs_unbatched": 3.0517578125e-05,
+  "invariant": true,
+  "max_features_native": 128,
+  "peak_rss_mb": 1374.27,
+  "subprocess_elapsed_sec": 8.406,
+  "violation_reason": null,
+  "attempt_id": "M03_FM04_L1_batch_consistency",
+  "suspend_detected": false,
+  "max_poll_gap_sec": 0.297
+}

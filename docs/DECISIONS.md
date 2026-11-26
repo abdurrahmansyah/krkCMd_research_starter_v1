@@ -49,3 +49,13 @@
   - Deprecated legacy hardcoded `scripts/check_model_compatibility.py` in favor of registry-driven `scripts/build_compatibility_matrix.py` reading `configs/model_registry.yaml`.
   - Enforced GiB-consistent subprocess watchdog in `scripts/resource_policy.py` (64 GiB RAM cap, 20 GiB VRAM cap, 16 GiB RAM reserve, 2.5 GiB VRAM reserve, log-file stdout/stderr, process-tree termination).
 - Strict Constraint: D-001 through D-004 remain unchanged; 0/32 candidates are `APPROVED` for actual krkCMd experiments.
+
+## D-008 — M02C Foundation Model & Deferred Recovery Governance (2026-11-26)
+- Status: ADMINISTRATIVE (RECORDED; ZERO MODELS APPROVED FOR REAL TRAINING)
+- Context: Provisioned `.venv-foundation` (`krkcmd-foundation`) and `.venv-tabr` (`krkcmd-tabr`); recovered `DL04`, `RF05` (with train-only zero-center + `pi2mi`), and `SG06` (`1,800s` cap) through L2C; validated `FM03` & `FM04` through L2B; recorded `FM01` & `FM02` as `BLOCKED_LICENSE` pending researcher PriorLabs license acceptance.
+- Strict Constraint: D-001 through D-004 remain unchanged; 0/32 candidates are `APPROVED` for actual krkCMd experiments.
+
+## D-009 — M03 Scientific Evaluation Protocol & Foundation Closure Governance (2026-11-26)
+- Status: PROPOSED (AWAITING RESEARCHER APPROVAL FOR M04; ZERO REAL TRAINING EXECUTED)
+- Context: Closed synthetic L2C readiness for `FM03` (`TabICLv2` with `offload_mode="cpu"`, `52.719 s`) and `FM04` (`TabDPT`, `2,361.703 s`); audited `19,098` rows (`4,900` zero-width observations, `36` `Series + Image` groups); proposed leakage-free `Protocol B` (3-fold primary, 5-fold sensitivity) and `Protocol C` (LOSO) alongside historical `Protocol A`; prohibited global `MAPE` as a primary metric; defined statistical, robustness, HPO, and reference reproduction (`RF03` `k=6`, `RF04` `krknet.mat`, `RF05` Table 3) protocols.
+- Strict Constraint: D-001 through D-004 remain unchanged; all 8 `.venv*` environments remain unmodified; `0/32` candidates are `APPROVED` until explicit researcher sign-off on `M03_EVALUATION_PROTOCOL.md` and `M04_EXECUTION_PLAN.md`.

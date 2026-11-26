@@ -1,0 +1,21 @@
+{
+  "torch_version": "2.9.1+cu128",
+  "torch_cuda_version": "12.8",
+  "cuda_available": true,
+  "gpu_name": "Quadro RTX 6000",
+  "compute_capability": [
+    7,
+    5
+  ],
+  "matmul_finite": true,
+  "fp32_finite": true,
+  "grads_finite_post_backward": true,
+  "params_finite_post_step": true,
+  "device_placed": "cuda:0",
+  "elapsed_sec": 1.7246,
+  "peak_cuda_allocated_mb": 20.062,
+  "status": "GPU_PASS",
+  "peak_rss_mb": 1054.254,
+  "subprocess_elapsed_sec": 4.953,
+  "violation_reason": null
+}

@@ -1,0 +1,25 @@
+version: "1.0"
+milestone: "M03"
+intensity_bounds: [0.0, 255.0]
+seed: 42
+note: "Synthetic brightness-profile stress tests (NOT real camera/scanner acquisition experiments)."
+
+m00_legacy_perturbations:
+  - {id: "P01_bright_m20", fn: "apply_brightness_shift", params: {delta: -20.0}, severity: 1}
+  - {id: "P02_bright_p20", fn: "apply_brightness_shift", params: {delta: 20.0}, severity: 1}
+  - {id: "P03_contrast_08", fn: "apply_contrast_scale", params: {scale: 0.8}, severity: 1}
+  - {id: "P04_contrast_12", fn: "apply_contrast_scale", params: {scale: 1.2}, severity: 1}
+  - {id: "P05_gnoise_5", fn: "apply_gaussian_noise", params: {sigma: 5.0, seed: 42}, severity: 1}
+  - {id: "P06_gnoise_10", fn: "apply_gaussian_noise", params: {sigma: 10.0, seed: 42}, severity: 2}
+  - {id: "P07_gsmooth_1", fn: "apply_gaussian_smoothing", params: {sigma: 1.0}, severity: 1}
+
+expanded_perturbations:
+  - {id: "P08_bright_m40", fn: "apply_brightness_shift", params: {delta: -40.0}, severity: 2}
+  - {id: "P09_bright_p40", fn: "apply_brightness_shift", params: {delta: 40.0}, severity: 2}
+  - {id: "P10_contrast_06", fn: "apply_contrast_scale", params: {scale: 0.6}, severity: 2}
+  - {id: "P11_gamma_07", fn: "apply_gamma", params: {gamma: 0.7}, severity: 1}
+  - {id: "P12_gamma_15", fn: "apply_gamma", params: {gamma: 1.5}, severity: 2}
+  - {id: "P13_illum_grad_20", fn: "apply_illumination_gradient", params: {amplitude: 20.0}, severity: 1}
+  - {id: "P14_impulse_002", fn: "apply_impulse_noise", params: {prob: 0.02, seed: 42}, severity: 2}
+  - {id: "P15_downsample_4", fn: "apply_downsample_interp", params: {factor: 4}, severity: 2}
+  - {id: "P16_combined", fn: "apply_combined_corruption", params: {shift: -15.0, scale: 0.85, sigma: 5.0, seed: 42}, severity: 3}

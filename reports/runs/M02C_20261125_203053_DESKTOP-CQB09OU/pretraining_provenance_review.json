@@ -1,0 +1,19 @@
+{
+  "run_id": "M02C_20261125_203053_DESKTOP-CQB09OU",
+  "FM01": {
+    "pretraining_data": "Synthetic structural causal priors + TabPFN-3.5 updates",
+    "krkcmd_overlap_provenance": "UNKNOWN"
+  },
+  "FM02": {
+    "pretraining_data": "Synthetic structural causal priors (fast 3.5 variant)",
+    "krkcmd_overlap_provenance": "UNKNOWN"
+  },
+  "FM03": {
+    "pretraining_data": "Synthetic tabular priors (arXiv:2602.11139)",
+    "krkcmd_overlap_provenance": "UNKNOWN"
+  },
+  "FM04": {
+    "pretraining_data": "Real-world public tabular datasets (arXiv:2410.18164)",
+    "krkcmd_overlap_provenance": "UNKNOWN"
+  }
+}

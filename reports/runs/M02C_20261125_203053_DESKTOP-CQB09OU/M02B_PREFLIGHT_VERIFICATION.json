@@ -1,0 +1,20 @@
+{
+  "run_id": "M02C_20261125_203053_DESKTOP-CQB09OU",
+  "m02b_run_dir_exists": true,
+  "m02b_gpu_status": "GPU_PASS",
+  "m02b_scale_pass": [
+    "DL01",
+    "DL02",
+    "DL03",
+    "DL05",
+    "SG01",
+    "SG02",
+    "SG03",
+    "SG04"
+  ],
+  "m02b_unresolved": [
+    "DL04",
+    "SG06",
+    "RF05"
+  ]
+}

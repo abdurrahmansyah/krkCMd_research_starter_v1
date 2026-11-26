@@ -124,14 +124,14 @@ def build_thread_env(cpu_threads: int = 16, base_env: Optional[Dict[str, str]] =
     return env
 
 
-def query_gpu_vram_usage() -> Optional[Dict[str, float]]:
-    """Query current GPU VRAM usage in bytes/MiB/GiB via nvidia-smi if available."""
+def query_gpu_vram_usage(timeout_sec: int = 3) -> Optional[Dict[str, float]]:
+    """Query current GPU VRAM usage in bytes/MiB/GiB via nvidia-smi with bounded timeout."""
     try:
         res = subprocess.run(
             ["nvidia-smi", "--query-gpu=memory.total,memory.free,memory.used,utilization.gpu", "--format=csv,noheader,nounits"],
             capture_output=True,
             text=True,
-            timeout=5,
+            timeout=timeout_sec,
         )
         if res.returncode != 0 or not res.stdout.strip():
             return None
@@ -221,12 +221,14 @@ def run_monitored_subprocess(
     vram_reserve_bytes: int = int(2.5 * BYTES_PER_GIB),
     monitor_gpu: bool = False,
     ram_probe: Optional[Callable[[], int]] = None,
+    clock_fn: Callable[[], float] = time.monotonic,
+    suspend_gap_threshold_sec: float = 30.0,
 ) -> Dict[str, object]:
     """
     Execute a subprocess with:
       - explicit BLAS/OpenMP/Numba thread controls before framework import
       - log files (not PIPE) to prevent stdout/stderr pipe deadlock
-      - wall-clock timeout enforcement
+      - monotonic wall-clock timeout enforcement & suspend/resume jump detection
       - active process-tree RAM and system RAM/VRAM reserve enforcement
       - process-tree termination on timeout or resource limit violation
     """
@@ -244,7 +246,10 @@ def run_monitored_subprocess(
         out_path = Path(tmpdir) / "stdout.log"
         err_path = Path(tmpdir) / "stderr.log"
         with out_path.open("w+", encoding="utf-8") as fout, err_path.open("w+", encoding="utf-8") as ferr:
-            t0 = time.monotonic()
+            t0 = clock_fn()
+            prev_t = t0
+            max_poll_gap = 0.0
+            suspend_detected = False
             proc = subprocess.Popen(
                 list(cmd),
                 stdout=fout,
@@ -259,6 +264,14 @@ def run_monitored_subprocess(
             violation_reason: Optional[str] = None
 
             while True:
+                now = clock_fn()
+                gap = now - prev_t
+                if gap > max_poll_gap:
+                    max_poll_gap = gap
+                if gap > suspend_gap_threshold_sec:
+                    suspend_detected = True
+                prev_t = now
+
                 ret = proc.poll()
                 rss = 0
                 try:
@@ -302,16 +315,20 @@ def run_monitored_subprocess(
                     terminate_process_tree(proc.pid)
                     break
 
-                if (time.monotonic() - t0) >= timeout_sec:
+                if (now - t0) >= timeout_sec:
                     timed_out = True
-                    violation_reason = f"WALL_CLOCK_TIMEOUT ({timeout_sec}s)"
+                    violation_reason = f"WALL_CLOCK_TIMEOUT ({timeout_sec}s)" + (" [SUSPEND_DETECTED]" if suspend_detected else "")
                     terminate_process_tree(proc.pid)
                     break
 
                 time.sleep(poll_interval_sec)
 
-            proc.wait()
-            elapsed = round(time.monotonic() - t0, 3)
+            try:
+                proc.wait(timeout=5)
+            except subprocess.TimeoutExpired:
+                terminate_process_tree(proc.pid)
+                proc.wait(timeout=3)
+            elapsed = round(clock_fn() - t0, 3)
             fout.seek(0)
             ferr.seek(0)
             stdout_txt = fout.read()
@@ -320,6 +337,8 @@ def run_monitored_subprocess(
     return {
         "returncode": -1 if (timed_out or violation_reason is not None) else proc.returncode,
         "timed_out": timed_out,
+        "suspend_detected": suspend_detected,
+        "max_poll_gap_sec": round(max_poll_gap, 3),
         "violation_reason": violation_reason,
         "elapsed_sec": elapsed,
         "peak_rss_bytes": peak_rss_bytes,

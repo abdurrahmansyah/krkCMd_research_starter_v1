@@ -1,0 +1,880 @@
+{
+  "FM01": {
+    "L2A": {
+      "status": "NOT_EXECUTED",
+      "reason": "Prior stage failed"
+    },
+    "L2B": {
+      "status": "NOT_EXECUTED",
+      "reason": "Prior stage failed"
+    },
+    "L2C": {
+      "status": "NOT_EXECUTED",
+      "reason": "Prior stage failed"
+    }
+  },
+  "FM02": {
+    "L2A": {
+      "status": "NOT_EXECUTED",
+      "reason": "Prior stage failed"
+    },
+    "L2B": {
+      "status": "NOT_EXECUTED",
+      "reason": "Prior stage failed"
+    },
+    "L2C": {
+      "status": "NOT_EXECUTED",
+      "reason": "Prior stage failed"
+    }
+  },
+  "FM03": {
+    "L2A": {
+      "model_id": "FM03",
+      "stage": "L2A",
+      "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-foundation\\Scripts\\python.exe",
+      "n_threads": 16,
+      "status": "PASS",
+      "input_shape": [
+        1000,
+        501
+      ],
+      "predict_input_shape": [
+        200,
+        501
+      ],
+      "output_shape": [
+        200
+      ],
+      "all_finite": true,
+      "negative_prediction_count": 0,
+      "min_pred": 32.34552001953125,
+      "max_pred": 348.3642272949219,
+      "init_time_sec": 3.5278,
+      "checkpoint_load_time_sec": 0.0,
+      "fit_context_time_sec": 3.4724,
+      "predict_time_sec": 3.0808,
+      "total_wall_sec": 6.5532,
+      "peak_cuda_allocated_mb": 2094.19,
+      "peak_cuda_reserved_mb": 2970.0,
+      "serialization": null,
+      "metadata": {
+        "model_id": "FM03",
+        "environment_name": ".venv-foundation",
+        "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-foundation\\Scripts\\python.exe",
+        "package": "tabicl",
+        "package_version": "unknown",
+        "estimator_class": "tabicl.TabICLRegressor",
+        "config": {
+          "checkpoint_version": "tabicl-regressor-v2-20260212.ckpt",
+          "n_estimators": 8,
+          "batch_size": 1,
+          "use_amp": "auto",
+          "use_fa3": false,
+          "random_state": 42
+        },
+        "device_requested": "cuda:0",
+        "device_used": "cuda:0",
+        "checkpoint_load_time_sec": 0.0,
+        "fit_context_time_sec": 3.4724,
+        "predict_time_sec": 3.0808,
+        "peak_cuda_allocated_mb": 2094.19,
+        "peak_cuda_reserved_mb": 2970.0,
+        "checkpoint_repo": "jingang/TabICL",
+        "checkpoint_file": "tabicl-regressor-v2-20260212.ckpt",
+        "ensemble_size": 8,
+        "attention_backend": "PyTorch SDPA (use_fa3=False for Turing sm_75)",
+        "available_training_rows": 1000
+      },
+      "warning_count": 0,
+      "warnings_sample": [],
+      "peak_rss_mb": 1446.211,
+      "subprocess_elapsed_sec": 11.141,
+      "violation_reason": null
+    },
+    "L2B": {
+      "model_id": "FM03",
+      "stage": "L2B",
+      "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-foundation\\Scripts\\python.exe",
+      "n_threads": 16,
+      "status": "PASS",
+      "input_shape": [
+        4096,
+        501
+      ],
+      "predict_input_shape": [
+        1024,
+        501
+      ],
+      "output_shape": [
+        1024
+      ],
+      "all_finite": true,
+      "negative_prediction_count": 0,
+      "min_pred": 29.906978607177734,
+      "max_pred": 347.97344970703125,
+      "init_time_sec": 3.5564,
+      "checkpoint_load_time_sec": 0.0,
+      "fit_context_time_sec": 4.7623,
+      "predict_time_sec": 10.1333,
+      "total_wall_sec": 14.8956,
+      "peak_cuda_allocated_mb": 8306.66,
+      "peak_cuda_reserved_mb": 11688.0,
+      "serialization": null,
+      "metadata": {
+        "model_id": "FM03",
+        "environment_name": ".venv-foundation",
+        "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-foundation\\Scripts\\python.exe",
+        "package": "tabicl",
+        "package_version": "unknown",
+        "estimator_class": "tabicl.TabICLRegressor",
+        "config": {
+          "checkpoint_version": "tabicl-regressor-v2-20260212.ckpt",
+          "n_estimators": 8,
+          "batch_size": 1,
+          "use_amp": "auto",
+          "use_fa3": false,
+          "random_state": 42
+        },
+        "device_requested": "cuda:0",
+        "device_used": "cuda:0",
+        "checkpoint_load_time_sec": 0.0,
+        "fit_context_time_sec": 4.7623,
+        "predict_time_sec": 10.1333,
+        "peak_cuda_allocated_mb": 8306.66,
+        "peak_cuda_reserved_mb": 11688.0,
+        "checkpoint_repo": "jingang/TabICL",
+        "checkpoint_file": "tabicl-regressor-v2-20260212.ckpt",
+        "ensemble_size": 8,
+        "attention_backend": "PyTorch SDPA (use_fa3=False for Turing sm_75)",
+        "available_training_rows": 4096
+      },
+      "warning_count": 0,
+      "warnings_sample": [],
+      "peak_rss_mb": 1534.266,
+      "subprocess_elapsed_sec": 19.531,
+      "violation_reason": null
+    },
+    "L2C": {
+      "status": "FAILED",
+      "error": "Empty worker output",
+      "peak_rss_mb": 1622.723,
+      "subprocess_elapsed_sec": 13.421,
+      "violation_reason": "GPU_VRAM_BUDGET_EXCEEDED (20731.0 MiB > 19527.0 MiB)"
+    }
+  },
+  "FM04": {
+    "L2A": {
+      "model_id": "FM04",
+      "stage": "L2A",
+      "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-foundation\\Scripts\\python.exe",
+      "n_threads": 16,
+      "status": "PASS",
+      "input_shape": [
+        1000,
+        501
+      ],
+      "predict_input_shape": [
+        200,
+        501
+      ],
+      "output_shape": [
+        200
+      ],
+      "all_finite": true,
+      "negative_prediction_count": 0,
+      "min_pred": 33.984275817871094,
+      "max_pred": 347.54840087890625,
+      "init_time_sec": 5.2143,
+      "checkpoint_load_time_sec": 1.5484,
+      "fit_context_time_sec": 0.0995,
+      "predict_time_sec": 1.526,
+      "total_wall_sec": 1.6255,
+      "peak_cuda_allocated_mb": 486.056,
+      "peak_cuda_reserved_mb": 506.0,
+      "serialization": null,
+      "metadata": {
+        "model_id": "FM04",
+        "environment_name": ".venv-foundation",
+        "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-foundation\\Scripts\\python.exe",
+        "package": "tabdpt",
+        "package_version": "unknown",
+        "estimator_class": "tabdpt.TabDPTRegressor",
+        "config": {
+          "normalizer": "standard",
+          "feature_reduction": "pca (native TabDPT compression if > max_features)",
+          "context_reduction": "retrieval",
+          "n_ensembles": 8,
+          "context_size": 2048,
+          "use_flash": false,
+          "compile": false,
+          "seed": 42
+        },
+        "device_requested": "cuda:0",
+        "device_used": "cuda:0",
+        "checkpoint_load_time_sec": 1.5484,
+        "fit_context_time_sec": 0.0995,
+        "predict_time_sec": 1.526,
+        "peak_cuda_allocated_mb": 486.056,
+        "peak_cuda_reserved_mb": 506.0,
+        "checkpoint_repo": "Layer6/TabDPT",
+        "max_features_native": 128,
+        "native_feature_reduction": "pca",
+        "context_mechanism": "FAISS L2 retrieval (context_size per query)",
+        "ensemble_size": 8,
+        "attention_backend": "PyTorch SDPA (use_flash=False for Turing sm_75)",
+        "available_training_rows": 1000,
+        "context_rows_per_query": 1000
+      },
+      "warning_count": 0,
+      "warnings_sample": [],
+      "peak_rss_mb": 1370.43,
+      "subprocess_elapsed_sec": 7.954,
+      "violation_reason": null
+    },
+    "L2B": {
+      "model_id": "FM04",
+      "stage": "L2B",
+      "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-foundation\\Scripts\\python.exe",
+      "n_threads": 16,
+      "status": "PASS",
+      "input_shape": [
+        4096,
+        501
+      ],
+      "predict_input_shape": [
+        1024,
+        501
+      ],
+      "output_shape": [
+        1024
+      ],
+      "all_finite": true,
+      "negative_prediction_count": 0,
+      "min_pred": 30.866838455200195,
+      "max_pred": 348.2017517089844,
+      "init_time_sec": 5.4724,
+      "checkpoint_load_time_sec": 1.5428,
+      "fit_context_time_sec": 0.1875,
+      "predict_time_sec": 616.6034,
+      "total_wall_sec": 616.7909,
+      "peak_cuda_allocated_mb": 8164.267,
+      "peak_cuda_reserved_mb": 10816.0,
+      "serialization": null,
+      "metadata": {
+        "model_id": "FM04",
+        "environment_name": ".venv-foundation",
+        "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-foundation\\Scripts\\python.exe",
+        "package": "tabdpt",
+        "package_version": "unknown",
+        "estimator_class": "tabdpt.TabDPTRegressor",
+        "config": {
+          "normalizer": "standard",
+          "feature_reduction": "pca (native TabDPT compression if > max_features)",
+          "context_reduction": "retrieval",
+          "n_ensembles": 8,
+          "context_size": 2048,
+          "use_flash": false,
+          "compile": false,
+          "seed": 42
+        },
+        "device_requested": "cuda:0",
+        "device_used": "cuda:0",
+        "checkpoint_load_time_sec": 1.5428,
+        "fit_context_time_sec": 0.1875,
+        "predict_time_sec": 616.6034,
+        "peak_cuda_allocated_mb": 8164.267,
+        "peak_cuda_reserved_mb": 10816.0,
+        "checkpoint_repo": "Layer6/TabDPT",
+        "max_features_native": 128,
+        "native_feature_reduction": "pca",
+        "context_mechanism": "FAISS L2 retrieval (context_size per query)",
+        "ensemble_size": 8,
+        "attention_backend": "PyTorch SDPA (use_flash=False for Turing sm_75)",
+        "available_training_rows": 4096,
+        "context_rows_per_query": 2048
+      },
+      "warning_count": 0,
+      "warnings_sample": [],
+      "peak_rss_mb": 1477.109,
+      "subprocess_elapsed_sec": 623.578,
+      "violation_reason": null
+    },
+    "L2C": {
+      "status": "FAILED",
+      "error": "Empty worker output",
+      "peak_rss_mb": 1590.344,
+      "subprocess_elapsed_sec": 48477.078,
+      "violation_reason": "WALL_CLOCK_TIMEOUT (900s)"
+    }
+  },
+  "DL04": {
+    "L2A": {
+      "model_id": "DL04",
+      "stage": "L2A",
+      "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-tabr\\Scripts\\python.exe",
+      "n_threads": 16,
+      "status": "PASS",
+      "input_shape": [
+        1000,
+        501
+      ],
+      "predict_input_shape": [
+        200,
+        501
+      ],
+      "output_shape": [
+        200
+      ],
+      "all_finite": true,
+      "negative_prediction_count": 0,
+      "min_pred": 38.20436096191406,
+      "max_pred": 339.6119384765625,
+      "init_time_sec": 4.324,
+      "checkpoint_load_time_sec": 2.3724,
+      "fit_context_time_sec": 0.9819,
+      "predict_time_sec": 0.0158,
+      "total_wall_sec": 0.9977,
+      "peak_cuda_allocated_mb": null,
+      "peak_cuda_reserved_mb": null,
+      "serialization": null,
+      "metadata": {
+        "model_id": "DL04",
+        "environment_name": ".venv-tabr",
+        "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-tabr\\Scripts\\python.exe",
+        "package": "bin",
+        "package_version": "unknown",
+        "estimator_class": "bin.tabr.Model",
+        "config": {
+          "repo_commit": "17baa9082506f8e7a0f8d11bb1e08212926a1507",
+          "d_main": 64,
+          "d_multiplier": 2.0,
+          "encoder_n_blocks": 1,
+          "predictor_n_blocks": 1,
+          "context_size": 32,
+          "epochs": 3,
+          "batch_size": 64,
+          "faiss_backend": "faiss.IndexFlatL2 (CPU on Windows)"
+        },
+        "device_requested": "cpu",
+        "device_used": "cpu (faiss-cpu IndexFlatL2; faiss-gpu unsupported on Windows)",
+        "checkpoint_load_time_sec": 2.3724,
+        "fit_context_time_sec": 0.9819,
+        "predict_time_sec": 0.0158,
+        "peak_cuda_allocated_mb": null,
+        "peak_cuda_reserved_mb": null,
+        "param_count": 86529,
+        "repo_commit": "17baa9082506f8e7a0f8d11bb1e08212926a1507",
+        "available_training_rows": 1000,
+        "context_rows_per_query": 32
+      },
+      "warning_count": 0,
+      "warnings_sample": [],
+      "peak_rss_mb": 727.949,
+      "subprocess_elapsed_sec": 8.656,
+      "violation_reason": null
+    },
+    "L2B": {
+      "model_id": "DL04",
+      "stage": "L2B",
+      "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-tabr\\Scripts\\python.exe",
+      "n_threads": 16,
+      "status": "PASS",
+      "input_shape": [
+        4096,
+        501
+      ],
+      "predict_input_shape": [
+        1024,
+        501
+      ],
+      "output_shape": [
+        1024
+      ],
+      "all_finite": true,
+      "negative_prediction_count": 0,
+      "min_pred": 37.47242736816406,
+      "max_pred": 347.9542236328125,
+      "init_time_sec": 3.8705,
+      "checkpoint_load_time_sec": 2.0022,
+      "fit_context_time_sec": 6.5195,
+      "predict_time_sec": 0.0751,
+      "total_wall_sec": 6.5946,
+      "peak_cuda_allocated_mb": null,
+      "peak_cuda_reserved_mb": null,
+      "serialization": null,
+      "metadata": {
+        "model_id": "DL04",
+        "environment_name": ".venv-tabr",
+        "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-tabr\\Scripts\\python.exe",
+        "package": "bin",
+        "package_version": "unknown",
+        "estimator_class": "bin.tabr.Model",
+        "config": {
+          "repo_commit": "17baa9082506f8e7a0f8d11bb1e08212926a1507",
+          "d_main": 64,
+          "d_multiplier": 2.0,
+          "encoder_n_blocks": 1,
+          "predictor_n_blocks": 1,
+          "context_size": 32,
+          "epochs": 3,
+          "batch_size": 64,
+          "faiss_backend": "faiss.IndexFlatL2 (CPU on Windows)"
+        },
+        "device_requested": "cpu",
+        "device_used": "cpu (faiss-cpu IndexFlatL2; faiss-gpu unsupported on Windows)",
+        "checkpoint_load_time_sec": 2.0022,
+        "fit_context_time_sec": 6.5195,
+        "predict_time_sec": 0.0751,
+        "peak_cuda_allocated_mb": null,
+        "peak_cuda_reserved_mb": null,
+        "param_count": 86529,
+        "repo_commit": "17baa9082506f8e7a0f8d11bb1e08212926a1507",
+        "available_training_rows": 4096,
+        "context_rows_per_query": 32
+      },
+      "warning_count": 0,
+      "warnings_sample": [],
+      "peak_rss_mb": 767.605,
+      "subprocess_elapsed_sec": 13.735,
+      "violation_reason": null
+    },
+    "L2C": {
+      "model_id": "DL04",
+      "stage": "L2C",
+      "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-tabr\\Scripts\\python.exe",
+      "n_threads": 16,
+      "status": "PASS",
+      "input_shape": [
+        12216,
+        501
+      ],
+      "predict_input_shape": [
+        3822,
+        501
+      ],
+      "output_shape": [
+        3822
+      ],
+      "all_finite": true,
+      "negative_prediction_count": 0,
+      "min_pred": 31.851287841796875,
+      "max_pred": 350.1922302246094,
+      "init_time_sec": 3.9363,
+      "checkpoint_load_time_sec": 2.0551,
+      "fit_context_time_sec": 43.8489,
+      "predict_time_sec": 0.7268,
+      "total_wall_sec": 44.5757,
+      "peak_cuda_allocated_mb": null,
+      "peak_cuda_reserved_mb": null,
+      "serialization": null,
+      "metadata": {
+        "model_id": "DL04",
+        "environment_name": ".venv-tabr",
+        "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-tabr\\Scripts\\python.exe",
+        "package": "bin",
+        "package_version": "unknown",
+        "estimator_class": "bin.tabr.Model",
+        "config": {
+          "repo_commit": "17baa9082506f8e7a0f8d11bb1e08212926a1507",
+          "d_main": 64,
+          "d_multiplier": 2.0,
+          "encoder_n_blocks": 1,
+          "predictor_n_blocks": 1,
+          "context_size": 32,
+          "epochs": 3,
+          "batch_size": 64,
+          "faiss_backend": "faiss.IndexFlatL2 (CPU on Windows)"
+        },
+        "device_requested": "cpu",
+        "device_used": "cpu (faiss-cpu IndexFlatL2; faiss-gpu unsupported on Windows)",
+        "checkpoint_load_time_sec": 2.0551,
+        "fit_context_time_sec": 43.8489,
+        "predict_time_sec": 0.7268,
+        "peak_cuda_allocated_mb": null,
+        "peak_cuda_reserved_mb": null,
+        "param_count": 86529,
+        "repo_commit": "17baa9082506f8e7a0f8d11bb1e08212926a1507",
+        "available_training_rows": 12216,
+        "context_rows_per_query": 32
+      },
+      "warning_count": 0,
+      "warnings_sample": [],
+      "peak_rss_mb": 861.953,
+      "subprocess_elapsed_sec": 52.109,
+      "violation_reason": null
+    }
+  },
+  "RF05": {
+    "L2A": {
+      "model_id": "RF05",
+      "stage": "L2A",
+      "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-deep\\Scripts\\python.exe",
+      "n_threads": 16,
+      "status": "PASS",
+      "input_shape": [
+        1000,
+        501
+      ],
+      "predict_input_shape": [
+        200,
+        501
+      ],
+      "output_shape": [
+        200
+      ],
+      "all_finite": true,
+      "negative_prediction_count": 0,
+      "min_pred": 10.84453010559082,
+      "max_pred": 372.76116943359375,
+      "init_time_sec": 2.2966,
+      "checkpoint_load_time_sec": 0.2691,
+      "fit_context_time_sec": 0.4903,
+      "predict_time_sec": 0.0066,
+      "total_wall_sec": 0.4969,
+      "peak_cuda_allocated_mb": 111.15,
+      "peak_cuda_reserved_mb": 140.0,
+      "serialization": null,
+      "metadata": {
+        "model_id": "RF05",
+        "environment_name": ".venv-deep",
+        "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-deep\\Scripts\\python.exe",
+        "package": "torch",
+        "package_version": "2.9.1+cu128",
+        "estimator_class": "torch.nn.DLM15LayerCNN_Table3_Normalized",
+        "config": {
+          "table3_layers": 15,
+          "input_normalization": "train-only global zero-center (X - mean_train)",
+          "target_unit_during_training": "pixels (y_um / 3.96875); predictions scaled by pi2mi=3.96875 -> um",
+          "optimizer": "SGD(lr=1e-3, momentum=0.9)",
+          "epochs": 5,
+          "batch_size": 128
+        },
+        "device_requested": "cuda:0",
+        "device_used": "cuda:0",
+        "checkpoint_load_time_sec": 0.2691,
+        "fit_context_time_sec": 0.4903,
+        "predict_time_sec": 0.0066,
+        "peak_cuda_allocated_mb": 111.15,
+        "peak_cuda_reserved_mb": 140.0,
+        "param_count": 70113,
+        "train_input_mean": 135.8546905517578
+      },
+      "warning_count": 1,
+      "warnings_sample": [
+        "Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at C:\\actions-runner\\_work\\pytorch\\pytorch\\pytorch\\aten\\src\\ATen\\native\\Convolution.cpp:1032.)"
+      ],
+      "peak_rss_mb": 1081.473,
+      "subprocess_elapsed_sec": 5.781,
+      "violation_reason": null
+    },
+    "L2B": {
+      "model_id": "RF05",
+      "stage": "L2B",
+      "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-deep\\Scripts\\python.exe",
+      "n_threads": 16,
+      "status": "PASS",
+      "input_shape": [
+        4096,
+        501
+      ],
+      "predict_input_shape": [
+        1024,
+        501
+      ],
+      "output_shape": [
+        1024
+      ],
+      "all_finite": true,
+      "negative_prediction_count": 0,
+      "min_pred": 149.59906005859375,
+      "max_pred": 149.59906005859375,
+      "init_time_sec": 2.2518,
+      "checkpoint_load_time_sec": 0.3138,
+      "fit_context_time_sec": 1.5167,
+      "predict_time_sec": 0.0125,
+      "total_wall_sec": 1.5292,
+      "peak_cuda_allocated_mb": 111.15,
+      "peak_cuda_reserved_mb": 138.0,
+      "serialization": null,
+      "metadata": {
+        "model_id": "RF05",
+        "environment_name": ".venv-deep",
+        "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-deep\\Scripts\\python.exe",
+        "package": "torch",
+        "package_version": "2.9.1+cu128",
+        "estimator_class": "torch.nn.DLM15LayerCNN_Table3_Normalized",
+        "config": {
+          "table3_layers": 15,
+          "input_normalization": "train-only global zero-center (X - mean_train)",
+          "target_unit_during_training": "pixels (y_um / 3.96875); predictions scaled by pi2mi=3.96875 -> um",
+          "optimizer": "SGD(lr=1e-3, momentum=0.9)",
+          "epochs": 5,
+          "batch_size": 128
+        },
+        "device_requested": "cuda:0",
+        "device_used": "cuda:0",
+        "checkpoint_load_time_sec": 0.3138,
+        "fit_context_time_sec": 1.5167,
+        "predict_time_sec": 0.0125,
+        "peak_cuda_allocated_mb": 111.15,
+        "peak_cuda_reserved_mb": 138.0,
+        "param_count": 70113,
+        "train_input_mean": 135.4098663330078
+      },
+      "warning_count": 1,
+      "warnings_sample": [
+        "Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at C:\\actions-runner\\_work\\pytorch\\pytorch\\pytorch\\aten\\src\\ATen\\native\\Convolution.cpp:1032.)"
+      ],
+      "peak_rss_mb": 1091.043,
+      "subprocess_elapsed_sec": 6.781,
+      "violation_reason": null
+    },
+    "L2C": {
+      "model_id": "RF05",
+      "stage": "L2C",
+      "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-deep\\Scripts\\python.exe",
+      "n_threads": 16,
+      "status": "PASS",
+      "input_shape": [
+        12216,
+        501
+      ],
+      "predict_input_shape": [
+        3822,
+        501
+      ],
+      "output_shape": [
+        3822
+      ],
+      "all_finite": true,
+      "negative_prediction_count": 0,
+      "min_pred": 39.408782958984375,
+      "max_pred": 389.726806640625,
+      "init_time_sec": 2.2137,
+      "checkpoint_load_time_sec": 0.2659,
+      "fit_context_time_sec": 4.1528,
+      "predict_time_sec": 0.0429,
+      "total_wall_sec": 4.1957,
+      "peak_cuda_allocated_mb": 111.15,
+      "peak_cuda_reserved_mb": 144.0,
+      "serialization": null,
+      "metadata": {
+        "model_id": "RF05",
+        "environment_name": ".venv-deep",
+        "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-deep\\Scripts\\python.exe",
+        "package": "torch",
+        "package_version": "2.9.1+cu128",
+        "estimator_class": "torch.nn.DLM15LayerCNN_Table3_Normalized",
+        "config": {
+          "table3_layers": 15,
+          "input_normalization": "train-only global zero-center (X - mean_train)",
+          "target_unit_during_training": "pixels (y_um / 3.96875); predictions scaled by pi2mi=3.96875 -> um",
+          "optimizer": "SGD(lr=1e-3, momentum=0.9)",
+          "epochs": 5,
+          "batch_size": 128
+        },
+        "device_requested": "cuda:0",
+        "device_used": "cuda:0",
+        "checkpoint_load_time_sec": 0.2659,
+        "fit_context_time_sec": 4.1528,
+        "predict_time_sec": 0.0429,
+        "peak_cuda_allocated_mb": 111.15,
+        "peak_cuda_reserved_mb": 144.0,
+        "param_count": 70113,
+        "train_input_mean": 135.4574737548828
+      },
+      "warning_count": 1,
+      "warnings_sample": [
+        "Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at C:\\actions-runner\\_work\\pytorch\\pytorch\\pytorch\\aten\\src\\ATen\\native\\Convolution.cpp:1032.)"
+      ],
+      "peak_rss_mb": 1131.488,
+      "subprocess_elapsed_sec": 9.594,
+      "violation_reason": null
+    }
+  },
+  "SG06": {
+    "L2A": {
+      "model_id": "SG06",
+      "stage": "L2A",
+      "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-signal-hydra\\Scripts\\python.exe",
+      "n_threads": 16,
+      "status": "PASS",
+      "input_shape": [
+        1000,
+        501
+      ],
+      "predict_input_shape": [
+        200,
+        501
+      ],
+      "output_shape": [
+        200
+      ],
+      "all_finite": true,
+      "negative_prediction_count": 0,
+      "min_pred": 31.723190307617188,
+      "max_pred": 350.8638916015625,
+      "init_time_sec": 3.9571,
+      "fit_time_sec": 7.5525,
+      "predict_time_sec": 0.9425,
+      "total_wall_sec": 8.495,
+      "peak_cuda_allocated_mb": null,
+      "peak_cuda_reserved_mb": null,
+      "serialization": null,
+      "metadata": {
+        "model_id": "SG06",
+        "environment_name": ".venv-signal-hydra",
+        "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-signal-hydra\\Scripts\\python.exe",
+        "package": "aeon",
+        "package_version": "1.6.0",
+        "estimator_class": "aeon.regression.convolution_based.MultiRocketHydraRegressor",
+        "input_mode": "3d_signal",
+        "config_label": "compatibility_bounded",
+        "config": {
+          "n_kernels": 8,
+          "n_groups": 64,
+          "n_jobs": 16,
+          "random_state": 42
+        },
+        "random_state": 42,
+        "n_threads": 16,
+        "device_requested": "cpu",
+        "device_used": "CPU (aeon MultiRocketHydraRegressor runs on CPU even with torch installed)",
+        "param_count": null,
+        "last_loss_finite": true,
+        "last_grad_finite": null,
+        "peak_cuda_allocated_mb": null,
+        "peak_cuda_reserved_mb": null,
+        "fit_time_sec": 7.5525,
+        "predict_time_sec": 0.9425
+      },
+      "warning_count": 0,
+      "warnings_sample": [],
+      "peak_rss_mb": 3528.605,
+      "subprocess_elapsed_sec": 13.422,
+      "violation_reason": null
+    },
+    "L2B": {
+      "model_id": "SG06",
+      "stage": "L2B",
+      "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-signal-hydra\\Scripts\\python.exe",
+      "n_threads": 16,
+      "status": "PASS",
+      "input_shape": [
+        4096,
+        501
+      ],
+      "predict_input_shape": [
+        1024,
+        501
+      ],
+      "output_shape": [
+        1024
+      ],
+      "all_finite": true,
+      "negative_prediction_count": 0,
+      "min_pred": 30.118377685546875,
+      "max_pred": 348.2216796875,
+      "init_time_sec": 4.0034,
+      "fit_time_sec": 39.9913,
+      "predict_time_sec": 4.5424,
+      "total_wall_sec": 44.5337,
+      "peak_cuda_allocated_mb": null,
+      "peak_cuda_reserved_mb": null,
+      "serialization": null,
+      "metadata": {
+        "model_id": "SG06",
+        "environment_name": ".venv-signal-hydra",
+        "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-signal-hydra\\Scripts\\python.exe",
+        "package": "aeon",
+        "package_version": "1.6.0",
+        "estimator_class": "aeon.regression.convolution_based.MultiRocketHydraRegressor",
+        "input_mode": "3d_signal",
+        "config_label": "compatibility_bounded",
+        "config": {
+          "n_kernels": 8,
+          "n_groups": 64,
+          "n_jobs": 16,
+          "random_state": 42
+        },
+        "random_state": 42,
+        "n_threads": 16,
+        "device_requested": "cpu",
+        "device_used": "CPU (aeon MultiRocketHydraRegressor runs on CPU even with torch installed)",
+        "param_count": null,
+        "last_loss_finite": true,
+        "last_grad_finite": null,
+        "peak_cuda_allocated_mb": null,
+        "peak_cuda_reserved_mb": null,
+        "fit_time_sec": 39.9913,
+        "predict_time_sec": 4.5424
+      },
+      "warning_count": 0,
+      "warnings_sample": [],
+      "peak_rss_mb": 15732.336,
+      "subprocess_elapsed_sec": 50.422,
+      "violation_reason": null
+    },
+    "L2C": {
+      "model_id": "SG06",
+      "stage": "L2C",
+      "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-signal-hydra\\Scripts\\python.exe",
+      "n_threads": 16,
+      "status": "PASS",
+      "input_shape": [
+        12216,
+        501
+      ],
+      "predict_input_shape": [
+        3822,
+        501
+      ],
+      "output_shape": [
+        3822
+      ],
+      "all_finite": true,
+      "negative_prediction_count": 0,
+      "min_pred": 27.34027099609375,
+      "max_pred": 353.5357971191406,
+      "init_time_sec": 4.4958,
+      "fit_time_sec": 320.9941,
+      "predict_time_sec": 17.0389,
+      "total_wall_sec": 338.033,
+      "peak_cuda_allocated_mb": null,
+      "peak_cuda_reserved_mb": null,
+      "serialization": null,
+      "metadata": {
+        "model_id": "SG06",
+        "environment_name": ".venv-signal-hydra",
+        "python_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-signal-hydra\\Scripts\\python.exe",
+        "package": "aeon",
+        "package_version": "1.6.0",
+        "estimator_class": "aeon.regression.convolution_based.MultiRocketHydraRegressor",
+        "input_mode": "3d_signal",
+        "config_label": "compatibility_bounded",
+        "config": {
+          "n_kernels": 8,
+          "n_groups": 64,
+          "n_jobs": 16,
+          "random_state": 42
+        },
+        "random_state": 42,
+        "n_threads": 16,
+        "device_requested": "cpu",
+        "device_used": "CPU (aeon MultiRocketHydraRegressor runs on CPU even with torch installed)",
+        "param_count": null,
+        "last_loss_finite": true,
+        "last_grad_finite": null,
+        "peak_cuda_allocated_mb": null,
+        "peak_cuda_reserved_mb": null,
+        "fit_time_sec": 320.9941,
+        "predict_time_sec": 17.0389
+      },
+      "warning_count": 0,
+      "warnings_sample": [],
+      "peak_rss_mb": 26234.871,
+      "subprocess_elapsed_sec": 344.859,
+      "violation_reason": null
+    }
+  }
+}

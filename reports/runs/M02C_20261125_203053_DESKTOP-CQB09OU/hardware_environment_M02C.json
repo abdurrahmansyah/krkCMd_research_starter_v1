@@ -1,0 +1,26 @@
+{
+  "timestamp_utc": "2026-11-25T13:31:04Z",
+  "run_id": "M02C_20261125_203053_DESKTOP-CQB09OU",
+  "hostname": "DESKTOP-CQB09OU",
+  "cpu_logical_cores": 20,
+  "ram_total_gib": 127.921,
+  "ram_available_gib": 103.436,
+  "disk_free_gib": 1727.554,
+  "gpu": {
+    "gpu_available": true,
+    "gpu_name": "Quadro RTX 6000",
+    "driver_version": "621.24",
+    "compute_capability": "7.5",
+    "vram_total_gib": 24.0,
+    "vram_available_gib": 22.133
+  },
+  "m02c_resource_policy": {
+    "ram_budget_gib": 64.0,
+    "vram_budget_gib": 18.813,
+    "env_cache_budget_gib": 30.0,
+    "max_cpu_threads": 16,
+    "l2_timeout_sec": 900,
+    "l2_retry_timeout_sec": 1800,
+    "wddm_note": "Windows WDDM per-process VRAM reporting is approximate; torch.cuda.max_memory_allocated measures PyTorch allocator only."
+  }
+}

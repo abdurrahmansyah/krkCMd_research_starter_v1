@@ -1,0 +1,30 @@
+{
+  "foundation": {
+    "status": "RESOLVED_TRANSITIVE",
+    "pkg_count": 82,
+    "key_pkgs": {
+      "tabpfn": "10.2.0",
+      "tabicl": "2.2.0",
+      "tabdpt": "1.3.2",
+      "scikit-learn": "1.9.1",
+      "einops": "0.8.2",
+      "faiss-cpu": "1.12.0",
+      "numpy": "2.4.6",
+      "pandas": "3.1.1",
+      "torch": "PyPI=2.15.0 -> LOCKED_TO_2.9.1+cu128"
+    }
+  },
+  "tabr": {
+    "status": "RESOLVED_TRANSITIVE",
+    "pkg_count": 54,
+    "key_pkgs": {
+      "delu": "0.0.26",
+      "faiss-cpu": "1.16.0",
+      "einops": "0.8.2",
+      "numpy": "2.4.6",
+      "pandas": "3.1.1",
+      "scikit-learn": "1.9.1",
+      "torch": "PyPI=2.15.0 -> LOCKED_TO_2.9.1+cu128"
+    }
+  }
+}

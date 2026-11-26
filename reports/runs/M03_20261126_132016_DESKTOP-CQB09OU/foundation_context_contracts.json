@@ -1,0 +1,106 @@
+{
+  "run_id": "M03_20261126_132016_DESKTOP-CQB09OU",
+  "generated_utc": "2026-11-26T07:03:00Z",
+  "policy": "Record highest successful synthetic stage only; never fall back from failed L2C to L1; zero real krkCMd training.",
+  "contracts": {
+    "FM01": {
+      "model_id": "FM01",
+      "name": "TabPFN-3.5",
+      "environment": ".venv-foundation",
+      "effective_runtime_status": "BLOCKED_LICENSE",
+      "highest_successful_stage": "L0",
+      "l2c_passed": false,
+      "max_verified_train_rows": 0,
+      "max_verified_test_rows": 0,
+      "max_native_features": 500,
+      "requires_feature_reduction_for_501": true,
+      "token_present": false,
+      "blocking_reason": "PriorLabs gated checkpoint requires personal researcher license acceptance and TABPFN_TOKEN.",
+      "m04_eligible": false
+    },
+    "FM02": {
+      "model_id": "FM02",
+      "name": "TabPFN-3.5-Fast",
+      "environment": ".venv-foundation",
+      "effective_runtime_status": "BLOCKED_LICENSE",
+      "highest_successful_stage": "L0",
+      "l2c_passed": false,
+      "max_verified_train_rows": 0,
+      "max_verified_test_rows": 0,
+      "max_native_features": 500,
+      "requires_feature_reduction_for_501": true,
+      "token_present": false,
+      "blocking_reason": "PriorLabs gated checkpoint requires personal researcher license acceptance and TABPFN_TOKEN.",
+      "m04_eligible": false
+    },
+    "FM03": {
+      "model_id": "FM03",
+      "name": "TabICLv2",
+      "environment": ".venv-foundation",
+      "effective_runtime_status": "SCALE_CHECK_PASS",
+      "highest_successful_stage": "L2C",
+      "l2c_passed": true,
+      "max_verified_train_rows": 12216,
+      "max_verified_test_rows": 3822,
+      "max_native_features": 501,
+      "requires_feature_reduction_for_501": false,
+      "verified_configuration": {
+        "n_estimators": 8,
+        "batch_size": 1,
+        "offload_mode": "cpu",
+        "use_amp": "auto",
+        "use_fa3": false,
+        "random_state": 42
+      },
+      "verified_l2c_metrics": {
+        "attempt_id": "M03_FM03_L2C_offload_cpu",
+        "subprocess_elapsed_sec": 52.719,
+        "fit_sec": 7.211,
+        "predict_sec": 39.946,
+        "peak_cuda_alloc_mb": 11917.214,
+        "peak_cuda_res_mb": 18418.0,
+        "vram_delta_mb": 18569.0,
+        "peak_rss_mb": 9720.547,
+        "suspend_detected": false
+      },
+      "m04_eligible": true
+    },
+    "FM04": {
+      "model_id": "FM04",
+      "name": "TabDPT",
+      "environment": ".venv-foundation",
+      "effective_runtime_status": "SCALE_CHECK_PASS",
+      "highest_successful_stage": "L2C",
+      "l2c_passed": true,
+      "max_verified_train_rows": 12216,
+      "max_verified_test_rows": 3822,
+      "max_native_features": 128,
+      "requires_feature_reduction_for_501": true,
+      "feature_reduction_mechanism": "internal TabDPT PCA compression (>128 features)",
+      "verified_configuration": {
+        "normalizer": "standard",
+        "feature_reduction": "pca",
+        "context_reduction": "retrieval",
+        "n_ensembles": 8,
+        "context_size": 2048,
+        "use_flash": false,
+        "compile": false,
+        "seed": 42
+      },
+      "verified_l2c_metrics": {
+        "attempt_id": "M03_FM04_L2C_retry",
+        "subprocess_elapsed_sec": 2361.703,
+        "load_sec": 1.413,
+        "fit_sec": 0.228,
+        "predict_sec": 2354.673,
+        "peak_cuda_alloc_mb": 8169.624,
+        "peak_cuda_res_mb": 10864.0,
+        "vram_delta_mb": 11454.0,
+        "peak_rss_mb": 1763.988,
+        "suspend_detected": false,
+        "batch_consistency_max_abs_diff": 3.0517578125e-05
+      },
+      "m04_eligible": true
+    }
+  }
+}

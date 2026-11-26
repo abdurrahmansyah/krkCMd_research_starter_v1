@@ -91,3 +91,34 @@ Append-only log. Do not rewrite old results.
   - `SG06` (`MultiRocketHydraRegressor`): L0/L1/L2A/L2B (`15.73 GiB` RSS) `PASS` on `CPU`; L2C `FAILED` (`WALL_CLOCK_TIMEOUT (300s)` at `26.35 GiB` RSS).
   - `DL04` (`TabR`): `CONDITIONAL` (non-PyPI repo `yandex-research/tabular-dl-tabr` @ `17baa908`).
 - Next: Await researcher review of `reports/runs/M02B_20261125_081433_DESKTOP-CQB09OU/M02B_PROVISIONING_REPORT.md` before M02C or any real data experiments.
+
+## EXP-006 — Milestone M02C: Tabular Foundation Models & Deferred Candidate Recovery
+- Date: 2026-11-25/26
+- Run ID: `M02C_20261125_203053_DESKTOP-CQB09OU`
+- Status: PARTIAL (Track B: DL04, RF05, SG06 all SCALE_CHECK_PASS through L2C; Track A: FM03 & FM04 PASS through L2B [4,096 rows] / FAILED L2C, FM01 & FM02 BLOCKED_LICENSE pending PriorLabs token; ZERO real krkCMd training)
+- Environments Created:
+  - `.venv-foundation` (`krkcmd-foundation`): `torch==2.9.1+cu128`, `tabpfn==10.2.0`, `tabicl==2.2.0`, `tabdpt==1.3.2`, `huggingface_hub`, `numpy==2.4.6`; `pip check` clean; `GPU_PASS` (`Quadro RTX 6000`, `matmul_finite=True`, `grads_finite=True`, `params_finite=True`).
+  - `.venv-tabr` (`krkcmd-tabr`): `torch==2.9.1+cu128`, `faiss-cpu==1.16.0`, `delu==0.0.26`, `tomli-w==1.2.0`, `tensorboard==2.21.0`, `yandex-research/tabular-dl-tabr` @ `17baa908`.
+- Results (strictly synthetic `seed=42`, `D=501`):
+  - `DL04` (`bin.tabr.Model`, CPU `faiss-cpu`): L0..L2C `PASS` (`861.95 MiB` RSS, `52.11 s` wall).
+  - `RF05` (`DLM15LayerCNN_Table3_Normalized`, train-only zero-center + `pi2mi=3.96875`, `cuda:0`): L0..L2C `PASS` (`1,131.49 MiB` RSS, `111.15 MiB` VRAM, `9.59 s` wall).
+  - `SG06` (`MultiRocketHydraRegressor`, `.venv-signal-hydra`, CPU `n_jobs=16`, `1,800s` cap): L2C `PASS` (`344.86 s`, `26,234.87 MiB` RSS).
+  - `FM03` (`TabICLv2`, `batch_size=1`, `cuda:0`) & `FM04` (`TabDPT`, `batch_size=128`, `cuda:0`): L0..L2B `PASS` (`8.31 GiB` & `8.16 GiB` VRAM); L2C `FAILED` (VRAM reserve / timeout).
+  - `FM01` (`TabPFN-3.5`) & `FM02` (`TabPFN-3.5-Fast`): L0 `PASS`; L1 `BLOCKED_LICENSE` (`TabPFNLicenseError` — requires researcher acceptance at `https://ux.priorlabs.ai`).
+- Next: Await researcher review of `reports/runs/M02C_20261125_203053_DESKTOP-CQB09OU/M02C_PROVISIONING_REPORT.md` before M03.
+
+## EXP-007 — Milestone M03: Scientific Evaluation Protocol, Foundation Readiness Closure & Reference Benchmark Planning
+- Date: 2026-11-26
+- Run ID: `M03_20261126_132016_DESKTOP-CQB09OU`
+- Status: COMPLETE (PROPOSED PROTOCOL; ZERO real `krkCMd` training; ZERO `.venv*` modifications; 0/32 `APPROVED`)
+- Foundation Readiness Closure (strictly synthetic `seed=42`, `D=501` in `.venv-foundation`):
+  - `FM03` (`TabICLRegressor`, `offload_mode="cpu"`, `batch_size=1`, `use_fa3=False`): L1 `PASS` (`9.61 s`), full **L2C `PASS`** (`12,216 -> 3,822` in `52.719 s` wall, `18,418 MiB` peak CUDA res, `18,569 MiB` VRAM delta, `suspend_detected=false`).
+  - `FM04` (`TabDPTRegressor`, `context_size=2048`, `n_ensembles=8`): L1 batch consistency `PASS` (`max_abs_diff=3.05e-05`), full **L2C `PASS`** (`12,216 -> 3,822` in `2,361.703 s` / ~39.4 min wall, `10,864 MiB` peak CUDA res, `suspend_detected=false`).
+  - `FM01` (`TabPFN-3.5`) & `FM02` (`TabPFN-3.5-Fast`): remain `BLOCKED_LICENSE` (`TABPFN_TOKEN` not set).
+- Readiness Reconciliation (32 candidates): `6` M00 historical + `17` additional synthetic L2C PASS (`23` M04-eligible) + `2` `BLOCKED_LICENSE` + `2` reference pending (`RF03`, `RF04`) + `5` custom `DESIGN_REQUIRED`; `0` `APPROVED`.
+- Dataset Audit & Proposed Split Manifests (`data/processed/krkCMd_table.csv`: `19,098` rows, `3,183` gridline groups, `36` `Series + Image` groups, `4,900` exact zero-width observations):
+  - Generated `protocol_b_series_image_3fold.csv`, `protocol_b_series_image_5fold.csv`, and `protocol_c_leave_one_series_out.csv` (`max_folds_per_image_group=1`).
+- Infrastructure & Code Deliverables:
+  - Repaired `scripts/resource_policy.py` (suspend/sleep gap detection, bounded `nvidia-smi` timeout, `clock_fn` injection) and documented M02C `48,477.078 s` anomaly in `WATCHDOG_ANOMALY_INVESTIGATION_M03.md`.
+  - Implemented `src/evaluation/metrics.py`, `src/features/perturbations.py`, `src/evaluation/experiment_runner.py` (guarded against real-data training), and `tests/test_m03_metrics_perturbations_watchdog.py` (`37` unit tests `OK`).
+- Next: Await researcher review and explicit approval of `reports/runs/M03_20261126_132016_DESKTOP-CQB09OU/M03_EVALUATION_PROTOCOL.md` and `M04_EXECUTION_PLAN.md` before M04.

@@ -1,0 +1,78 @@
+{
+  "token_present": false,
+  "FM01": {
+    "status": "BLOCKED_LICENSE",
+    "reason": "TABPFN_TOKEN not set; researcher PriorLabs acceptance required."
+  },
+  "FM02": {
+    "status": "BLOCKED_LICENSE",
+    "reason": "TABPFN_TOKEN not set; researcher PriorLabs acceptance required."
+  },
+  "attempts": {
+    "M03_FM03_L1_offload_cpu": {
+      "status": "PASS",
+      "shape": [
+        20
+      ],
+      "all_finite": true,
+      "elapsed_sec": 4.618,
+      "peak_cuda_alloc_mb": 414.329,
+      "peak_cuda_res_mb": 524.0,
+      "peak_rss_mb": 1450.75,
+      "subprocess_elapsed_sec": 9.61,
+      "violation_reason": null,
+      "attempt_id": "M03_FM03_L1_offload_cpu",
+      "suspend_detected": false,
+      "max_poll_gap_sec": 0.297
+    },
+    "M03_FM03_L2C_offload_cpu": {
+      "status": "PASS",
+      "shape": [
+        3822
+      ],
+      "all_finite": true,
+      "fit_sec": 7.211,
+      "predict_sec": 39.946,
+      "elapsed_sec": 47.157,
+      "peak_cuda_alloc_mb": 11917.214,
+      "peak_cuda_res_mb": 18418.0,
+      "peak_rss_mb": 9720.547,
+      "subprocess_elapsed_sec": 52.719,
+      "violation_reason": null,
+      "attempt_id": "M03_FM03_L2C_offload_cpu",
+      "suspend_detected": false,
+      "max_poll_gap_sec": 0.407
+    },
+    "M03_FM04_L1_batch_consistency": {
+      "status": "PASS",
+      "max_abs_diff_batched_vs_unbatched": 3.0517578125e-05,
+      "invariant": true,
+      "max_features_native": 128,
+      "peak_rss_mb": 1374.27,
+      "subprocess_elapsed_sec": 8.406,
+      "violation_reason": null,
+      "attempt_id": "M03_FM04_L1_batch_consistency",
+      "suspend_detected": false,
+      "max_poll_gap_sec": 0.297
+    },
+    "M03_FM04_L2C_retry": {
+      "status": "PASS",
+      "shape": [
+        3822
+      ],
+      "all_finite": true,
+      "load_sec": 1.413,
+      "fit_sec": 0.228,
+      "predict_sec": 2354.673,
+      "elapsed_sec": 2356.315,
+      "peak_cuda_alloc_mb": 8169.624,
+      "peak_cuda_res_mb": 10864.0,
+      "peak_rss_mb": 1763.988,
+      "subprocess_elapsed_sec": 2361.703,
+      "violation_reason": null,
+      "attempt_id": "M03_FM04_L2C_retry",
+      "suspend_detected": false,
+      "max_poll_gap_sec": 0.797
+    }
+  }
+}
