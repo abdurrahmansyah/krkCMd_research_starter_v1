@@ -1,0 +1,17 @@
+model_id,name,category,raw_mae_um,raw_rmse_um,lins_ccc,total_elapsed_sec,compact_roster,balanced_roster,expanded_roster,m05_role
+ML01,Extra Trees,classical_boosting,14.2536,28.9352,0.9796,32.20,true,true,true,HPO
+ML02,Random Forest,classical_boosting,14.5582,29.8717,0.9783,95.88,false,true,true,HPO
+ML03,HistGradientBoosting,classical_boosting,15.2379,30.1506,0.9779,9.19,false,false,true,HPO
+ML04,XGBoost,classical_boosting,14.7437,29.6757,0.9786,20.74,true,true,true,HPO
+ML05,LightGBM,classical_boosting,14.9981,29.6455,0.9787,9.39,false,true,true,HPO
+ML06,CatBoost,classical_boosting,14.9827,29.0493,0.9796,29.48,true,true,true,HPO
+FM03,TabICLv2,tabular_foundation_models,14.3933,29.1724,0.9794,83.25,true,true,true,InferenceConfigOnly
+DL03,RealMLP,tabular_deep_learning,16.6599,31.4117,0.9762,119.34,true,true,true,HPO
+DL02,FT-Transformer,tabular_deep_learning,16.7273,31.3570,0.9768,188.22,false,true,true,HPO
+DL05,TabM,tabular_deep_learning,23.5185,41.3599,0.9583,24.02,false,false,true,HPO
+DL04,TabR,tabular_deep_learning,23.9516,42.8140,0.9548,430.01,false,false,true,HPO
+SG06,MultiROCKET-HYDRA,spatial_signal_regression,22.3345,33.4576,0.9730,347.88,false,true,true,HPO
+SG04,LITETime,spatial_signal_regression,27.7206,38.4293,0.9638,739.40,false,false,true,HPO
+RF05,DLM retrained,reference_benchmarks,17.4926,33.6785,0.9728,22.95,true,true,true,FixedAnchor
+RF02,Linear Regression,reference_benchmarks,52.4496,70.3733,0.8722,1.54,true,true,true,FixedAnchor
+RF01,Dummy Mean,reference_benchmarks,120.2711,145.7915,0.0000,1.30,true,true,true,FixedAnchor

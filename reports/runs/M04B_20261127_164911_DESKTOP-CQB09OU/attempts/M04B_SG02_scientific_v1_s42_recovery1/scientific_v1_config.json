@@ -1,0 +1,6 @@
+{
+  "batch_size": 64,
+  "n_epochs": 50,
+  "random_state": 42,
+  "verbose": false
+}

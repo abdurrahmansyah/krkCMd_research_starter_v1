@@ -1,0 +1,215 @@
+{
+  "run_id": "M04B_20261127_164911_DESKTOP-CQB09OU",
+  "n_models_recomputed": 23,
+  "max_mae_diff": 0.0,
+  "max_rmse_diff": 0.0,
+  "per_model": {
+    "ML01": {
+      "source_run_id": "M04A_20261126_145808_DESKTOP-CQB09OU",
+      "reported_mae_um": 14.2536276120915,
+      "recomputed_mae_um": 14.2536276120915,
+      "mae_diff": 0.0,
+      "reported_rmse_um": 28.935168488592005,
+      "recomputed_rmse_um": 28.935168488592005,
+      "rmse_diff": 0.0
+    },
+    "ML02": {
+      "source_run_id": "M04A_20261126_145808_DESKTOP-CQB09OU",
+      "reported_mae_um": 14.558165921459691,
+      "recomputed_mae_um": 14.558165921459691,
+      "mae_diff": 0.0,
+      "reported_rmse_um": 29.8717115626437,
+      "recomputed_rmse_um": 29.8717115626437,
+      "rmse_diff": 0.0
+    },
+    "ML03": {
+      "source_run_id": "M04A_20261126_145808_DESKTOP-CQB09OU",
+      "reported_mae_um": 15.23786063570177,
+      "recomputed_mae_um": 15.23786063570177,
+      "mae_diff": 0.0,
+      "reported_rmse_um": 30.150626522418836,
+      "recomputed_rmse_um": 30.150626522418836,
+      "rmse_diff": 0.0
+    },
+    "ML04": {
+      "source_run_id": "M04A_20261126_145808_DESKTOP-CQB09OU",
+      "reported_mae_um": 14.743679356206801,
+      "recomputed_mae_um": 14.743679356206801,
+      "mae_diff": 0.0,
+      "reported_rmse_um": 29.675694105974735,
+      "recomputed_rmse_um": 29.675694105974735,
+      "rmse_diff": 0.0
+    },
+    "ML05": {
+      "source_run_id": "M04A_20261126_145808_DESKTOP-CQB09OU",
+      "reported_mae_um": 14.998149455810902,
+      "recomputed_mae_um": 14.998149455810902,
+      "mae_diff": 0.0,
+      "reported_rmse_um": 29.645536293502566,
+      "recomputed_rmse_um": 29.645536293502566,
+      "rmse_diff": 0.0
+    },
+    "ML06": {
+      "source_run_id": "M04A_20261126_145808_DESKTOP-CQB09OU",
+      "reported_mae_um": 14.982728261668612,
+      "recomputed_mae_um": 14.982728261668612,
+      "mae_diff": 0.0,
+      "reported_rmse_um": 29.049250872632324,
+      "recomputed_rmse_um": 29.049250872632324,
+      "rmse_diff": 0.0
+    },
+    "ML07": {
+      "source_run_id": "M04A_20261126_145808_DESKTOP-CQB09OU",
+      "reported_mae_um": 29.719144166695784,
+      "recomputed_mae_um": 29.719144166695784,
+      "mae_diff": 0.0,
+      "reported_rmse_um": 49.8594409051568,
+      "recomputed_rmse_um": 49.8594409051568,
+      "rmse_diff": 0.0
+    },
+    "DL01": {
+      "source_run_id": "M04A_20261126_145808_DESKTOP-CQB09OU",
+      "reported_mae_um": 24.212902393794177,
+      "recomputed_mae_um": 24.212902393794177,
+      "mae_diff": 0.0,
+      "reported_rmse_um": 46.341011990199256,
+      "recomputed_rmse_um": 46.341011990199256,
+      "rmse_diff": 0.0
+    },
+    "DL02": {
+      "source_run_id": "M04A_20261126_145808_DESKTOP-CQB09OU",
+      "reported_mae_um": 16.727288633785246,
+      "recomputed_mae_um": 16.727288633785246,
+      "mae_diff": 0.0,
+      "reported_rmse_um": 31.357001851942897,
+      "recomputed_rmse_um": 31.357001851942897,
+      "rmse_diff": 0.0
+    },
+    "DL03": {
+      "source_run_id": "M04A_20261126_145808_DESKTOP-CQB09OU",
+      "reported_mae_um": 16.659929593406126,
+      "recomputed_mae_um": 16.659929593406126,
+      "mae_diff": 0.0,
+      "reported_rmse_um": 31.41168490236181,
+      "recomputed_rmse_um": 31.41168490236181,
+      "rmse_diff": 0.0
+    },
+    "DL04": {
+      "source_run_id": "M04A_20261126_145808_DESKTOP-CQB09OU",
+      "reported_mae_um": 23.95159550548874,
+      "recomputed_mae_um": 23.95159550548874,
+      "mae_diff": 0.0,
+      "reported_rmse_um": 42.81402796392156,
+      "recomputed_rmse_um": 42.81402796392156,
+      "rmse_diff": 0.0
+    },
+    "DL05": {
+      "source_run_id": "M04A_20261126_145808_DESKTOP-CQB09OU",
+      "reported_mae_um": 23.518459878335563,
+      "recomputed_mae_um": 23.518459878335563,
+      "mae_diff": 0.0,
+      "reported_rmse_um": 41.359917437496996,
+      "recomputed_rmse_um": 41.359917437496996,
+      "rmse_diff": 0.0
+    },
+    "FM03": {
+      "source_run_id": "M04A_20261126_145808_DESKTOP-CQB09OU",
+      "reported_mae_um": 14.39326022635167,
+      "recomputed_mae_um": 14.39326022635167,
+      "mae_diff": 0.0,
+      "reported_rmse_um": 29.172433741094878,
+      "recomputed_rmse_um": 29.172433741094878,
+      "rmse_diff": 0.0
+    },
+    "FM04": {
+      "source_run_id": "M04B_20261127_164911_DESKTOP-CQB09OU",
+      "reported_mae_um": 23.90256453464134,
+      "recomputed_mae_um": 23.90256453464134,
+      "mae_diff": 0.0,
+      "reported_rmse_um": 40.65062417459175,
+      "recomputed_rmse_um": 40.65062417459175,
+      "rmse_diff": 0.0
+    },
+    "SG01": {
+      "source_run_id": "M04A_20261126_145808_DESKTOP-CQB09OU",
+      "reported_mae_um": 41.880293768011356,
+      "recomputed_mae_um": 41.880293768011356,
+      "mae_diff": 0.0,
+      "reported_rmse_um": 56.21303003058945,
+      "recomputed_rmse_um": 56.21303003058945,
+      "rmse_diff": 0.0
+    },
+    "SG02": {
+      "source_run_id": "M04B_20261127_164911_DESKTOP-CQB09OU",
+      "reported_mae_um": 56.41741319333174,
+      "recomputed_mae_um": 56.41741319333174,
+      "mae_diff": 0.0,
+      "reported_rmse_um": 78.83655422484212,
+      "recomputed_rmse_um": 78.83655422484212,
+      "rmse_diff": 0.0
+    },
+    "SG03": {
+      "source_run_id": "M04B_20261127_164911_DESKTOP-CQB09OU",
+      "reported_mae_um": 75.02967704205362,
+      "recomputed_mae_um": 75.02967704205362,
+      "mae_diff": 0.0,
+      "reported_rmse_um": 108.2175176398586,
+      "recomputed_rmse_um": 108.2175176398586,
+      "rmse_diff": 0.0
+    },
+    "SG04": {
+      "source_run_id": "M04A_20261126_145808_DESKTOP-CQB09OU",
+      "reported_mae_um": 27.720625021359126,
+      "recomputed_mae_um": 27.720625021359126,
+      "mae_diff": 0.0,
+      "reported_rmse_um": 38.429254296360675,
+      "recomputed_rmse_um": 38.429254296360675,
+      "rmse_diff": 0.0
+    },
+    "SG05": {
+      "source_run_id": "M04A_20261126_145808_DESKTOP-CQB09OU",
+      "reported_mae_um": 26.24824921788833,
+      "recomputed_mae_um": 26.24824921788833,
+      "mae_diff": 0.0,
+      "reported_rmse_um": 38.82922742842535,
+      "recomputed_rmse_um": 38.82922742842535,
+      "rmse_diff": 0.0
+    },
+    "SG06": {
+      "source_run_id": "M04A_20261126_145808_DESKTOP-CQB09OU",
+      "reported_mae_um": 22.334537208515243,
+      "recomputed_mae_um": 22.334537208515243,
+      "mae_diff": 0.0,
+      "reported_rmse_um": 33.457639471097124,
+      "recomputed_rmse_um": 33.457639471097124,
+      "rmse_diff": 0.0
+    },
+    "RF01": {
+      "source_run_id": "M04A_20261126_145808_DESKTOP-CQB09OU",
+      "reported_mae_um": 120.27106501322332,
+      "recomputed_mae_um": 120.27106501322332,
+      "mae_diff": 0.0,
+      "reported_rmse_um": 145.79146923161503,
+      "recomputed_rmse_um": 145.79146923161503,
+      "rmse_diff": 0.0
+    },
+    "RF02": {
+      "source_run_id": "M04A_20261126_145808_DESKTOP-CQB09OU",
+      "reported_mae_um": 52.449626254324315,
+      "recomputed_mae_um": 52.449626254324315,
+      "mae_diff": 0.0,
+      "reported_rmse_um": 70.37331002651744,
+      "recomputed_rmse_um": 70.37331002651744,
+      "rmse_diff": 0.0
+    },
+    "RF05": {
+      "source_run_id": "M04A_20261126_145808_DESKTOP-CQB09OU",
+      "reported_mae_um": 17.492568693360493,
+      "recomputed_mae_um": 17.492568693360493,
+      "mae_diff": 0.0,
+      "reported_rmse_um": 33.67845706879621,
+      "recomputed_rmse_um": 33.67845706879621,
+      "rmse_diff": 0.0
+    }
+  }
+}

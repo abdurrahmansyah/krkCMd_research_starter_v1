@@ -99,3 +99,23 @@
 ## D-009J — Comparative Robustness Sequence (2026-11-26)
 - Status: APPROVED BY RESEARCHER (Execution deferred until after screening and tuning)
 - Decision: Full comparative robustness experiments shall follow screening and tuning; no actual-data corruption sweeps are executed in M04A.
+
+## D-010A — M04B Scientific Recovery for SG02 and SG03 (2026-11-27)
+- Status: APPROVED BY RESEARCHER
+- Decision: Authorize one recovery attempt each for `SG02` (`ResNet-1D`) and `SG03` (`InceptionTime`, `n_regressors=1` single-member) with a maximum timeout of `10,800` seconds per model, preserving the exact `scientific_v1` configuration, implementation, and CPU-only TensorFlow/Keras backend.
+
+## D-010B — M04B TabDPT Recovery (2026-11-27)
+- Status: APPROVED BY RESEARCHER
+- Decision: Authorize one recovery attempt for `FM04` (`TabDPT`) with a maximum timeout of `7,200` seconds, preserving the last valid M04A configuration (`context_size=2048`, `n_ensembles=8`, `batch_size=128`, `context_reduction=retrieval`, `feature_reduction=pca`, `use_flash=false`, `compile=false`).
+
+## D-010C — Exploratory Paired Image-Cluster Bootstrap (2026-11-27)
+- Status: APPROVED BY RESEARCHER
+- Decision: Authorize exploratory paired `Series + Image` cluster bootstrap with 95% confidence intervals using existing M04A and successfully recovered M04B Protocol A validation predictions. All statistical conclusions remain strictly exploratory.
+
+## D-010D — Screening Closure Without HPO or Outer Evaluation (2026-11-27)
+- Status: APPROVED BY RESEARCHER
+- Decision: M04B closes initial Protocol A screening and prepares a proposed finalist shortlist and M05 HPO plan without executing HPO, actual-data robustness sweeps, or Protocol B/C outer evaluation.
+
+## D-010E — Raw Validation MAE Ranking Policy (2026-11-27)
+- Status: APPROVED BY RESEARCHER
+- Decision: Raw validation MAE (`y_pred_raw_um`) is the primary screening ranking criterion (tie-broken by raw RMSE and Lin's CCC); nonnegative-clipped prediction metrics (`y_pred_nonnegative_um = max(0, y_pred_raw_um)`) must be reported separately.

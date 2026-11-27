@@ -1,0 +1,17 @@
+{
+  "model_id": "FM04",
+  "config_id": "scientific_v1",
+  "run_id": "M04B_20261127_164911_DESKTOP-CQB09OU",
+  "attempt_id": "attempts/M04B_FM04_scientific_v1_s42_recovery1",
+  "split_manifest": "C:\\PROJECT\\krkCMd_research_starter_v1\\reports\\tables\\group_split_manifest.csv",
+  "seed": 42,
+  "environment_executable": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-foundation\\Scripts\\python.exe",
+  "worker_module": "src.evaluation.m04a_scientific_worker",
+  "authorize_real_data_training": true,
+  "authorized_phase": "M04A_PROTOCOL_A_TRAIN_VAL",
+  "config_json_path": "reports\\runs\\M04B_20261127_164911_DESKTOP-CQB09OU\\attempts\\M04B_FM04_scientific_v1_s42_recovery1\\scientific_v1_config.json",
+  "config_hash": "E80E87866A863FD202990FEBF2BE59B80E3AA2327D73C3474640144FC89057C3",
+  "timeout_sec": 7200,
+  "cpu_threads": 16,
+  "monitor_gpu": true
+}

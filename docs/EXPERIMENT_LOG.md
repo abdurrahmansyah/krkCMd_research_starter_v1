@@ -136,3 +136,18 @@ Append-only log. Do not rewrite old results.
   - Neural/Signal/Ref: `DL03` (`16.6599`), `DL02` (`16.7273`), `RF05` (`17.4926`), `SG06` (`22.3345`), `DL05` (`23.5185`), `DL04` (`23.9516`), `DL01` (`24.2129`), `SG05` (`26.2482`), `SG04` (`27.7206`), `ML07` (`29.7191`), `SG01` (`41.8803`), `RF02` (`52.4496`), `RF01` (`120.2711`).
 - Notebook & Verification: Executed `notebooks/01_M04A_scientific_screening_analysis.ipynb` via `krkcmd-research-newpc` (`01_M04A_scientific_screening_analysis_executed.ipynb` + `.html`); `41` unit tests `OK`; independent MAE/RMSE recomputation `max_diff=0.0`.
 - Next: Stop after M04A and await researcher review of `for_review/result_run_11_M04A.md` and `M04A_review_package.zip`.
+
+## EXP-009 — Milestone M04B: Scientific Screening Completion, Exploratory Statistical Analysis & Finalist Selection
+- Date: 2026-11-27
+- Run ID: `M04B_20261127_164911_DESKTOP-CQB09OU`
+- Status: PASS (23/23 authorized candidates PASS; 70,380 validation predictions; exploratory paired image-cluster bootstrap B=10,000 complete; 0 test-partition exposure; 0 `.venv*` modifications)
+- Approved Governance: `D-009A`–`D-009J` + `D-010A`–`D-010E` (`docs/DECISIONS.md`).
+- Track A Recovery Results (`1` attempt each, `suspend_detected=False`):
+  - `FM04` (`TabDPT`, `.venv-foundation`, `7,200s` cap): `PASS` in `1,862.938s` (`MAE=23.9026`, `RMSE=40.6506`, `CCC=0.9591`).
+  - `SG02` (`ResNet-1D`, `.venv-signal-tf` CPU-only TF, `10,800s` cap): `PASS` in `5,082.375s` (`MAE=56.4174`, `RMSE=78.8366`, `CCC=0.8999`).
+  - `SG03` (`InceptionTime`, `.venv-signal-tf` CPU-only TF, `n_regressors=1`, `10,800s` cap): `PASS` in `5,890.922s` (`MAE=75.0297`, `RMSE=108.2175`, `CCC=0.8418`).
+- Consolidated Validation Summary (`n=3,060`, `35` image clusters):
+  - Top-5 raw MAE (µm): `ML01` (`14.2536`), `FM03` (`14.3933`), `ML02` (`14.5582`), `ML04` (`14.7437`), `ML06` (`14.9827`).
+  - Exploratory paired `ΔMAE` vs `ML01` 95% CI: `FM03` `+0.1396 [-0.4787, +0.8771]`.
+  - Notebook `02_M04B_screening_completion_analysis.ipynb` created; `nbconvert --execute` blocked by Windows App Control on `_zmq` (`M04B_NOTEBOOK_EXECUTION_LOG.txt`); 8 figures rendered via `matplotlib`; `44` unit tests `OK`; independent MAE/RMSE recomputation `max_diff=0.0`.
+- Next: Stop after M04B and await researcher review of `for_review/result_run_12_M04B.md` and `M04B_review_package.zip`.

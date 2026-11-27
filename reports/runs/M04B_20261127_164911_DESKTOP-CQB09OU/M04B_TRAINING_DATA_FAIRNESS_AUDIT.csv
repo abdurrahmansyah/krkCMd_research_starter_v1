@@ -1,0 +1,24 @@
+model_id,authorized_train_rows,actual_optimization_rows,inner_val_rows,uses_group_aware_inner_split,final_refit_on_full_train,preprocessing_train_only,actual_epochs,notes
+ML01,12216,12216,0,False,False,True,,"Full 12,216 train rows"
+ML02,12216,12216,0,False,False,True,,"Full 12,216 train rows"
+ML03,12216,12216,0,False,False,True,,"Full 12,216 train rows"
+ML04,12216,12216,0,False,False,True,,"Full 12,216 train rows"
+ML05,12216,12216,0,False,False,True,,"Full 12,216 train rows"
+ML06,12216,12216,0,False,False,True,,"Full 12,216 train rows"
+ML07,12216,12216,0,False,False,True,,"Full 12,216 train rows"
+DL01,12216,9774,2442,True,False,True,43.0,Group-aware 80/20 inner split; best inner-val checkpoint
+DL02,12216,9774,2442,True,False,True,28.0,Group-aware 80/20 inner split; best inner-val checkpoint
+DL03,12216,12216,0,False,False,True,100.0,"Full 12,216 train rows"
+DL04,12216,9774,2442,True,False,True,40.0,Group-aware 80/20 inner split; best inner-val checkpoint
+DL05,12216,9774,2442,True,False,True,57.0,Group-aware 80/20 inner split; best inner-val checkpoint
+FM03,12216,12216,0,False,False,True,,"Full 12,216 train database context (zero-shot)"
+FM04,12216,12216,0,False,False,True,,"Full 12,216 train database context (zero-shot)"
+SG01,12216,9774,2442,True,False,True,100.0,Group-aware 80/20 inner split; best inner-val checkpoint
+SG02,12216,12216,0,False,False,True,50.0,"Full 12,216 train rows"
+SG03,12216,12216,0,False,False,True,50.0,"Full 12,216 train rows"
+SG04,12216,12216,0,False,False,True,50.0,"Full 12,216 train rows"
+SG05,12216,12216,0,False,False,True,,"Full 12,216 train rows"
+SG06,12216,12216,0,False,False,True,,"Full 12,216 train rows"
+RF01,12216,12216,0,False,False,True,,"Full 12,216 train rows"
+RF02,12216,12216,0,False,False,True,,"Full 12,216 train rows"
+RF05,12216,9774,2442,True,False,True,50.0,Group-aware 80/20 inner split; best inner-val checkpoint

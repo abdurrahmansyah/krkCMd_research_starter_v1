@@ -1,0 +1,178 @@
+{
+  "run_id": "M04B_20261127_164911_DESKTOP-CQB09OU",
+  "started_utc": "2026-11-27T09:49:16.628395+00:00",
+  "git_head": "bd79ac1ad6dc5c28ffa5934188eda465482483ae",
+  "git_status_before": "## main...origin/main\n M docs/DECISIONS.md",
+  "fingerprint_type": "pip_freeze_sha256_and_file_sha256 (pip-freeze equality does not prove complete binary identity)",
+  "before": {
+    "environments": {
+      "baseline": {
+        "python": "c:\\PROJECT\\krkCMd_research_starter_v1\\.venv\\Scripts\\python.exe",
+        "exists": true,
+        "freeze_sha256": "C9BEBFE1B8950B4AC6730DB68E349ED1C1BC447DA5DF8C0B9D693C829A975EDA",
+        "pkg_count": 112
+      },
+      "boost": {
+        "python": "c:\\PROJECT\\krkCMd_research_starter_v1\\.venv-boost\\Scripts\\python.exe",
+        "exists": true,
+        "freeze_sha256": "771E95964EAD47F8C6562F879D18D0D90A6E83918EB315D9AB6BB771F89A6297",
+        "pkg_count": 50
+      },
+      "signal_cpu": {
+        "python": "c:\\PROJECT\\krkCMd_research_starter_v1\\.venv-signal-cpu\\Scripts\\python.exe",
+        "exists": true,
+        "freeze_sha256": "C22ADDB782A6B7900C08C0DF3B84A823CC447432178D15756C77FDDB40C9684F",
+        "pkg_count": 42
+      },
+      "deep": {
+        "python": "c:\\PROJECT\\krkCMd_research_starter_v1\\.venv-deep\\Scripts\\python.exe",
+        "exists": true,
+        "freeze_sha256": "3D4B0FC1FD32870D9D537874646CF5EE38394B836975A31CDD736B9EC020E897",
+        "pkg_count": 64
+      },
+      "signal_tf": {
+        "python": "c:\\PROJECT\\krkCMd_research_starter_v1\\.venv-signal-tf\\Scripts\\python.exe",
+        "exists": true,
+        "freeze_sha256": "879AC93DDAEFE1F254648E2F7FA41442D537F7398C049279D8A2E040230EED31",
+        "pkg_count": 67
+      },
+      "signal_hydra": {
+        "python": "c:\\PROJECT\\krkCMd_research_starter_v1\\.venv-signal-hydra\\Scripts\\python.exe",
+        "exists": true,
+        "freeze_sha256": "144E1398313601017853FBEA6979F6A99303680FA6ACBC407C154CB6D4600F8C",
+        "pkg_count": 50
+      },
+      "foundation": {
+        "python": "c:\\PROJECT\\krkCMd_research_starter_v1\\.venv-foundation\\Scripts\\python.exe",
+        "exists": true,
+        "freeze_sha256": "A5DDBB7189C28B7AD1AFE107D9F595CE43A6C7AECD128BC36BF55FE44055F756",
+        "pkg_count": 81
+      },
+      "tabr": {
+        "python": "c:\\PROJECT\\krkCMd_research_starter_v1\\.venv-tabr\\Scripts\\python.exe",
+        "exists": true,
+        "freeze_sha256": "CA1C488D7C150636EF76793C7BF20F5AE99FC753B482558B7C8C9D77299AE789",
+        "pkg_count": 62
+      }
+    },
+    "files_sha256": {
+      "configs/baseline.yaml": "1175981E4D283CC0A989A3E48209FDD62C4FA54289FBDF02737CEF311961C697",
+      "configs/model_registry.yaml": "6B902C8CED47D4BBD7A4FEF0176940211B48A4D109108EDA9AC06753C6909D11",
+      "data/raw/krkCMd_table.csv": "CCCA7965B225F77D35567573BB557A6E0476122C381E14AB1BDA898DF9F9B909",
+      "reports/tables/group_split_manifest.csv": "361A3446455F6BCB431E20319BDD33AA3CF6F7BD5A65EE74581C6A20EFCF7685",
+      "notebooks/00_baseline_krkCMd.ipynb": "0C94F13EA7AEF87E884F21075459E57D43BCA563CE18907697AE72C16AFE6864",
+      "notebooks/01_M04A_scientific_screening_analysis.ipynb": "DE7C4B1A6CCBE96AAC03F2396CF939FE6A4B9E600277FEDFAB063AFFE515E630",
+      "manuscript/krkCMd_paper_en_v0.1.docx": "BBB1EA614821BAC10855BB4B2E3E7EBCD11080E56D24E9C6DE84D315800C68A0",
+      "manuscript/krkCMd_paper_id_v0.1.docx": "01FD8CC435529D7B2DF2FAA742C1DAC7F47968E5E23B8D015F0F4895E3C23BF6",
+      "reports/runs/M04A_20261126_145808_DESKTOP-CQB09OU/M04A_SCIENTIFIC_CONFIGURATIONS.yaml": "509B62102E6E2847A0F64909D1EE67AF62F65B7B201B202A4322C2BD45EFD94D",
+      "reports/runs/M04A_20261126_145808_DESKTOP-CQB09OU/M04A_VALIDATION_PREDICTIONS.csv": "BF4F5C98BBC0C3ABB56E3AFD99077BD0385BCC2435BADF5E7F4316D680610939",
+      "reports/runs/M04A_20261126_145808_DESKTOP-CQB09OU/M04A_VALIDATION_METRICS_RAW.csv": "5F55B65F4B70D97BA7AD7465DE6FF2462BA8B0D5E58188F8CE06A65CB06799A7",
+      "reports/runs/M04A_20261126_145808_DESKTOP-CQB09OU/M04A_VALIDATION_METRICS_NONNEGATIVE.csv": "72A4FA8FC0E4CDCF62124B70F903EFDA1554F861B5FBBADA773B34E12BDE5C97"
+    }
+  },
+  "completed_utc": "2026-11-27T13:26:31.077509+00:00",
+  "after": {
+    "environments": {
+      "baseline": {
+        "python": "c:\\PROJECT\\krkCMd_research_starter_v1\\.venv\\Scripts\\python.exe",
+        "freeze_sha256": "C9BEBFE1B8950B4AC6730DB68E349ED1C1BC447DA5DF8C0B9D693C829A975EDA",
+        "pkg_count": 112,
+        "unchanged": true
+      },
+      "boost": {
+        "python": "c:\\PROJECT\\krkCMd_research_starter_v1\\.venv-boost\\Scripts\\python.exe",
+        "freeze_sha256": "771E95964EAD47F8C6562F879D18D0D90A6E83918EB315D9AB6BB771F89A6297",
+        "pkg_count": 50,
+        "unchanged": true
+      },
+      "signal_cpu": {
+        "python": "c:\\PROJECT\\krkCMd_research_starter_v1\\.venv-signal-cpu\\Scripts\\python.exe",
+        "freeze_sha256": "C22ADDB782A6B7900C08C0DF3B84A823CC447432178D15756C77FDDB40C9684F",
+        "pkg_count": 42,
+        "unchanged": true
+      },
+      "deep": {
+        "python": "c:\\PROJECT\\krkCMd_research_starter_v1\\.venv-deep\\Scripts\\python.exe",
+        "freeze_sha256": "3D4B0FC1FD32870D9D537874646CF5EE38394B836975A31CDD736B9EC020E897",
+        "pkg_count": 64,
+        "unchanged": true
+      },
+      "signal_tf": {
+        "python": "c:\\PROJECT\\krkCMd_research_starter_v1\\.venv-signal-tf\\Scripts\\python.exe",
+        "freeze_sha256": "879AC93DDAEFE1F254648E2F7FA41442D537F7398C049279D8A2E040230EED31",
+        "pkg_count": 67,
+        "unchanged": true
+      },
+      "signal_hydra": {
+        "python": "c:\\PROJECT\\krkCMd_research_starter_v1\\.venv-signal-hydra\\Scripts\\python.exe",
+        "freeze_sha256": "144E1398313601017853FBEA6979F6A99303680FA6ACBC407C154CB6D4600F8C",
+        "pkg_count": 50,
+        "unchanged": true
+      },
+      "foundation": {
+        "python": "c:\\PROJECT\\krkCMd_research_starter_v1\\.venv-foundation\\Scripts\\python.exe",
+        "freeze_sha256": "A5DDBB7189C28B7AD1AFE107D9F595CE43A6C7AECD128BC36BF55FE44055F756",
+        "pkg_count": 81,
+        "unchanged": true
+      },
+      "tabr": {
+        "python": "c:\\PROJECT\\krkCMd_research_starter_v1\\.venv-tabr\\Scripts\\python.exe",
+        "freeze_sha256": "CA1C488D7C150636EF76793C7BF20F5AE99FC753B482558B7C8C9D77299AE789",
+        "pkg_count": 62,
+        "unchanged": true
+      }
+    },
+    "files_sha256": {
+      "configs/baseline.yaml": {
+        "sha256": "1175981E4D283CC0A989A3E48209FDD62C4FA54289FBDF02737CEF311961C697",
+        "unchanged": true
+      },
+      "configs/model_registry.yaml": {
+        "sha256": "6B902C8CED47D4BBD7A4FEF0176940211B48A4D109108EDA9AC06753C6909D11",
+        "unchanged": true
+      },
+      "data/raw/krkCMd_table.csv": {
+        "sha256": "CCCA7965B225F77D35567573BB557A6E0476122C381E14AB1BDA898DF9F9B909",
+        "unchanged": true
+      },
+      "reports/tables/group_split_manifest.csv": {
+        "sha256": "361A3446455F6BCB431E20319BDD33AA3CF6F7BD5A65EE74581C6A20EFCF7685",
+        "unchanged": true
+      },
+      "notebooks/00_baseline_krkCMd.ipynb": {
+        "sha256": "0C94F13EA7AEF87E884F21075459E57D43BCA563CE18907697AE72C16AFE6864",
+        "unchanged": true
+      },
+      "notebooks/01_M04A_scientific_screening_analysis.ipynb": {
+        "sha256": "DE7C4B1A6CCBE96AAC03F2396CF939FE6A4B9E600277FEDFAB063AFFE515E630",
+        "unchanged": true
+      },
+      "manuscript/krkCMd_paper_en_v0.1.docx": {
+        "sha256": "BBB1EA614821BAC10855BB4B2E3E7EBCD11080E56D24E9C6DE84D315800C68A0",
+        "unchanged": true
+      },
+      "manuscript/krkCMd_paper_id_v0.1.docx": {
+        "sha256": "01FD8CC435529D7B2DF2FAA742C1DAC7F47968E5E23B8D015F0F4895E3C23BF6",
+        "unchanged": true
+      },
+      "reports/runs/M04A_20261126_145808_DESKTOP-CQB09OU/M04A_SCIENTIFIC_CONFIGURATIONS.yaml": {
+        "sha256": "509B62102E6E2847A0F64909D1EE67AF62F65B7B201B202A4322C2BD45EFD94D",
+        "unchanged": true
+      },
+      "reports/runs/M04A_20261126_145808_DESKTOP-CQB09OU/M04A_VALIDATION_PREDICTIONS.csv": {
+        "sha256": "BF4F5C98BBC0C3ABB56E3AFD99077BD0385BCC2435BADF5E7F4316D680610939",
+        "unchanged": true
+      },
+      "reports/runs/M04A_20261126_145808_DESKTOP-CQB09OU/M04A_VALIDATION_METRICS_RAW.csv": {
+        "sha256": "5F55B65F4B70D97BA7AD7465DE6FF2462BA8B0D5E58188F8CE06A65CB06799A7",
+        "unchanged": true
+      },
+      "reports/runs/M04A_20261126_145808_DESKTOP-CQB09OU/M04A_VALIDATION_METRICS_NONNEGATIVE.csv": {
+        "sha256": "72A4FA8FC0E4CDCF62124B70F903EFDA1554F861B5FBBADA773B34E12BDE5C97",
+        "unchanged": true
+      }
+    },
+    "all_environments_unchanged": true,
+    "all_protected_files_unchanged": true
+  }
+}

@@ -1,0 +1,4 @@
+scenario,models_included,n_models,trials_per_model_range,total_estimated_trials,measured_single_run_range_sec,estimated_wall_hours,ram_cap_gib,vram_cap_gib,notes
+Compact,ML01;ML04;ML06;FM03;DL03,5,3 to 12,42,20.7 to 119.3,1.5 to 2.5,64,20,Prioritizes top fast/medium models across 4 paradigms; FM03 discrete inference sweep only
+Balanced,ML01;ML02;ML04;ML05;ML06;FM03;DL02;DL03;SG06,9,3 to 15,96,9.4 to 347.9,4.0 to 7.0,64,20,Balances accuracy and full paradigm diversity; SG06 bounded to 3-4 trials due to 26.5 GiB RSS
+Expanded,ML01;ML02;ML03;ML04;ML05;ML06;FM03;DL02;DL03;DL05;DL04;SG06;SG04,13,2 to 20,145,9.2 to 739.4,8.0 to 14.0,64,20,Comprehensive search; excludes >3600s CPU TF models unless GPU port or higher cap approved

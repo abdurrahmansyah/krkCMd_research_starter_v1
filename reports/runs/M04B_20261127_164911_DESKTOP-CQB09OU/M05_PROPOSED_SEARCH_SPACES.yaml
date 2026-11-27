@@ -1,0 +1,91 @@
+version: "1.0"
+run_id: "M04B_20261127_164911_DESKTOP-CQB09OU"
+status: "PROPOSED_AWAITING_APPROVAL"
+seed: 42
+objective: "minimize_group_aware_inner_val_raw_mae_um"
+
+search_spaces:
+  ML01:
+    estimator: "sklearn.ensemble.ExtraTreesRegressor"
+    environment: ".venv"
+    category: "conventional_hyperparameters"
+    params:
+      n_estimators: { type: "int", values: [200, 300, 500] }
+      max_features: { type: "categorical", values: [0.3, 0.5, 0.7, 1.0] }
+      min_samples_leaf: { type: "int", values: [1, 2, 4, 8] }
+      max_depth: { type: "categorical", values: [null, 20, 35] }
+  ML02:
+    estimator: "sklearn.ensemble.RandomForestRegressor"
+    environment: ".venv"
+    category: "conventional_hyperparameters"
+    params:
+      n_estimators: { type: "int", values: [200, 300, 500] }
+      max_features: { type: "categorical", values: [0.3, 0.5, 0.7, 1.0] }
+      min_samples_leaf: { type: "int", values: [1, 2, 4, 8] }
+  ML04:
+    estimator: "xgboost.XGBRegressor"
+    environment: ".venv-boost"
+    category: "conventional_hyperparameters"
+    params:
+      n_estimators: { type: "int", values: [300, 500, 800] }
+      max_depth: { type: "int", values: [4, 6, 8, 10] }
+      learning_rate: { type: "float", range: [0.02, 0.15], log: true }
+      subsample: { type: "float", values: [0.7, 0.85, 1.0] }
+      colsample_bytree: { type: "float", values: [0.5, 0.75, 1.0] }
+      reg_lambda: { type: "float", range: [0.5, 10.0], log: true }
+  ML05:
+    estimator: "lightgbm.LGBMRegressor"
+    environment: ".venv-boost"
+    category: "conventional_hyperparameters"
+    conditional_dependency: "subsample_freq=1 required whenever subsample < 1.0"
+    params:
+      n_estimators: { type: "int", values: [300, 500, 800] }
+      num_leaves: { type: "int", values: [31, 63, 127] }
+      learning_rate: { type: "float", range: [0.02, 0.15], log: true }
+      subsample: { type: "float", values: [0.7, 0.85, 1.0] }
+      subsample_freq: { type: "int", fixed: 1 }
+      colsample_bytree: { type: "float", values: [0.5, 0.75, 1.0] }
+      min_child_samples: { type: "int", values: [10, 20, 40] }
+  ML06:
+    estimator: "catboost.CatBoostRegressor"
+    environment: ".venv-boost"
+    category: "conventional_hyperparameters"
+    params:
+      iterations: { type: "int", values: [600, 1000, 1500] }
+      depth: { type: "int", values: [5, 6, 8] }
+      learning_rate: { type: "float", range: [0.02, 0.12], log: true }
+      l2_leaf_reg: { type: "float", values: [1.0, 3.0, 9.0] }
+  DL02:
+    estimator: "rtdl_revisiting_models.FTTransformer"
+    environment: ".venv-deep"
+    category: "neural_architecture_and_training"
+    params:
+      n_blocks: { type: "int", values: [2, 3, 4] }
+      d_block: { type: "categorical", values: [64, 96, 128] }
+      lr: { type: "float", range: [0.0001, 0.001], log: true }
+      attention_dropout: { type: "float", values: [0.1, 0.2] }
+      ffn_dropout: { type: "float", values: [0.1, 0.2] }
+  DL03:
+    estimator: "pytabkit.RealMLP_TD_Regressor"
+    environment: ".venv-deep"
+    category: "neural_architecture_and_training"
+    params:
+      n_epochs: { type: "int", values: [80, 120, 160] }
+      lr: { type: "float", values: [0.02, 0.04, 0.08] }
+      hidden_sizes: { type: "categorical", values: [[256, 256, 256], [512, 256, 128]] }
+  FM03:
+    estimator: "tabicl.TabICLRegressor"
+    environment: ".venv-foundation"
+    category: "foundation_inference_config_only"
+    no_weight_finetuning: true
+    params:
+      n_estimators: { type: "int", values: [4, 8, 16] }
+      offload_mode: { type: "categorical", fixed: "cpu" }
+      batch_size: { type: "int", fixed: 1 }
+  SG06:
+    estimator: "aeon.regression.convolution_based.MultiRocketHydraRegressor"
+    environment: ".venv-signal-hydra"
+    category: "spatial_convolution"
+    params:
+      n_kernels: { type: "int", values: [4, 8] }
+      n_groups: { type: "int", values: [32, 64] }

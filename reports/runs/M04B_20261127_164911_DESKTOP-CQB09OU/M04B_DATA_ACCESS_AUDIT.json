@@ -1,0 +1,10 @@
+{
+  "run_id": "M04B_20261127_164911_DESKTOP-CQB09OU",
+  "authorized_phase": "M04A_PROTOCOL_A_TRAIN_VAL",
+  "train_rows": 12216,
+  "validation_rows": 3060,
+  "test_rows_excluded": 3822,
+  "test_rows_exposed_to_workers": 0,
+  "successful_models": 23,
+  "consolidated_prediction_rows": 70380
+}

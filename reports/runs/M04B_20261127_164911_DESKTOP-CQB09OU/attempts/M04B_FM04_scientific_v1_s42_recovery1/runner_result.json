@@ -1,0 +1,14 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "suspend_detected": false,
+  "max_poll_gap_sec": 0.375,
+  "violation_reason": null,
+  "elapsed_sec": 1862.938,
+  "peak_rss_bytes": 1873285120,
+  "peak_rss_mb": 1786.504,
+  "peak_vram_delta_bytes": 11681136640,
+  "peak_vram_delta_mib": 11140.0,
+  "stdout": "WORKER_PASS FM04 raw_mae=23.9026 wall=1861.12s\n",
+  "stderr": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-foundation\\Lib\\site-packages\\tabdpt\\utils.py:73: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\\actions-runner\\_work\\pytorch\\pytorch\\pytorch\\torch\\csrc\\utils\\tensor_numpy.cpp:212.)\n  return torch.from_numpy(input)\n"
+}

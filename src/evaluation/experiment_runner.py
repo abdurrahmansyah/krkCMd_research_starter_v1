@@ -108,4 +108,3 @@ def execute_experiment(spec: ExperimentSpec, out_dir: Path) -> Dict[str, Any]:
     )
     _atomic_write_json(attempt_dir / "runner_result.json", res)
     return res
-  ccc
