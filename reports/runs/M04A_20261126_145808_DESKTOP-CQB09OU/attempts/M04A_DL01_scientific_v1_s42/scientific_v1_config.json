@@ -1,0 +1,14 @@
+{
+  "batch_size": 128,
+  "dropout": 0.1,
+  "early_stopping_patience": 15,
+  "hidden_dims": [
+    256,
+    128,
+    64
+  ],
+  "lr": 0.001,
+  "max_epochs": 100,
+  "seed": 42,
+  "standardization": "train_only_zscore"
+}

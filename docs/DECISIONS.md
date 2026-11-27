@@ -59,3 +59,43 @@
 - Status: PROPOSED (AWAITING RESEARCHER APPROVAL FOR M04; ZERO REAL TRAINING EXECUTED)
 - Context: Closed synthetic L2C readiness for `FM03` (`TabICLv2` with `offload_mode="cpu"`, `52.719 s`) and `FM04` (`TabDPT`, `2,361.703 s`); audited `19,098` rows (`4,900` zero-width observations, `36` `Series + Image` groups); proposed leakage-free `Protocol B` (3-fold primary, 5-fold sensitivity) and `Protocol C` (LOSO) alongside historical `Protocol A`; prohibited global `MAPE` as a primary metric; defined statistical, robustness, HPO, and reference reproduction (`RF03` `k=6`, `RF04` `krknet.mat`, `RF05` Table 3) protocols.
 - Strict Constraint: D-001 through D-004 remain unchanged; all 8 `.venv*` environments remain unmodified; `0/32` candidates are `APPROVED` until explicit researcher sign-off on `M03_EVALUATION_PROTOCOL.md` and `M04_EXECUTION_PLAN.md`.
+
+## D-009A — Protocol A Legacy Exploratory Benchmark (2026-11-26)
+- Status: APPROVED BY RESEARCHER (M04A screening only; historical test partition remains sealed)
+- Decision: Protocol A is designated as the legacy exploratory benchmark. Initial screening (M04A) must use the historical `train` (12,216 rows / 2,036 groups) and `validation` (3,060 rows / 510 groups) partitions only; `test` (3,822 rows / 637 groups) remains excluded.
+
+## D-009B — Protocol B Three-Fold Series + Image Primary Internal Evaluation (2026-11-26)
+- Status: APPROVED BY RESEARCHER (Methodological protocol approved; execution deferred beyond M04A)
+- Decision: Three-fold `Series + Image` grouped evaluation (`max_folds_per_image_group = 1`) is approved as the primary stricter internal evaluation protocol for subsequent phases.
+
+## D-009C — Five-Fold Series + Image Sensitivity Analysis (2026-11-26)
+- Status: APPROVED BY RESEARCHER (Methodological protocol approved; execution deferred beyond M04A)
+- Decision: Five-fold `Series + Image` sensitivity analysis is restricted to selected finalists.
+
+## D-009D — Protocol C Leave-One-Series-Out (LOSO) Evaluation (2026-11-26)
+- Status: APPROVED BY RESEARCHER (Methodological protocol approved; execution deferred beyond M04A)
+- Decision: Protocol C Leave-One-Series-Out evaluation is approved for finalists and representative model families; full domain adaptation remains deferred.
+
+## D-009E — Initial Screening Model Roster & Registry Preservation (2026-11-26)
+- Status: APPROVED BY RESEARCHER (M04A screening scope: 23 candidates)
+- Decision: Twenty-three initial screening candidates (`ML01–ML07`, `DL01–DL05`, `FM03`, `FM04`, `SG01–SG06`, `RF01`, `RF02`, `RF05`) are approved for M04A clean-data screening. All 32 registered candidate IDs (`FM01`, `FM02`, `RF03`, `RF04`, `HY01–HY05` retained) remain preserved in `configs/model_registry.yaml`.
+
+## D-009F — Primary & Tie-Break Validation Metrics (2026-11-26)
+- Status: APPROVED BY RESEARCHER
+- Decision: Primary metric is **MAE** (µm), followed by **RMSE** (µm) and **Lin's CCC** as secondary tie-break criteria. Global MAPE remains prohibited due to 4,900 zero-width observations.
+
+## D-009G — Hyperparameter Optimization Deferral (2026-11-26)
+- Status: APPROVED BY RESEARCHER
+- Decision: Hyperparameter optimization (HPO) is deferred to M05. No HPO is permitted during M04 screening; prespecified `scientific_v1` configurations must be used.
+
+## D-009H — Separate Reference Reproduction Track (2026-11-26)
+- Status: APPROVED BY RESEARCHER
+- Decision: Original AED (`RF03`) and pretrained DLM (`RF04`) exact reproductions shall proceed separately and shall not block initial M04A model screening.
+
+## D-009I — Dual Prediction Policy (Raw & Nonnegative-Clipped) (2026-11-26)
+- Status: APPROVED BY RESEARCHER
+- Decision: Preserve raw predictions (`y_pred_raw_um`) and nonnegative-clipped predictions (`y_pred_nonnegative_um = max(0, y_pred_raw_um)`) separately. Raw validation MAE is used as the primary screening ranking implementation, with clipped metrics reported separately.
+
+## D-009J — Comparative Robustness Sequence (2026-11-26)
+- Status: APPROVED BY RESEARCHER (Execution deferred until after screening and tuning)
+- Decision: Full comparative robustness experiments shall follow screening and tuning; no actual-data corruption sweeps are executed in M04A.

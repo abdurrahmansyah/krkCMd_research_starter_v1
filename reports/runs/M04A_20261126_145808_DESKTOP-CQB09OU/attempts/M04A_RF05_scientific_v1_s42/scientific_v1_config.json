@@ -1,0 +1,11 @@
+{
+  "batch_size": 128,
+  "early_stopping_patience": 15,
+  "input_normalization": "train_zero_center",
+  "lr": 0.001,
+  "max_epochs": 50,
+  "momentum": 0.9,
+  "optimizer": "SGD",
+  "seed": 42,
+  "target_scale_pi2mi": 3.96875
+}

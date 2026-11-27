@@ -1,0 +1,10 @@
+{
+  "compile": false,
+  "context_reduction": "retrieval",
+  "context_size": 2048,
+  "feature_reduction": "pca",
+  "n_ensembles": 8,
+  "normalizer": "standard",
+  "seed": 42,
+  "use_flash": false
+}

@@ -1,0 +1,6 @@
+{
+  "n_groups": 64,
+  "n_jobs": 16,
+  "n_kernels": 8,
+  "random_state": 42
+}

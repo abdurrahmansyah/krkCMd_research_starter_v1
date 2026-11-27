@@ -41,5 +41,6 @@ reports/tables/*
 reports/logs/*
 !reports/logs/.gitkeep
 reports/runs/*/isolated_workspace
+reports/runs/*/artifacts
 papers/*.pdf
 !papers/.gitkeep

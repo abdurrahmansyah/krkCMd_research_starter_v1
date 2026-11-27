@@ -1,0 +1,255 @@
+{
+  "model_id": "RF05",
+  "history": [
+    {
+      "epoch": 1,
+      "inner_train_mse": 608.3667898660109,
+      "inner_val_mse": 106.17540225779591
+    },
+    {
+      "epoch": 2,
+      "inner_train_mse": 355.0890004482156,
+      "inner_val_mse": 139.66931932778948
+    },
+    {
+      "epoch": 3,
+      "inner_train_mse": 183.5387511857331,
+      "inner_val_mse": 123.58904008295183
+    },
+    {
+      "epoch": 4,
+      "inner_train_mse": 151.58481000131786,
+      "inner_val_mse": 64.37822164618315
+    },
+    {
+      "epoch": 5,
+      "inner_train_mse": 155.75069895214114,
+      "inner_val_mse": 97.14339160684871
+    },
+    {
+      "epoch": 6,
+      "inner_train_mse": 186.04138651629862,
+      "inner_val_mse": 380.32791380292565
+    },
+    {
+      "epoch": 7,
+      "inner_train_mse": 164.72649321254593,
+      "inner_val_mse": 316.8157974605576
+    },
+    {
+      "epoch": 8,
+      "inner_train_mse": 135.0804990444882,
+      "inner_val_mse": 64.70086661174003
+    },
+    {
+      "epoch": 9,
+      "inner_train_mse": 151.12386673751092,
+      "inner_val_mse": 88.49638250789909
+    },
+    {
+      "epoch": 10,
+      "inner_train_mse": 214.76953159345544,
+      "inner_val_mse": 91.59631281109934
+    },
+    {
+      "epoch": 11,
+      "inner_train_mse": 184.13526708869475,
+      "inner_val_mse": 157.08115158893358
+    },
+    {
+      "epoch": 12,
+      "inner_train_mse": 120.02033158550726,
+      "inner_val_mse": 116.38314878071652
+    },
+    {
+      "epoch": 13,
+      "inner_train_mse": 114.89406496394942,
+      "inner_val_mse": 235.15720445537644
+    },
+    {
+      "epoch": 14,
+      "inner_train_mse": 126.58616873606695,
+      "inner_val_mse": 98.11698269668317
+    },
+    {
+      "epoch": 15,
+      "inner_train_mse": 131.2393166526637,
+      "inner_val_mse": 73.83929693142377
+    },
+    {
+      "epoch": 16,
+      "inner_train_mse": 107.39602677212773,
+      "inner_val_mse": 64.69948059569413
+    },
+    {
+      "epoch": 17,
+      "inner_train_mse": 107.4511436023716,
+      "inner_val_mse": 69.51363997650772
+    },
+    {
+      "epoch": 18,
+      "inner_train_mse": 101.08485560751849,
+      "inner_val_mse": 63.54506602119365
+    },
+    {
+      "epoch": 19,
+      "inner_train_mse": 95.17085701989474,
+      "inner_val_mse": 95.76664467545243
+    },
+    {
+      "epoch": 20,
+      "inner_train_mse": 88.58727208124438,
+      "inner_val_mse": 74.03425201522239
+    },
+    {
+      "epoch": 21,
+      "inner_train_mse": 93.00197496096098,
+      "inner_val_mse": 73.6401489017246
+    },
+    {
+      "epoch": 22,
+      "inner_train_mse": 85.99887051708205,
+      "inner_val_mse": 56.395176072866576
+    },
+    {
+      "epoch": 23,
+      "inner_train_mse": 97.10621307338701,
+      "inner_val_mse": 99.5456430230543
+    },
+    {
+      "epoch": 24,
+      "inner_train_mse": 91.50557521557013,
+      "inner_val_mse": 62.33391980320386
+    },
+    {
+      "epoch": 25,
+      "inner_train_mse": 82.028830565532,
+      "inner_val_mse": 58.96449728738471
+    },
+    {
+      "epoch": 26,
+      "inner_train_mse": 93.78106727389341,
+      "inner_val_mse": 63.33491102620093
+    },
+    {
+      "epoch": 27,
+      "inner_train_mse": 81.6213617951245,
+      "inner_val_mse": 84.03850371402174
+    },
+    {
+      "epoch": 28,
+      "inner_train_mse": 85.05820358811846,
+      "inner_val_mse": 71.2937672026913
+    },
+    {
+      "epoch": 29,
+      "inner_train_mse": 77.13791578904431,
+      "inner_val_mse": 57.28203347508386
+    },
+    {
+      "epoch": 30,
+      "inner_train_mse": 76.91770165093915,
+      "inner_val_mse": 67.86805336442177
+    },
+    {
+      "epoch": 31,
+      "inner_train_mse": 83.14366464164083,
+      "inner_val_mse": 117.6077252746507
+    },
+    {
+      "epoch": 32,
+      "inner_train_mse": 79.2148581876183,
+      "inner_val_mse": 51.118533755403185
+    },
+    {
+      "epoch": 33,
+      "inner_train_mse": 71.77807179281798,
+      "inner_val_mse": 71.61945063710506
+    },
+    {
+      "epoch": 34,
+      "inner_train_mse": 74.46188948045656,
+      "inner_val_mse": 72.76961480311738
+    },
+    {
+      "epoch": 35,
+      "inner_train_mse": 83.35579154972945,
+      "inner_val_mse": 59.37298915153835
+    },
+    {
+      "epoch": 36,
+      "inner_train_mse": 70.53675417649323,
+      "inner_val_mse": 82.26904654444289
+    },
+    {
+      "epoch": 37,
+      "inner_train_mse": 86.31787099071336,
+      "inner_val_mse": 52.73296852955361
+    },
+    {
+      "epoch": 38,
+      "inner_train_mse": 81.00147924077811,
+      "inner_val_mse": 55.041734379886314
+    },
+    {
+      "epoch": 39,
+      "inner_train_mse": 74.2936005347439,
+      "inner_val_mse": 75.52425979064391
+    },
+    {
+      "epoch": 40,
+      "inner_train_mse": 71.33729468998013,
+      "inner_val_mse": 93.90567714244396
+    },
+    {
+      "epoch": 41,
+      "inner_train_mse": 73.04354779872031,
+      "inner_val_mse": 62.266150359732514
+    },
+    {
+      "epoch": 42,
+      "inner_train_mse": 67.70155829829089,
+      "inner_val_mse": 259.37110685306334
+    },
+    {
+      "epoch": 43,
+      "inner_train_mse": 70.57406645248535,
+      "inner_val_mse": 60.30357958038355
+    },
+    {
+      "epoch": 44,
+      "inner_train_mse": 73.5172235509577,
+      "inner_val_mse": 58.15065171306588
+    },
+    {
+      "epoch": 45,
+      "inner_train_mse": 70.37734335908524,
+      "inner_val_mse": 58.177488089584116
+    },
+    {
+      "epoch": 46,
+      "inner_train_mse": 75.25075139154411,
+      "inner_val_mse": 50.169318732621726
+    },
+    {
+      "epoch": 47,
+      "inner_train_mse": 73.6433961999814,
+      "inner_val_mse": 61.74047562882707
+    },
+    {
+      "epoch": 48,
+      "inner_train_mse": 71.27122087519618,
+      "inner_val_mse": 61.261634618898185
+    },
+    {
+      "epoch": 49,
+      "inner_train_mse": 77.76254101904082,
+      "inner_val_mse": 70.0992814859926
+    },
+    {
+      "epoch": 50,
+      "inner_train_mse": 68.62612031421853,
+      "inner_val_mse": 55.50862755490365
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "batch_size": 128,
+  "d_out": 1,
+  "early_stopping_patience": 15,
+  "k_ensemble_size": 8,
+  "lr": 0.001,
+  "max_epochs": 100,
+  "n_num_features": 501,
+  "seed": 42,
+  "standardization": "train_only_zscore"
+}

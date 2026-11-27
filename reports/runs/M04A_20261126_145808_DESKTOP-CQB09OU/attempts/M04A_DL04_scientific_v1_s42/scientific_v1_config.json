@@ -1,0 +1,13 @@
+{
+  "batch_size": 64,
+  "context_size": 32,
+  "d_main": 64,
+  "d_multiplier": 2.0,
+  "early_stopping_patience": 12,
+  "encoder_n_blocks": 1,
+  "lr": 0.001,
+  "max_epochs": 80,
+  "predictor_n_blocks": 1,
+  "seed": 42,
+  "standardization": "train_only_zscore"
+}

@@ -1,0 +1,183 @@
+version: "1.0"
+run_id: "M04A_20261126_145808_DESKTOP-CQB09OU"
+config_tier: "scientific_v1"
+target: "MANwidth"
+target_unit: "um"
+input_features: "x1..x501"
+expected_feature_count: 501
+seed: 42
+tuned_v1: null
+hpo_status: "DEFERRED_TO_M05_D009G"
+inner_val_policy: "Group-aware 20% of Protocol A train gridline groups (407 groups / 2,442 rows) for early stopping; outer Protocol A validation (510 groups / 3,060 rows) strictly unseen during training/early stopping."
+
+models:
+  RF01:
+    environment: ".venv"
+    estimator: "sklearn.dummy.DummyRegressor"
+    device: "cpu"
+    compat_v1: { strategy: "mean" }
+    scientific_v1: { strategy: "mean" }
+    official_default_match: true
+  RF02:
+    environment: ".venv"
+    estimator: "sklearn.pipeline.Pipeline(StandardScaler, LinearRegression)"
+    device: "cpu"
+    compat_v1: {}
+    scientific_v1: { fit_intercept: true }
+    official_default_match: true
+  ML01:
+    environment: ".venv"
+    estimator: "sklearn.ensemble.ExtraTreesRegressor"
+    device: "cpu"
+    compat_v1: { n_estimators: 10, random_state: 42 }
+    scientific_v1: { n_estimators: 300, n_jobs: 16, random_state: 42 }
+    official_default_match: false
+  ML02:
+    environment: ".venv"
+    estimator: "sklearn.ensemble.RandomForestRegressor"
+    device: "cpu"
+    compat_v1: { n_estimators: 10, random_state: 42 }
+    scientific_v1: { n_estimators: 300, n_jobs: 16, random_state: 42 }
+    official_default_match: false
+  ML03:
+    environment: ".venv"
+    estimator: "sklearn.ensemble.HistGradientBoostingRegressor"
+    device: "cpu"
+    compat_v1: { max_iter: 20, random_state: 42 }
+    scientific_v1: { max_iter: 300, learning_rate: 0.05, random_state: 42 }
+    official_default_match: false
+  ML04:
+    environment: ".venv-boost"
+    estimator: "xgboost.XGBRegressor"
+    device: "cpu"
+    compat_v1: { n_estimators: 20, max_depth: 4, learning_rate: 0.1, tree_method: "hist", device: "cpu", n_jobs: 16, random_state: 42 }
+    scientific_v1: { n_estimators: 500, max_depth: 6, learning_rate: 0.05, subsample: 0.8, colsample_bytree: 0.8, tree_method: "hist", device: "cpu", n_jobs: 16, random_state: 42 }
+    official_default_match: false
+  ML05:
+    environment: ".venv-boost"
+    estimator: "lightgbm.LGBMRegressor"
+    device: "cpu"
+    compat_v1: { n_estimators: 20, max_depth: 6, learning_rate: 0.1, device: "cpu", n_jobs: 16, random_state: 42, verbose: -1 }
+    scientific_v1: { n_estimators: 500, max_depth: -1, num_leaves: 63, learning_rate: 0.05, subsample: 0.8, subsample_freq: 1, colsample_bytree: 0.8, device: "cpu", n_jobs: 16, random_state: 42, verbose: -1 }
+    official_default_match: false
+    preflight_note: "Added subsample_freq=1 so subsample=0.8 is active."
+  ML06:
+    environment: ".venv-boost"
+    estimator: "catboost.CatBoostRegressor"
+    device: "cpu"
+    compat_v1: { iterations: 20, depth: 6, learning_rate: 0.1, task_type: "CPU", thread_count: 16, random_seed: 42, verbose: 0, allow_writing_files: false }
+    scientific_v1: { iterations: 1000, depth: 6, learning_rate: 0.05, task_type: "CPU", thread_count: 16, random_seed: 42, verbose: 0, allow_writing_files: false }
+    official_default_match: false
+  ML07:
+    environment: ".venv"
+    estimator: "sklearn.pipeline.Pipeline(StandardScaler, SVR)"
+    device: "cpu"
+    compat_v1: { C: 10.0, epsilon: 0.1, kernel: "rbf" }
+    scientific_v1: { C: 10.0, epsilon: 0.1, kernel: "rbf" }
+    official_default_match: false
+  DL01:
+    environment: ".venv-deep"
+    estimator: "torch.nn.Sequential_MLP"
+    device: "cuda:0"
+    compat_v1: { hidden_dims: [128, 64], epochs: 5, batch_size: 64, lr: 0.001 }
+    scientific_v1: { hidden_dims: [256, 128, 64], dropout: 0.1, lr: 0.001, batch_size: 128, max_epochs: 100, early_stopping_patience: 15, standardization: "train_only_zscore", seed: 42 }
+    official_default_match: false
+  DL02:
+    environment: ".venv-deep"
+    estimator: "rtdl_revisiting_models.FTTransformer"
+    device: "cuda:0"
+    compat_v1: { n_blocks: 2, d_block: 64, attention_n_heads: 4, epochs: 3, batch_size: 32 }
+    scientific_v1: { n_cont_features: 501, d_out: 1, n_blocks: 3, d_block: 64, attention_n_heads: 4, ffn_d_hidden_multiplier: 1.333, attention_dropout: 0.1, ffn_dropout: 0.1, residual_dropout: 0.0, lr: 0.0005, batch_size: 64, max_epochs: 80, early_stopping_patience: 12, standardization: "train_only_zscore", seed: 42 }
+    official_default_match: false
+  DL03:
+    environment: ".venv-deep"
+    estimator: "pytabkit.RealMLP_TD_Regressor"
+    device: "cuda:0"
+    compat_v1: { n_epochs: 5, batch_size: 64, device: "cuda:0", random_state: 42 }
+    scientific_v1: { n_epochs: 100, batch_size: 128, device: "cuda:0", random_state: 42, use_early_stopping: false, val_fraction: 0.0 }
+    official_default_match: false
+    preflight_note: "val_fraction=0.0 & use_early_stopping=false prevents pytabkit random row-wise internal validation split."
+  DL04:
+    environment: ".venv-tabr"
+    estimator: "bin.tabr.Model"
+    device: "cpu (faiss-cpu)"
+    compat_v1: { d_main: 64, context_size: 32, epochs: 3, batch_size: 64 }
+    scientific_v1: { d_main: 64, d_multiplier: 2.0, encoder_n_blocks: 1, predictor_n_blocks: 1, context_size: 32, lr: 0.001, batch_size: 64, max_epochs: 80, early_stopping_patience: 12, standardization: "train_only_zscore", seed: 42 }
+    official_default_match: false
+  DL05:
+    environment: ".venv-deep"
+    estimator: "tabm.TabM"
+    device: "cuda:0"
+    compat_v1: { k_ensemble_size: 8, epochs: 5, batch_size: 64 }
+    scientific_v1: { n_num_features: 501, k_ensemble_size: 8, d_out: 1, lr: 0.001, batch_size: 128, max_epochs: 100, early_stopping_patience: 15, standardization: "train_only_zscore", seed: 42 }
+    official_default_match: false
+  FM03:
+    environment: ".venv-foundation"
+    estimator: "tabicl.TabICLRegressor"
+    device: "cuda:0"
+    compat_v1: { n_estimators: 8, batch_size: 1, offload_mode: "cpu", use_fa3: false, random_state: 42 }
+    scientific_v1: { n_estimators: 8, batch_size: 1, offload_mode: "cpu", use_amp: "auto", use_fa3: false, random_state: 42 }
+    official_default_match: false
+    zero_shot_in_context: true
+  FM04:
+    environment: ".venv-foundation"
+    estimator: "tabdpt.TabDPTRegressor"
+    device: "cuda:0"
+    compat_v1: { normalizer: "standard", feature_reduction: "pca", context_reduction: "retrieval", n_ensembles: 8, context_size: 2048, batch_size: 128, use_flash: false, compile: false, seed: 42 }
+    scientific_v1: { normalizer: "standard", feature_reduction: "pca", context_reduction: "retrieval", n_ensembles: 8, context_size: 2048, batch_size: 128, use_flash: false, compile: false, seed: 42 }
+    official_default_match: false
+    zero_shot_in_context: true
+  SG01:
+    environment: ".venv-deep"
+    estimator: "torch.nn.VanillaConv1DRegressor"
+    device: "cuda:0"
+    compat_v1: { channels: [32, 64], kernel_sizes: [5, 5], epochs: 5, batch_size: 64 }
+    scientific_v1: { channels: [32, 64], kernel_sizes: [5, 5], lr: 0.001, batch_size: 128, max_epochs: 100, early_stopping_patience: 15, standardization: "train_only_zscore", seed: 42 }
+    official_default_match: false
+  SG02:
+    environment: ".venv-signal-tf"
+    estimator: "aeon.regression.deep_learning.ResNetRegressor"
+    device: "cpu (native Windows TF)"
+    compat_v1: { n_epochs: 2, batch_size: 32, random_state: 42, verbose: false }
+    scientific_v1: { n_epochs: 50, batch_size: 64, random_state: 42, verbose: false }
+    official_default_match: false
+  SG03:
+    environment: ".venv-signal-tf"
+    estimator: "aeon.regression.deep_learning.InceptionTimeRegressor"
+    device: "cpu (native Windows TF)"
+    compat_v1: { n_regressors: 1, n_epochs: 2, batch_size: 32, random_state: 42, verbose: false }
+    scientific_v1: { n_regressors: 1, n_epochs: 50, batch_size: 64, random_state: 42, verbose: false }
+    official_default_match: false
+    single_member_config: true
+    preflight_note: "Official aeon default n_regressors=5; n_regressors=1 explicitly labeled single-member."
+  SG04:
+    environment: ".venv-signal-tf"
+    estimator: "aeon.regression.deep_learning.LITETimeRegressor"
+    device: "cpu (native Windows TF)"
+    compat_v1: { n_regressors: 1, n_epochs: 2, batch_size: 32, random_state: 42, verbose: false }
+    scientific_v1: { n_regressors: 1, n_epochs: 50, batch_size: 64, random_state: 42, verbose: false }
+    official_default_match: false
+    single_member_config: true
+    preflight_note: "Official aeon default n_regressors=5; n_regressors=1 explicitly labeled single-member."
+  SG05:
+    environment: ".venv-signal-cpu"
+    estimator: "aeon.regression.convolution_based.RocketRegressor"
+    device: "cpu"
+    compat_v1: { n_kernels: 2000, n_jobs: 16, random_state: 42 }
+    scientific_v1: { n_kernels: 2000, n_jobs: 16, random_state: 42 }
+    official_default_match: false
+  SG06:
+    environment: ".venv-signal-hydra"
+    estimator: "aeon.regression.convolution_based.MultiRocketHydraRegressor"
+    device: "cpu"
+    compat_v1: { n_kernels: 8, n_groups: 64, n_jobs: 16, random_state: 42 }
+    scientific_v1: { n_kernels: 8, n_groups: 64, n_jobs: 16, random_state: 42 }
+    official_default_match: true
+  RF05:
+    environment: ".venv-deep"
+    estimator: "torch.nn.DLM15LayerCNN_Table3_Normalized"
+    device: "cuda:0"
+    compat_v1: { epochs: 5, batch_size: 128, lr: 0.001, momentum: 0.9, pi2mi: 3.96875 }
+    scientific_v1: { input_normalization: "train_zero_center", target_scale_pi2mi: 3.96875, optimizer: "SGD", lr: 0.001, momentum: 0.9, batch_size: 128, max_epochs: 50, early_stopping_patience: 15, seed: 42 }
+    official_default_match: false
+    preflight_note: "Reconciled to 50 epochs per M03_REFERENCE_REPRODUCTION_PROTOCOL.md / paper Table 3 SGDM schedule."

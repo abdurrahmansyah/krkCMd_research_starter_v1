@@ -1,0 +1,5 @@
+{
+  "learning_rate": 0.05,
+  "max_iter": 300,
+  "random_state": 42
+}

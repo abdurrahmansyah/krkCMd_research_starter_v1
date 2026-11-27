@@ -1,0 +1,14 @@
+{
+  "authorized_phase": "M04A_PROTOCOL_A_TRAIN_VAL",
+  "feature_count": 501,
+  "target_col": "MANwidth",
+  "train_rows": 12216,
+  "train_groups": 2036,
+  "inner_train_rows": 9774,
+  "inner_val_rows": 2442,
+  "inner_val_groups": 407,
+  "validation_rows": 3060,
+  "validation_groups": 510,
+  "test_rows_excluded": 3822,
+  "test_rows_exposed_to_worker": 0
+}

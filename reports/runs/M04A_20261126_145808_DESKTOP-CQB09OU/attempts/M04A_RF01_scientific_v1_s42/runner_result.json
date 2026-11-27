@@ -1,0 +1,14 @@
+{
+  "returncode": 1,
+  "timed_out": false,
+  "suspend_detected": false,
+  "max_poll_gap_sec": 0.219,
+  "violation_reason": null,
+  "elapsed_sec": 3.328,
+  "peak_rss_bytes": 271892480,
+  "peak_rss_mb": 259.297,
+  "peak_vram_delta_bytes": 0,
+  "peak_vram_delta_mib": 0.0,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"C:\\PROJECT\\krkCMd_research_starter_v1\\src\\evaluation\\m04a_scientific_worker.py\", line 945, in <module>\n    main()\n  File \"C:\\PROJECT\\krkCMd_research_starter_v1\\src\\evaluation\\m04a_scientific_worker.py\", line 882, in main\n    res = run_model(args.model_id, cfg, data, args.seed, artifact_dir, args.attempt_id)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\PROJECT\\krkCMd_research_starter_v1\\src\\evaluation\\m04a_scientific_worker.py\", line 294, in run_model\n    with art_path.open(\"wb\") as f:\n         ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Nur Ridho A\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\pathlib.py\", line 1044, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\PROJECT\\\\krkCMd_research_starter_v1\\\\reports\\\\runs\\\\M04A_20261126_145808_DESKTOP-CQB09OU\\\\artifacts\\\\RF01_attempts\\\\M04A_RF01_scientific_v1_s42.pkl'\n"
+}

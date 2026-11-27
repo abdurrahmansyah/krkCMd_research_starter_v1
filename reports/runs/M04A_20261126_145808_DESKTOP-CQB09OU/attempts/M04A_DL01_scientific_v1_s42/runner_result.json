@@ -1,0 +1,14 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "suspend_detected": false,
+  "max_poll_gap_sec": 0.281,
+  "violation_reason": null,
+  "elapsed_sec": 17.688,
+  "peak_rss_bytes": 1198059520,
+  "peak_rss_mb": 1142.559,
+  "peak_vram_delta_bytes": 264241152,
+  "peak_vram_delta_mib": 252.0,
+  "stdout": "WORKER_PASS DL01 raw_mae=24.2129 wall=15.83s\n",
+  "stderr": ""
+}

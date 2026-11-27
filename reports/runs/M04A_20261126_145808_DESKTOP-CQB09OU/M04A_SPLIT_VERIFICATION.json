@@ -1,0 +1,40 @@
+{
+  "run_id": "M04A_20261126_145808_DESKTOP-CQB09OU",
+  "raw_csv_shape": [
+    19098,
+    510
+  ],
+  "raw_csv_sha256": "CCCA7965B225F77D35567573BB557A6E0476122C381E14AB1BDA898DF9F9B909",
+  "exact_column_match": false,
+  "non_expected_columns": [],
+  "missing_expected_columns": [],
+  "m03_512_col_explanation": "raw CSV has 510 columns (6 metadata + 501 x1..x501 + DLMwidth + AEDwidth + MANwidth); M03_SPLIT_AUDIT.json added 2 derived columns (group_id, image_group) in memory before recording shape[1]=512.",
+  "gridline_groups": 3183,
+  "image_groups": 36,
+  "obs_per_gridline_min": 6,
+  "obs_per_gridline_max": 6,
+  "zero_width_targets": 4900,
+  "missing_values_in_x1_x501": 0,
+  "missing_values_in_manwidth": 0,
+  "manifest_rows": 19098,
+  "manifest_unique_source_row_id": 19098,
+  "manifest_row_id_range": [
+    0,
+    19097
+  ],
+  "split_row_counts": {
+    "train": 12216,
+    "test": 3822,
+    "validation": 3060
+  },
+  "split_group_counts": {
+    "test": 637,
+    "train": 2036,
+    "validation": 510
+  },
+  "pairwise_group_overlap": {
+    "train_val": 0,
+    "train_test": 0,
+    "val_test": 0
+  }
+}

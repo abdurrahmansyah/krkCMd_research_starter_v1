@@ -1,0 +1,16 @@
+{
+  "batch_size": 128,
+  "channels": [
+    32,
+    64
+  ],
+  "early_stopping_patience": 15,
+  "kernel_sizes": [
+    5,
+    5
+  ],
+  "lr": 0.001,
+  "max_epochs": 100,
+  "seed": 42,
+  "standardization": "train_only_zscore"
+}

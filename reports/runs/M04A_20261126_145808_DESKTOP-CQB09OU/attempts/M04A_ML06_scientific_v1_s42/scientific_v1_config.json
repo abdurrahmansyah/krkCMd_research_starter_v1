@@ -1,0 +1,10 @@
+{
+  "allow_writing_files": false,
+  "depth": 6,
+  "iterations": 1000,
+  "learning_rate": 0.05,
+  "random_seed": 42,
+  "task_type": "CPU",
+  "thread_count": 16,
+  "verbose": 0
+}

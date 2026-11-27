@@ -1,0 +1,14 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "suspend_detected": false,
+  "max_poll_gap_sec": 0.359,
+  "violation_reason": null,
+  "elapsed_sec": 121.406,
+  "peak_rss_bytes": 1580326912,
+  "peak_rss_mb": 1507.117,
+  "peak_vram_delta_bytes": 294649856,
+  "peak_vram_delta_mib": 281.0,
+  "stdout": "WORKER_PASS DL03 raw_mae=16.6599 wall=119.34s\n",
+  "stderr": "C:\\PROJECT\\krkCMd_research_starter_v1\\.venv-deep\\Lib\\site-packages\\pytabkit\\models\\sklearn\\sklearn_base.py:283: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\\actions-runner\\_work\\pytorch\\pytorch\\pytorch\\torch\\csrc\\utils\\tensor_numpy.cpp:212.)\n  y_ds = DictDataset(tensors={'y': torch.as_tensor(y_tfmd, dtype=torch.float32)},\n"
+}

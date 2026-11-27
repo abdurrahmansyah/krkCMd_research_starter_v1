@@ -1,0 +1,14 @@
+{
+  "returncode": -1,
+  "timed_out": true,
+  "suspend_detected": false,
+  "max_poll_gap_sec": 0.36,
+  "violation_reason": "WALL_CLOCK_TIMEOUT (3600s)",
+  "elapsed_sec": 3600.297,
+  "peak_rss_bytes": 1226993664,
+  "peak_rss_mb": 1170.152,
+  "peak_vram_delta_bytes": 0,
+  "peak_vram_delta_mib": 0.0,
+  "stdout": "",
+  "stderr": "WARNING: All log messages before absl::InitializeLog() is called are written to STDERR\nI0000 00:00:1795681363.287683   24912 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.\nWARNING: All log messages before absl::InitializeLog() is called are written to STDERR\nI0000 00:00:1795681366.258007   24912 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.\nI0000 00:00:1795681366.982932   24912 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.\nTo enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.\nWARNING:tensorflow:TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.\n"
+}

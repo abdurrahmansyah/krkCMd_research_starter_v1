@@ -1,0 +1,18 @@
+manifest_version: "1.0"
+run_id: "M04A_20261126_145808_DESKTOP-CQB09OU"
+milestone: "M04A"
+phase: "protocol_a_clean_validation_screening"
+authorize_real_data_training: true
+authorized_partitions: ["train", "validation"]
+sealed_partitions: ["test"]
+seed: 42
+config_tier: "scientific_v1"
+primary_ranking_metric: "raw_mae_um"
+tie_break_metrics: ["raw_rmse_um", "raw_lins_ccc"]
+secondary_clipped_variant: "y_pred_nonnegative_um"
+timeout_per_worker_sec: 3600
+
+stage_a_pilot: ["RF01", "ML01", "DL01", "SG01", "FM03"]
+stage_b_remaining: ["RF02", "ML02", "ML03", "ML04", "ML05", "ML06", "ML07", "DL02", "DL03", "DL04", "DL05", "SG02", "SG03", "SG04", "SG05", "SG06", "RF05", "FM04"]
+stage_c_historical_references: ["DLMwidth", "AEDwidth"]
+registry_retained_non_m04a: ["FM01", "FM02", "RF03", "RF04", "HY01", "HY02", "HY03", "HY04", "HY05"]

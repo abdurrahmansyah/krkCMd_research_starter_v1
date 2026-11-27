@@ -122,3 +122,17 @@ Append-only log. Do not rewrite old results.
   - Repaired `scripts/resource_policy.py` (suspend/sleep gap detection, bounded `nvidia-smi` timeout, `clock_fn` injection) and documented M02C `48,477.078 s` anomaly in `WATCHDOG_ANOMALY_INVESTIGATION_M03.md`.
   - Implemented `src/evaluation/metrics.py`, `src/features/perturbations.py`, `src/evaluation/experiment_runner.py` (guarded against real-data training), and `tests/test_m03_metrics_perturbations_watchdog.py` (`37` unit tests `OK`).
 - Next: Await researcher review and explicit approval of `reports/runs/M03_20261126_132016_DESKTOP-CQB09OU/M03_EVALUATION_PROTOCOL.md` and `M04_EXECUTION_PLAN.md` before M04.
+
+## EXP-008 — Milestone M04A: First Scientific Model Screening on Actual krkCMd Data (Protocol A Train + Validation)
+- Date: 2026-11-26
+- Run ID: `M04A_20261126_145808_DESKTOP-CQB09OU`
+- Status: PARTIAL (20/23 targeted candidates PASS; 3/23 FAILED 3,600s wall-clock cap [`SG02`, `SG03`, `FM04`]; 0 test-partition exposure; 0 `.venv*` modifications)
+- Approved Governance: `D-009A` through `D-009J` (`docs/DECISIONS.md`); `seed=42`, `scientific_v1` prespecified configurations, zero HPO (`D-009G`).
+- Top Validation Results (Raw MAE µm, `n=3,060`):
+  - #1 `ML01` Extra Trees: `14.2536` (`RMSE=28.9352`, `CCC=0.9796`)
+  - #2 `FM03` TabICLv2 (zero-shot): `14.3933` (`RMSE=29.1724`, `CCC=0.9794`)
+  - #3 `ML02` Random Forest: `14.5582` (`RMSE=29.8717`, `CCC=0.9783`)
+  - #4 `ML04` XGBoost: `14.7437`; #5 `ML06` CatBoost: `14.9827`; #6 `ML05` LightGBM: `14.9981`; #7 `ML03` HGB: `15.2379`
+  - Neural/Signal/Ref: `DL03` (`16.6599`), `DL02` (`16.7273`), `RF05` (`17.4926`), `SG06` (`22.3345`), `DL05` (`23.5185`), `DL04` (`23.9516`), `DL01` (`24.2129`), `SG05` (`26.2482`), `SG04` (`27.7206`), `ML07` (`29.7191`), `SG01` (`41.8803`), `RF02` (`52.4496`), `RF01` (`120.2711`).
+- Notebook & Verification: Executed `notebooks/01_M04A_scientific_screening_analysis.ipynb` via `krkcmd-research-newpc` (`01_M04A_scientific_screening_analysis_executed.ipynb` + `.html`); `41` unit tests `OK`; independent MAE/RMSE recomputation `max_diff=0.0`.
+- Next: Stop after M04A and await researcher review of `for_review/result_run_11_M04A.md` and `M04A_review_package.zip`.

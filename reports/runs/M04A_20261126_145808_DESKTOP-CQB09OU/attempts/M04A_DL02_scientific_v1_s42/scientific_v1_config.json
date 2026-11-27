@@ -1,0 +1,17 @@
+{
+  "attention_dropout": 0.1,
+  "attention_n_heads": 4,
+  "batch_size": 64,
+  "d_block": 64,
+  "d_out": 1,
+  "early_stopping_patience": 12,
+  "ffn_d_hidden_multiplier": 1.333,
+  "ffn_dropout": 0.1,
+  "lr": 0.0005,
+  "max_epochs": 80,
+  "n_blocks": 3,
+  "n_cont_features": 501,
+  "residual_dropout": 0.0,
+  "seed": 42,
+  "standardization": "train_only_zscore"
+}

@@ -1,0 +1,33 @@
+model_id,name,category,environment,m04a_targeted,m04a_status,chosen_attempt_id,n_attempts,failure_or_exclusion_reason
+ML01,Extra Trees,classical_boosting,.venv,True,PASS,M04A_ML01_scientific_v1_s42_r2,2,
+ML02,Random Forest,classical_boosting,.venv,True,PASS,M04A_ML02_scientific_v1_s42,1,
+ML03,HistGradientBoosting,classical_boosting,.venv,True,PASS,M04A_ML03_scientific_v1_s42,1,
+ML04,XGBoost,classical_boosting,.venv-boost,True,PASS,M04A_ML04_scientific_v1_s42,1,
+ML05,LightGBM,classical_boosting,.venv-boost,True,PASS,M04A_ML05_scientific_v1_s42,1,
+ML06,CatBoost,classical_boosting,.venv-boost,True,PASS,M04A_ML06_scientific_v1_s42,1,
+ML07,SVR RBF,classical_boosting,.venv,True,PASS,M04A_ML07_scientific_v1_s42,1,
+DL01,MLP,tabular_deep_learning,.venv-deep,True,PASS,M04A_DL01_scientific_v1_s42,1,
+DL02,FT-Transformer,tabular_deep_learning,.venv-deep,True,PASS,M04A_DL02_scientific_v1_s42,1,
+DL03,RealMLP,tabular_deep_learning,.venv-deep,True,PASS,M04A_DL03_scientific_v1_s42,1,
+DL04,TabR,tabular_deep_learning,.venv-tabr,True,PASS,M04A_DL04_scientific_v1_s42,1,
+DL05,TabM,tabular_deep_learning,.venv-deep,True,PASS,M04A_DL05_scientific_v1_s42,1,
+FM01,TabPFN-3.5,tabular_foundation_models,.venv-foundation,False,BLOCKED_LICENSE,,0,Not targeted in M04A (D-009E)
+FM02,TabPFN-3.5-Fast,tabular_foundation_models,.venv-foundation,False,BLOCKED_LICENSE,,0,Not targeted in M04A (D-009E)
+FM03,TabICLv2,tabular_foundation_models,.venv-foundation,True,PASS,M04A_FM03_scientific_v1_s42,1,
+FM04,TabDPT,tabular_foundation_models,.venv-foundation,True,FAILED,M04A_FM04_scientific_v1_s42_r3,3,WALL_CLOCK_TIMEOUT (3600s) [SUSPEND_DETECTED]
+SG01,Vanilla 1D-CNN,spatial_signal_regression,.venv-deep,True,PASS,M04A_SG01_scientific_v1_s42,1,
+SG02,ResNet-1D,spatial_signal_regression,.venv-signal-tf,True,FAILED,M04A_SG02_scientific_v1_s42,1,WALL_CLOCK_TIMEOUT (3600s)
+SG03,InceptionTime Regression,spatial_signal_regression,.venv-signal-tf,True,FAILED,M04A_SG03_scientific_v1_s42,1,WALL_CLOCK_TIMEOUT (3600s)
+SG04,LITETime Regression,spatial_signal_regression,.venv-signal-tf,True,PASS,M04A_SG04_scientific_v1_s42,1,
+SG05,ROCKET Regression,spatial_signal_regression,.venv-signal-cpu,True,PASS,M04A_SG05_scientific_v1_s42,1,
+SG06,MultiROCKET-HYDRA Regression,spatial_signal_regression,.venv-signal-hydra,True,PASS,M04A_SG06_scientific_v1_s42,1,
+HY01,SNV + CatBoost,custom_hybrid_approaches,NOT_INSTALLED,False,DESIGN_REQUIRED,,0,Not targeted in M04A (D-009E)
+HY02,Derivative + Extra Trees,custom_hybrid_approaches,.venv,False,DESIGN_REQUIRED,,0,Not targeted in M04A (D-009E)
+HY03,Dual-stream multiscale CNN,custom_hybrid_approaches,NOT_INSTALLED,False,DESIGN_REQUIRED,,0,Not targeted in M04A (D-009E)
+HY04,CNN + CatBoost,custom_hybrid_approaches,NOT_INSTALLED,False,DESIGN_REQUIRED,,0,Not targeted in M04A (D-009E)
+HY05,Robust stacking ensemble,custom_hybrid_approaches,NOT_INSTALLED,False,DESIGN_REQUIRED,,0,Not targeted in M04A (D-009E)
+RF01,Dummy Mean,reference_benchmarks,.venv,True,PASS,M04A_RF01_scientific_v1_s42_r2,2,
+RF02,Linear Regression,reference_benchmarks,.venv,True,PASS,M04A_RF02_scientific_v1_s42,1,
+RF03,AED original,reference_benchmarks,.venv,False,REFERENCE_PENDING_IMPL,,0,Not targeted in M04A (D-009E)
+RF04,DLM pretrained,reference_benchmarks,NOT_INSTALLED,False,REFERENCE_PENDING_IMPL,,0,Not targeted in M04A (D-009E)
+RF05,DLM retrained,reference_benchmarks,.venv-deep,True,PASS,M04A_RF05_scientific_v1_s42,1,

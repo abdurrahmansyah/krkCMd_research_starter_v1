@@ -132,8 +132,21 @@ def compute_robustness_summary(
         if clean_tol > 0:
             tol_retentions.append(float(np.mean(np.abs(yp - yt) <= tolerance_um)) / clean_tol)
 
-    mean_corr_mae = float(np.mean(maes)) if maes else clean_mae
-    worst_corr_mae = float(np.max(maes)) if maes else clean_mae
+    if not corrupted_preds:
+        return {
+            "n_conditions": 0,
+            "clean_mae_um": clean_mae,
+            "mean_corrupted_mae_um": None,
+            "worst_condition_mae_um": None,
+            "abs_degradation_um": None,
+            "rel_degradation": None,
+            "prediction_consistency_mad_um": None,
+            "mean_tolerance_retention": None,
+            "area_under_severity_error_curve": None,
+        }
+
+    mean_corr_mae = float(np.mean(maes))
+    worst_corr_mae = float(np.max(maes))
     abs_deg = mean_corr_mae - clean_mae
     rel_deg = (abs_deg / clean_mae) if clean_mae > 0 else None
 
@@ -143,12 +156,13 @@ def compute_robustness_summary(
         ausec = float(np.trapezoid(np.asarray(maes)[order], np.asarray(severities)[order]))
 
     return {
+        "n_conditions": len(maes),
         "clean_mae_um": clean_mae,
         "mean_corrupted_mae_um": mean_corr_mae,
         "worst_condition_mae_um": worst_corr_mae,
         "abs_degradation_um": abs_deg,
         "rel_degradation": rel_deg,
-        "prediction_consistency_mad_um": float(np.mean(consistencies)) if consistencies else 0.0,
+        "prediction_consistency_mad_um": float(np.mean(consistencies)),
         "mean_tolerance_retention": float(np.mean(tol_retentions)) if tol_retentions else None,
         "area_under_severity_error_curve": ausec,
     }
